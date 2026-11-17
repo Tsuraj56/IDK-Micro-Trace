@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-11-13T10:00:46.828582+00:00",
+  "seed": 42,
+  "nominal_coverage": 0.9,
+  "alpha": 0.1,
+  "dev_pairs_count": 371,
+  "dev_participants_count": 75,
+  "test_pairs_count": 74,
+  "test_partition_status": "untouched_held_out",
+  "arms": {
+    "M1": {
+      "system_summary": {
+        "U0_homoscedastic_conformal": {
+          "n": 371,
+          "coverage": 0.9029649595687331,
+          "mean_width": 1.2921383348114495,
+          "median_width": 1.282777708643309,
+          "width_std": 0.01806625378103618,
+          "mae": 0.3114803335239893,
+          "rmse": 0.3901009687907566
+        },
+        "U1_quantile_regression": {
+          "n": 371,
+          "coverage": 0.7142857142857143,
+          "mean_width": 0.9291936834612344,
+          "median_width": 0.943886087968248,
+          "width_std": 0.2319277820171577,
+          "mae": 0.2868078329491931,
+          "rmse": 0.4146923755169277
+        },
+        "U2_locally_weighted_cv_plus": {
+          "n": 371,
+          "coverage": 0.9110512129380054,
+          "mean_width": 1.327369454739764,
+          "median_width": 1.3189302472812634,
+          "width_std": 0.19846890353743754,
+          "mae": 0.3114803335239893,
+          "rmse": 0.3901009687907566
+        },
+        "U2_cluster_weighted_sensitivity": {
+          "n": 371,
+          "coverage": 0.9272237196765498,
+          "mean_width": 1.4752031493227766,
+          "median_width": 1.4625819507491193,
+          "width_std": 0.21998292227413302,
+          "mae": 0.3114803335239893,
+          "rmse": 0.3901009687907566
+        }
+      },
+      "risk_coverage": [
+        {
+          "n": 371,
+          "coverage": 0.9110512129380054,
+          "mean_width": 1.327369454739764,
+          "median_width": 1.3189302472812634,
+          "width_std": 0.19846890353743754,
+          "mae": 0.3114803335239893,
+          "rmse": 0.3901009687907566,
+          "target_acceptance": 1.0,
+          "observed_acceptance": 1.0,
+          "mean_train_tau": Infinity
+        },
+        {
+          "n": 321,
+          "coverage": 0.9003115264797508,
+          "mean_width": 1.2794271545046174,
+          "median_width": 1.2805726513745068,
+          "width_std": 0.16410923844403738,
+          "mae": 0.31256361977118,
+          "rmse": 0.3929542692506898,
+          "target_acceptance": 0.9,
+          "observed_acceptance": 0.8652291105121294,
+          "mean_train_tau": 1.5589196953965647
+        },
+        {
+          "n": 287,
+          "coverage": 0.9024390243902439,
+          "mean_width": 1.247401339865241,
+          "median_width": 1.253624444249095,
+          "width_std": 0.14124350221724935,
+          "mae": 0.3036189741558518,
+          "rmse": 0.38306819405850495,
+          "target_acceptance": 0.8,
+          "observed_acceptance": 0.7735849056603774,
+          "mean_train_tau": 1.4767045379006096
+        },
+        {
+          "n": 265,
+          "coverage": 0.9018867924528302,
+          "mean_width": 1.2293724560792842,
+          "median_width": 1.2329598845738117,
+          "width_std": 0.13118727408723735,
+          "mae": 0.30078921649696055,
+          "rmse": 0.37885150469567536,
+          "target_acceptance": 0.7,
+          "observed_acceptance": 0.7142857142857143,
+          "mean_train_tau": 1.4222811726132403
+        },
+        {
+          "n": 221,
+          "coverage": 0.9004524886877828,
+          "mean_width": 1.1958221348338407,
+          "median_width": 1.2133453014212723,
+          "width_std": 0.11645417195017624,
+          "mae": 0.2899352582878165,
+          "rmse": 0.36964670030467867,
+          "target_acceptance": 0.6,
+          "observed_acceptance": 0.5956873315363881,
+          "mean_train_tau": 1.3663200480465196
+        },
+        {
+          "n": 182,
+          "coverage": 0.9010989010989011,
+          "mean_width": 1.1654107839382548,
+          "median_width": 1.1776362716968358,
+          "width_std": 0.10457656615293581,
+          "mae": 0.28278456231891086,
+          "rmse": 0.3609659352034977,
+          "target_acceptance": 0.5,
+          "observed_acceptance": 0.49056603773584906,
+          "mean_train_tau": 1.3148454704780588
+        }
+      ]
+    },
+    "M_guild_delta": {
+      "system_summary": {
+        "U0_homoscedastic_conformal": {
+          "n": 371,
+          "coverage": 0.8975741239892183,
+          "mean_width": 1.2802679153387502,
+          "median_width": 1.2614792628338622,
+          "width_std": 0.033550992113671935,
+          "mae": 0.309277716983222,
+          "rmse": 0.3879393651580426
+        },
+        "U1_quantile_regression": {
+          "n": 371,
+          "coverage": 0.6981132075471698,
+          "mean_width": 0.9220784835178075,
+          "median_width": 0.9498820580550194,
+          "width_std": 0.1965113552846048,
+          "mae": 0.27935064516834346,
+          "rmse": 0.4011319653870992
+        },
+        "U2_locally_weighted_cv_plus": {
+          "n": 371,
+          "coverage": 0.9056603773584906,
+          "mean_width": 1.3209488608364066,
+          "median_width": 1.3165981931690185,
+          "width_std": 0.17707976575355563,
+          "mae": 0.309277716983222,
+          "rmse": 0.3879393651580426
+        },
+        "U2_cluster_weighted_sensitivity": {
+          "n": 371,
+          "coverage": 0.9326145552560647,
+          "mean_width": 1.4401544622724427,
+          "median_width": 1.4351453405037822,
+          "width_std": 0.1875493610211682,
+          "mae": 0.309277716983222,
+          "rmse": 0.3879393651580426
+        }
+      },
+      "risk_coverage": [
+        {
+          "n": 371,
+          "coverage": 0.9056603773584906,
+          "mean_width": 1.3209488608364066,
+          "median_width": 1.3165981931690185,
+          "width_std": 0.17707976575355563,
+          "mae": 0.309277716983222,
+          "rmse": 0.3879393651580426,
+          "target_acceptance": 1.0,
+          "observed_acceptance": 1.0,
+          "mean_train_tau": Infinity
+        },
+        {
+          "n": 338,
+          "coverage": 0.8964497041420119,
+          "mean_width": 1.2899449841672614,
+          "median_width": 1.2995150561213773,
+          "width_std": 0.15140227291281652,
+          "mae": 0.31399361908215295,
+          "rmse": 0.39521506348825364,
+          "target_acceptance": 0.9,
+          "observed_acceptance": 0.9110512129380054,
+          "mean_train_tau": 1.5387328567497323
+        },
+        {
+          "n": 285,
+          "coverage": 0.887719298245614,
+          "mean_width": 1.2525003935155825,
+          "median_width": 1.26791519419193,
+          "width_std": 0.13354852502167963,
+          "mae": 0.3113686817985923,
+          "rmse": 0.3963374182549439,
+          "target_acceptance": 0.8,
+          "observed_acceptance": 0.7681940700808625,
+          "mean_train_tau": 1.4613428090362333
+        },
+        {
+          "n": 264,
+          "coverage": 0.8863636363636364,
+          "mean_width": 1.2369102802273828,
+          "median_width": 1.2593229019154784,
+          "width_std": 0.12570512115155796,
+          "mae": 0.30714044354418346,
+          "rmse": 0.39026644354992457,
+          "target_acceptance": 0.7,
+          "observed_acceptance": 0.7115902964959568,
+          "mean_train_tau": 1.4145378297931746
+        },
+        {
+          "n": 227,
+          "coverage": 0.8986784140969163,
+          "mean_width": 1.2143841844294492,
+          "median_width": 1.22545025886001,
+          "width_std": 0.11908585839414841,
+          "mae": 0.2985862122789834,
+          "rmse": 0.37781750710868617,
+          "target_acceptance": 0.6,
+          "observed_acceptance": 0.6118598382749326,
+          "mean_train_tau": 1.3616757165405102
+        },
+        {
+          "n": 194,
+          "coverage": 0.8917525773195877,
+          "mean_width": 1.1925104787337766,
+          "median_width": 1.2059706704881166,
+          "width_std": 0.11320271840485392,
+          "mae": 0.2944244070565131,
+          "rmse": 0.3748227781606023,
+          "target_acceptance": 0.5,
+          "observed_acceptance": 0.522911051212938,
+          "mean_train_tau": 1.3204960467503901
+        }
+      ]
+    },
+    "M5": {
+      "system_summary": {
+        "U0_homoscedastic_conformal": {
+          "n": 371,
+          "coverage": 0.9002695417789758,
+          "mean_width": 1.2528114923837512,
+          "median_width": 1.2453284708288348,
+          "width_std": 0.04869890620409585,
+          "mae": 0.3234267909813971,
+          "rmse": 0.3893157330913748
+        },
+        "U1_quantile_regression": {
+          "n": 371,
+          "coverage": 0.7142857142857143,
+          "mean_width": 0.9745408661703376,
+          "median_width": 1.0285834933542768,
+          "width_std": 0.19355598952012046,
+          "mae": 0.3061367442533026,
+          "rmse": 0.4097589007263787
+        },
+        "U2_locally_weighted_cv_plus": {
+          "n": 371,
+          "coverage": 0.9056603773584906,
+          "mean_width": 1.2603969295769177,
+          "median_width": 1.2471287557722521,
+          "width_std": 0.19332987818631414,
+          "mae": 0.3234267909813971,
+          "rmse": 0.3893157330913748
+        },
+        "U2_cluster_weighted_sensitivity": {
+          "n": 371,
+          "coverage": 0.9164420485175202,
+          "mean_width": 1.3646504747121337,
+          "median_width": 1.3450940055815845,
+          "width_std": 0.20701808354977996,
+          "mae": 0.3234267909813971,
+          "rmse": 0.3893157330913748
+        }
+      },
+      "risk_coverage": [
+        {
+          "n": 371,
+          "coverage": 0.9056603773584906,
+          "mean_width": 1.2603969295769177,
+          "median_width": 1.2471287557722521,
+          "width_std": 0.19332987818631414,
+          "mae": 0.3234267909813971,
+          "rmse": 0.3893157330913748,
+          "target_acceptance": 1.0,
+          "observed_acceptance": 1.0,
+          "mean_train_tau": Infinity
+        },
+        {
+          "n": 322,
+          "coverage": 0.8975155279503105,
+          "mean_width": 1.2149660525248303,
+          "median_width": 1.210699351584738,
+          "width_std": 0.15994591876764716,
+          "mae": 0.3141758556783332,
+          "rmse": 0.3795881298028841,
+          "target_acceptance": 0.9,
+          "observed_acceptance": 0.8679245283018868,
+          "mean_train_tau": 1.472859271049855
+        },
+        {
+          "n": 281,
+          "coverage": 0.896797153024911,
+          "mean_width": 1.1829773150965202,
+          "median_width": 1.182957712442945,
+          "width_std": 0.14241790574593705,
+          "mae": 0.31248694043429576,
+          "rmse": 0.3761716408567431,
+          "target_acceptance": 0.8,
+          "observed_acceptance": 0.7574123989218329,
+          "mean_train_tau": 1.3875712353122138
+        },
+        {
+          "n": 249,
+          "coverage": 0.8835341365461847,
+          "mean_width": 1.156982228936071,
+          "median_width": 1.154257785506167,
+          "width_std": 0.12682479760489493,
+          "mae": 0.3136518833158143,
+          "rmse": 0.38130225461569134,
+          "target_acceptance": 0.7,
+          "observed_acceptance": 0.6711590296495957,
+          "mean_train_tau": 1.3340848463853585
+        },
+        {
+          "n": 215,
+          "coverage": 0.8697674418604651,
+          "mean_width": 1.1313916270732873,
+          "median_width": 1.1281067847431137,
+          "width_std": 0.11488913789614405,
+          "mae": 0.32138831132223744,
+          "rmse": 0.3910067031468455,
+          "target_acceptance": 0.6,
+          "observed_acceptance": 0.5795148247978437,
+          "mean_train_tau": 1.2878372895358605
+        },
+        {
+          "n": 174,
+          "coverage": 0.8735632183908046,
+          "mean_width": 1.0983475275594037,
+          "median_width": 1.0932572075452351,
+          "width_std": 0.09843364064479973,
+          "mae": 0.3137041661909069,
+          "rmse": 0.37330410971509864,
+          "target_acceptance": 0.5,
+          "observed_acceptance": 0.46900269541778977,
+          "mean_train_tau": 1.2403632433861365
+        }
+      ]
+    }
+  }
+}

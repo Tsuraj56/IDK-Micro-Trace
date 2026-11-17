@@ -1,0 +1,491 @@
+column_index,column_name,mapped_role,dtype,non_null_total,missing_frac_total,non_null_mgx,missing_frac_mgx,n_unique
+0,Project,identifiers.project,object,5533,0.0,1638,0.0,5490
+1,External ID,identifiers.sample_id,object,5533,0.0,1638,0.0,2892
+2,Participant ID,identifiers.participant_id,object,5533,0.0,1638,0.0,131
+3,site_sub_coll,identifiers.collection_event_id,object,5533,0.0,1638,0.0,2302
+4,data_type,identifiers.data_type,object,5533,0.0,1638,0.0,11
+5,week_num,identifiers.week_num,float64,5273,0.047,1638,0.0,61
+6,date_of_receipt,dates.receipt_date,object,4352,0.2134,1638,0.0,462
+7,interval_days,identifiers.interval_days,float64,4352,0.2134,1638,0.0,61
+8,visit_num,identifiers.visit_id,int64,5533,0.0,1638,0.0,31
+9,Research Project,unmapped_metadata,object,5533,0.0,1638,0.0,1
+10,PDO Number,qc_variables.pdo_number,object,3062,0.4466,1617,0.0128,56
+11,GSSR IDs,unmapped_metadata,float64,206,0.9628,128,0.9219,206
+12,Product,unmapped_metadata,object,400,0.9277,322,0.8034,1
+13,LCSET,qc_variables.lcset,object,400,0.9277,322,0.8034,4
+14,Aggregated Lanes,unmapped_metadata,object,400,0.9277,322,0.8034,5
+15,WR ID,unmapped_metadata,float64,206,0.9628,128,0.9219,3
+16,# Lanes in Aggregation,unmapped_metadata,float64,400,0.9277,322,0.8034,2
+17,reads_raw,qc_variables.reads_raw,float64,3176,0.426,1638,0.0,3175
+18,reads_filtered,qc_variables.reads_filtered,float64,3176,0.426,1638,0.0,3174
+19,reads_qc_fail,qc_variables.reads_qc_fail,float64,3176,0.426,1638,0.0,3149
+20,reads_human,qc_variables.reads_human,float64,2473,0.553,1638,0.0,2459
+21,reads_ribosomal,qc_variables.reads_ribosomal,float64,835,0.8491,0,1.0,834
+22,reads_viral,qc_variables.reads_viral,float64,703,0.8729,0,1.0,547
+23,Delta,unmapped_metadata,float64,0,1.0,0,1.0,0
+24,IntervalName,unmapped_metadata,object,5533,0.0,1638,0.0,31
+25,IntervalSequence,unmapped_metadata,int64,5533,0.0,1638,0.0,31
+26,ProjectSpecificID,unmapped_metadata,int64,5533,0.0,1638,0.0,131
+27,site_name,identifiers.site_name,object,5533,0.0,1638,0.0,5
+28,Age at diagnosis,clinical.age_diagnosis,float64,4149,0.2501,1198,0.2686,39
+29,Has the subject had a cholecystectomy?,unmapped_metadata,object,49,0.9911,0,1.0,1
+30,Has the subject had a prior abdominal surgery (other)?,unmapped_metadata,object,49,0.9911,0,1.0,2
+31,Has the next visit been scheduled?,unmapped_metadata,object,181,0.9673,0,1.0,2
+32,Has the subject been given new stool kits?,unmapped_metadata,object,176,0.9682,0,1.0,2
+33,Has the subject completed the FFQ/YAQ?,unmapped_metadata,object,180,0.9675,0,1.0,2
+34,Education Level,unmapped_metadata,object,5418,0.0208,1601,0.0226,9
+35,Occupation,unmapped_metadata,object,5532,0.0002,1637,0.0006,5
+36,Scanned FFQ/YAQ document:,unmapped_metadata,object,157,0.9716,0,1.0,71
+37,FFQ/YAQ results:,unmapped_metadata,float64,0,1.0,0,1.0,0
+38,Has the subject had an appendectomy?,unmapped_metadata,object,49,0.9911,0,1.0,1
+39,Has the subject had a tonsillectomy?,unmapped_metadata,object,49,0.9911,0,1.0,2
+40,biopsy_location,unmapped_metadata,object,649,0.8827,0,1.0,9
+41,Were study bloods drawn?,unmapped_metadata,object,530,0.9042,0,1.0,1
+42,Whole blood received at Broad:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+43,Serum tube #1 received at CSMC:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+44,Serum tubes #2-4 received at MGH:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+45,Whole Blood (DNA),unmapped_metadata,object,529,0.9044,0,1.0,280
+46,Serum #1,unmapped_metadata,object,527,0.9048,0,1.0,457
+47,Serum #2,unmapped_metadata,object,527,0.9048,0,1.0,273
+48,Serum #3,unmapped_metadata,object,519,0.9062,0,1.0,269
+49,Serum #4,unmapped_metadata,object,491,0.9113,0,1.0,255
+50,Number of flora tubes collected:,unmapped_metadata,float64,651,0.8823,0,1.0,5
+51,Rectum Flora:,unmapped_metadata,float64,590,0.8934,0,1.0,91
+52,Ileum flora:,unmapped_metadata,float64,535,0.9033,0,1.0,80
+53,Other inflamed flora:,unmapped_metadata,float64,40,0.9928,0,1.0,5
+54,Non-inflamed flora:,unmapped_metadata,float64,69,0.9875,0,1.0,9
+55,Have samples been sent for histopathology?,unmapped_metadata,object,651,0.8823,0,1.0,2
+56,Number of tubes collected for epithelial cell biopsies:,unmapped_metadata,float64,324,0.9414,0,1.0,3
+57,Rectum cell biopsy:,unmapped_metadata,float64,174,0.9686,0,1.0,25
+58,Ileum cell biopsy:,unmapped_metadata,float64,169,0.9695,0,1.0,24
+59,Other inflamed cell biopsy:,unmapped_metadata,float64,0,1.0,0,1.0,0
+60,Other non-inflamed cell biopsy:,unmapped_metadata,float64,14,0.9975,0,1.0,2
+61,FLora received at MGH:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+62,RNA/DNA received at Broad:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+63,ECP received at Washington U:,unmapped_metadata,object,5533,0.0,1638,0.0,2
+64,Number of DNA/RNA tubes collected:,unmapped_metadata,float64,651,0.8823,0,1.0,4
+65,Rectum DNA/RNA:,unmapped_metadata,object,643,0.8838,0,1.0,110
+66,Ileum DNA/RNA:,unmapped_metadata,object,607,0.8903,0,1.0,102
+67,Other Inflamed DNA/RNA:,unmapped_metadata,object,190,0.9657,0,1.0,30
+68,Non-inflamed DNA/RNA:,unmapped_metadata,object,271,0.951,0,1.0,44
+69,consent_age,clinical.age_consent,float64,5473,0.0108,1619,0.0116,50
+70,diagnosis,clinical.disease_subtype,object,5533,0.0,1638,0.0,3
+71,"Soft drinks, tea or coffee with sugar (corn syrup, maple syrup, cane sugar, etc)",dietary_variables,object,4285,0.2256,1606,0.0195,5
+72,"Diet soft drinks, tea or coffee with sugar (Stevia, Equal, Splenda etc)",dietary_variables,object,4293,0.2241,1609,0.0177,5
+73,"Fruit juice (orange, apple, cranberry, prune etc.)",dietary_variables,object,4306,0.2218,1611,0.0165,5
+74,Water,dietary_variables,object,4307,0.2216,1612,0.0159,5
+75,"Alcohol (beer, brandy, spirits, hard liquor, wine, aperitif, etc.)",dietary_variables,object,4303,0.2223,1611,0.0165,5
+76,"Yogurt or other foods containing active bacterial cultures (kefir, sauerkraut)",dietary_variables,object,4290,0.2247,1608,0.0183,5
+77,"Dairy (milk, cream, ice cream, cheese, cream cheese)",dietary_variables,object,4293,0.2241,1609,0.0177,5
+78,Probiotic,dietary_variables,object,4286,0.2254,1607,0.0189,5
+79,"Fruits (no juice) (Apples, raisins, bananas, oranges, strawberries, blueberries",dietary_variables,object,4287,0.2252,1604,0.0208,5
+80,"Vegetables (salad, tomatoes, onions, greens, carrots, peppers, green beans, etc)",dietary_variables,object,4281,0.2263,1607,0.0189,5
+81,"1) In the past 2 weeks, have you received any of the following medications",unmapped_metadata,object,4180,0.2445,1572,0.0403,2
+82,"Beans (tofu, soy, soy burgers, lentils, Mexican beans, lima beans etc)",dietary_variables,object,4283,0.2259,1603,0.0214,5
+83,"Whole grains (wheat, oats, brown rice, rye, quinoa, wheat bread, wheat pasta)",dietary_variables,object,4292,0.2243,1610,0.0171,5
+84,"Starch (white rice, bread, pizza, potatoes, yams, cereals, pancakes, etc.)",dietary_variables,object,4289,0.2248,1606,0.0195,5
+85,Eggs,dietary_variables,object,4267,0.2288,1600,0.0232,5
+86,"Processed meat (other red or white meat such as lunch meat, ham, salami, bologna",dietary_variables,object,4295,0.2237,1608,0.0183,5
+87,"Red meat (beef, hamburger, pork, lamb)",dietary_variables,object,4297,0.2234,1610,0.0171,5
+88,"White meat (chicken, turkey, etc.)",dietary_variables,object,4281,0.2263,1604,0.0208,5
+89,"Shellfish (shrimp, lobster, scallops, etc.)",dietary_variables,object,4289,0.2248,1608,0.0183,5
+90,"Fish (fish nuggets, breaded fish, fish cakes, salmon, tuna, etc.)",dietary_variables,object,4288,0.225,1607,0.0189,5
+91,"Sweets (pies, jam, chocolate, cake, cookies, etc.)",dietary_variables,object,4295,0.2237,1609,0.0177,5
+92,Antibiotics,medications.antibiotics,object,5533,0.0,1638,0.0,2
+93,Chemotherapy,unmapped_metadata,object,5533,0.0,1638,0.0,2
+94,Immunosuppressants (e.g. oral corticosteroids),medications.immunosuppressants,object,5533,0.0,1638,0.0,2
+95,"2) In the past 2 weeks, have you undergone a colonoscopy or other procedure",unmapped_metadata,object,4217,0.2378,1580,0.0354,2
+96,"3) In the past 2 weeks, have you used an oral contrast",unmapped_metadata,object,4214,0.2384,1578,0.0366,2
+97,"4) In the past 2 weeks, have you had diarrhea?",unmapped_metadata,object,4220,0.2373,1581,0.0348,2
+98,"5) In the past 2 weeks, have you been hospitalized?",unmapped_metadata,object,4208,0.2395,1578,0.0366,2
+99,6) Have you ever had bowel surgery?,unmapped_metadata,object,4205,0.24,1575,0.0385,2
+100,Tea or coffee no sugar and no sugar replacement,dietary_variables,object,4300,0.2228,1607,0.0189,5
+101,Did you grow up on a farm?,unmapped_metadata,object,168,0.9696,0,1.0,2
+102,Did you attend daycare as a child?,unmapped_metadata,object,168,0.9696,0,1.0,3
+103,Were you exposed to cigarette smoke as a child?,unmapped_metadata,object,168,0.9696,0,1.0,2
+104,Were you born prematurely (more than 3 weeks early)?,unmapped_metadata,object,163,0.9705,0,1.0,3
+105,Do you currently smoke marijuana?,unmapped_metadata,object,63,0.9886,0,1.0,2
+106,"If yes, how many times per month do you smoke marijuana on average?",unmapped_metadata,float64,2,0.9996,0,1.0,1
+107,"In the past 2 months, have you used any acid reducing medication",unmapped_metadata,object,168,0.9696,0,1.0,3
+108,"If yes, how frequently do you take them?",unmapped_metadata,object,44,0.992,0,1.0,4
+109,"In the past 2 months, have you used any medications modifying bile production",unmapped_metadata,object,166,0.97,0,1.0,3
+110,Do you use non-steroidal anti-inflammatory medications,unmapped_metadata,object,168,0.9696,0,1.0,2
+111,Were you born in a hospital?,unmapped_metadata,object,166,0.97,0,1.0,2
+112,"If yes, how frequently do you take them?.1",unmapped_metadata,object,89,0.9839,0,1.0,5
+113,"If you are female, do you use hormonal contraception?",unmapped_metadata,object,161,0.9709,0,1.0,3
+114,"If yes, what type of contraception?",unmapped_metadata,object,15,0.9973,0,1.0,1
+115,Please list your current hormonal contraceptive:,unmapped_metadata,object,12,0.9978,0,1.0,5
+116,"If yes, for how many months have you been taking hormonal contraception?",unmapped_metadata,object,18,0.9967,0,1.0,2
+117,Have you changed your hormonal contraceptive regimen in the past two months?,unmapped_metadata,object,15,0.9973,0,1.0,1
+118,"In the past 6 months, have you used antibiotics?",unmapped_metadata,object,168,0.9696,0,1.0,3
+119,"In the past 3 months, have you consumed any probiotics (other than yogurt)",unmapped_metadata,object,164,0.9704,0,1.0,2
+120,"In the past 3 months, how often have you consumed yogurt or other foods containi",unmapped_metadata,object,168,0.9696,0,1.0,5
+121,Were you born via C-section?,unmapped_metadata,object,165,0.9702,0,1.0,3
+122,What are your dietary preferences with respect to meat?,unmapped_metadata,object,168,0.9696,0,1.0,3
+123,How often do you consume alcoholic beverages?,unmapped_metadata,object,63,0.9886,0,1.0,5
+124,"In the past 7 days, my sleep quality was...",unmapped_metadata,object,158,0.9714,0,1.0,5
+125,"In the past 7 days, my sleep was refreshing...",unmapped_metadata,object,162,0.9707,0,1.0,5
+126,I had a problem with my sleep...,unmapped_metadata,object,165,0.9702,0,1.0,5
+127,I had difficulty falling asleep...,unmapped_metadata,object,165,0.9702,0,1.0,5
+128,My sleep was restless...,unmapped_metadata,object,165,0.9702,0,1.0,5
+129,I tried hard to get to sleep...,unmapped_metadata,object,165,0.9702,0,1.0,5
+130,I worried about not being able to fall asleep...,unmapped_metadata,object,165,0.9702,0,1.0,5
+131,I was satisfied with my sleep...,unmapped_metadata,object,165,0.9702,0,1.0,5
+132,Were you born in the United States?,unmapped_metadata,object,168,0.9696,0,1.0,2
+133,"In the past 7 days, I felt worthless...",unmapped_metadata,object,163,0.9705,0,1.0,4
+134,I felt helpless...,unmapped_metadata,object,163,0.9705,0,1.0,5
+135,I felt depressed...,unmapped_metadata,object,163,0.9705,0,1.0,5
+136,I felt hopeless...,unmapped_metadata,object,163,0.9705,0,1.0,4
+137,I felt like a failure...,unmapped_metadata,object,163,0.9705,0,1.0,4
+138,I felt unhappy...,unmapped_metadata,object,163,0.9705,0,1.0,5
+139,I felt that I had nothing to look forward to...,unmapped_metadata,object,163,0.9705,0,1.0,4
+140,I felt that nothing could cheer me up...,unmapped_metadata,object,163,0.9705,0,1.0,4
+141,"In the past 7 days, I felt fearful...",unmapped_metadata,object,161,0.9709,0,1.0,5
+142,I found it hard to focus on anything other than my anxiety...,unmapped_metadata,object,161,0.9709,0,1.0,5
+143,"If no, where were you born?",unmapped_metadata,object,9,0.9984,0,1.0,5
+144,"If no, in what year did you come to the United States?",unmapped_metadata,float64,9,0.9984,0,1.0,5
+145,Were you breastfed as an infant?,unmapped_metadata,object,168,0.9696,0,1.0,3
+146,My worries overwhelmed me...,unmapped_metadata,object,161,0.9709,0,1.0,5
+147,I felt uneasy...,unmapped_metadata,object,161,0.9709,0,1.0,5
+148,I felt nervous...,unmapped_metadata,object,161,0.9709,0,1.0,4
+149,I felt like I needed help for my anxiety...,unmapped_metadata,object,159,0.9713,0,1.0,4
+150,I felt anxious...,unmapped_metadata,object,161,0.9709,0,1.0,5
+151,I felt tense...,unmapped_metadata,object,161,0.9709,0,1.0,5
+152,"When was the last time you saw a dentist (generalist, prosthodontist, periodonti",unmapped_metadata,object,163,0.9705,0,1.0,5
+153,When was the last time you had a dental cleaning? Choose the most recent option.,unmapped_metadata,object,163,0.9705,0,1.0,5
+154,Manual toothbrush,unmapped_metadata,object,162,0.9707,0,1.0,5
+155,Electric toothbrush,unmapped_metadata,object,163,0.9705,0,1.0,5
+156,Alcohol-based mouthwash,unmapped_metadata,object,157,0.9716,0,1.0,5
+157,Non alcoholic mouthwash,unmapped_metadata,object,155,0.972,0,1.0,5
+158,Floss,unmapped_metadata,object,163,0.9705,0,1.0,5
+159,Water-based pick/jet,unmapped_metadata,object,163,0.9705,0,1.0,5
+160,Tongue cleaner,unmapped_metadata,object,161,0.9709,0,1.0,5
+161,Tooth-whiteners,unmapped_metadata,object,163,0.9705,0,1.0,3
+162,Were you treated with antibiotics before the age of one?,unmapped_metadata,object,168,0.9696,0,1.0,3
+163,Were you hospitalized before the age of five?,unmapped_metadata,object,166,0.97,0,1.0,3
+164,Did you have pets growing up?,unmapped_metadata,object,168,0.9696,0,1.0,3
+165,"Subject is unwilling or unable to provide biopsy, blood, and stool samples:",unmapped_metadata,float64,0,1.0,0,1.0,0
+166,"Subject has an immune mediated disease (i.e. rheumatoid arthritis, lupus, T1DM):",unmapped_metadata,float64,0,1.0,0,1.0,0
+167,Subject is pregnant:,unmapped_metadata,float64,0,1.0,0,1.0,0
+168,Subject has a known bleeding disorder:,unmapped_metadata,float64,0,1.0,0,1.0,0
+169,Subject has an acute gastrointestinal infection:,unmapped_metadata,float64,0,1.0,0,1.0,0
+170,Subject is actively being treated for a malignancy with chemotherapy:,unmapped_metadata,float64,0,1.0,0,1.0,0
+171,Subject has been diagnosed with indeterminate colitis:,unmapped_metadata,float64,0,1.0,0,1.0,0
+172,Subject has a stoma or pouch:,unmapped_metadata,float64,0,1.0,0,1.0,0
+173,Subject has an acute gastrointestinal illness:,unmapped_metadata,float64,0,1.0,0,1.0,0
+174,Subject has an acute gastrointestinal infection or IBD:,unmapped_metadata,float64,0,1.0,0,1.0,0
+175,Behavior (B),unmapped_metadata,object,6,0.9989,0,1.0,2
+176,"For UC and CD, has the disease classification changed since baseline?",unmapped_metadata,object,251,0.9546,0,1.0,2
+177,Extent (E),unmapped_metadata,object,2,0.9996,0,1.0,1
+178,"For months 3, 6, and 9 ONLY: Has the subject been given 6 new stool collection k",unmapped_metadata,object,308,0.9443,0,1.0,2
+179,Location (L) prior to first surgery,unmapped_metadata,object,6,0.9989,0,1.0,3
+180,Has the subject experienced a flare since the last study visit?,unmapped_metadata,object,8,0.9986,0,1.0,2
+181,"If yes, how many times?",unmapped_metadata,float64,2,0.9996,0,1.0,1
+182,Weight,unmapped_metadata,float64,324,0.9414,0,1.0,116
+183,Has the subject had a colonoscopy since the last visit?,unmapped_metadata,object,324,0.9414,0,1.0,2
+184,Has the subject been hospitalized for any reason since the last study visit?,unmapped_metadata,object,324,0.9414,0,1.0,2
+185,Has the subject had any accute diarrheal illnesses since the last study visit?,unmapped_metadata,object,324,0.9414,0,1.0,2
+186,Has the subject used any antibiotics since the last visit?,medications.antibiotics_since_last,object,324,0.9414,0,1.0,2
+187,fecalcal_ng_ml,outcomes.fc_secondary,float64,121,0.9781,66,0.9597,105
+188,Parents,unmapped_metadata,object,179,0.9676,0,1.0,2
+189,Mother,unmapped_metadata,object,179,0.9676,0,1.0,3
+190,Father,unmapped_metadata,object,179,0.9676,0,1.0,2
+191,Siblings,unmapped_metadata,object,179,0.9676,0,1.0,2
+192,Male sibling 1,unmapped_metadata,object,179,0.9676,0,1.0,3
+193,Male sibling 2,unmapped_metadata,object,179,0.9676,0,1.0,1
+194,Male sibling 3,unmapped_metadata,object,179,0.9676,0,1.0,1
+195,Female sibling 1,unmapped_metadata,object,179,0.9676,0,1.0,2
+196,Female sibling 2,unmapped_metadata,object,179,0.9676,0,1.0,1
+197,Female sibling 3,unmapped_metadata,object,179,0.9676,0,1.0,1
+198,Children,unmapped_metadata,object,179,0.9676,0,1.0,1
+199,Male child 1,unmapped_metadata,object,179,0.9676,0,1.0,1
+200,Male child 2,unmapped_metadata,object,179,0.9676,0,1.0,1
+201,Male child 3,unmapped_metadata,object,179,0.9676,0,1.0,1
+202,Female child 1,unmapped_metadata,object,179,0.9676,0,1.0,1
+203,Female child 2,unmapped_metadata,object,179,0.9676,0,1.0,1
+204,Female child 3,unmapped_metadata,object,179,0.9676,0,1.0,1
+205,Grandparents,unmapped_metadata,object,179,0.9676,0,1.0,2
+206,Male grandparent 1,unmapped_metadata,object,179,0.9676,0,1.0,2
+207,Male grandparent 2,unmapped_metadata,object,179,0.9676,0,1.0,1
+208,Female grandparent 1,unmapped_metadata,object,179,0.9676,0,1.0,3
+209,Female grandparent 2,unmapped_metadata,object,179,0.9676,0,1.0,2
+210,Distant Relative,unmapped_metadata,object,179,0.9676,0,1.0,2
+211,Male distant relative 1,unmapped_metadata,object,179,0.9676,0,1.0,2
+212,Male distant relative 2,unmapped_metadata,object,179,0.9676,0,1.0,2
+213,Male distant relative 3,unmapped_metadata,object,179,0.9676,0,1.0,2
+214,Female distant relative 1,unmapped_metadata,object,179,0.9676,0,1.0,3
+215,Female distant relative 2,unmapped_metadata,object,179,0.9676,0,1.0,1
+216,Female distant relative 3,unmapped_metadata,object,179,0.9676,0,1.0,1
+217,Uveitis,unmapped_metadata,object,5533,0.0,1638,0.0,2
+218,Erythema nodosum,unmapped_metadata,object,5533,0.0,1638,0.0,2
+219,Aphthous ulcers,unmapped_metadata,object,5533,0.0,1638,0.0,2
+220,Pyoderma gangrenosum,unmapped_metadata,object,5533,0.0,1638,0.0,2
+221,Anal fissure,unmapped_metadata,object,5533,0.0,1638,0.0,2
+222,New fistula,unmapped_metadata,object,5533,0.0,1638,0.0,2
+223,Abscess,unmapped_metadata,object,5533,0.0,1638,0.0,2
+224,Was HBI completed?,unmapped_metadata,object,2316,0.5814,741,0.5476,2
+225,General wellbeing,clinical.wellbeing,object,2224,0.598,719,0.5611,5
+226,Abdominal pain,clinical.abdominal_pain,object,1180,0.7867,379,0.7686,3
+227,Number of liquid or very soft stools in the past 24 hours:,unmapped_metadata,float64,2197,0.6029,709,0.5672,14
+228,Abdominal mass,unmapped_metadata,object,8,0.9986,0,1.0,2
+229,Arthralgia,unmapped_metadata,object,5533,0.0,1638,0.0,2
+230,hbi,clinical.hbi,float64,2145,0.6123,693,0.5769,19
+231,Hispanic or Latino Origin,unmapped_metadata,object,5532,0.0002,1637,0.0006,2
+232,BMI,unmapped_metadata,float64,178,0.9678,0,1.0,68
+233,Height,unmapped_metadata,float64,178,0.9678,0,1.0,48
+234,Weight.1,unmapped_metadata,float64,178,0.9678,0,1.0,66
+235,Cancer - breast,unmapped_metadata,object,5533,0.0,1638,0.0,1
+236,Cancer - cholangiocarcinoma,unmapped_metadata,object,5533,0.0,1638,0.0,1
+237,Cancer - colon or rectum,unmapped_metadata,object,5533,0.0,1638,0.0,1
+238,Cancer - Hodgkin's lymphoma,unmapped_metadata,object,5533,0.0,1638,0.0,1
+239,Cancer - liver,unmapped_metadata,object,5533,0.0,1638,0.0,1
+240,Cancer - lung,unmapped_metadata,object,5533,0.0,1638,0.0,1
+241,Cancer - lymphoma (not otherwise specified),unmapped_metadata,object,5533,0.0,1638,0.0,1
+242,Cancer - Non-Hodkin's lymphoma,unmapped_metadata,object,5533,0.0,1638,0.0,1
+243,Cancer - ovarian,unmapped_metadata,object,5533,0.0,1638,0.0,1
+244,Cancer - prostate,unmapped_metadata,object,5533,0.0,1638,0.0,1
+245,Other immune mediated diseases,unmapped_metadata,object,390,0.9295,0,1.0,2
+246,Celiac sprue,unmapped_metadata,object,5533,0.0,1638,0.0,1
+247,Chronic bronchitis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+248,Dermatitis herpetiformis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+249,Familial Mediterranean fever,unmapped_metadata,object,5533,0.0,1638,0.0,1
+250,Grave's disease,unmapped_metadata,object,5533,0.0,1638,0.0,2
+251,Guillian-Barre Syndrome,unmapped_metadata,object,5533,0.0,1638,0.0,1
+252,Hashimoto's (autoimmune) thyroiditis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+253,Idiopathic pulmonary fibrosis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+254,Idiopathic thrombocytopenia purpura,unmapped_metadata,object,5533,0.0,1638,0.0,1
+255,Irritable bowel syndrome,unmapped_metadata,object,5533,0.0,1638,0.0,2
+256,Alopecia areata,unmapped_metadata,object,5533,0.0,1638,0.0,2
+257,Multiple sclerosis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+258,Myasthenia gravis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+259,Myocarditis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+260,Neuropathy,unmapped_metadata,object,5533,0.0,1638,0.0,1
+261,Pericarditis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+262,Pemphigus vulgaris,unmapped_metadata,object,5533,0.0,1638,0.0,1
+263,Pernicious anemia,unmapped_metadata,object,5533,0.0,1638,0.0,1
+264,Polymyositis or dermatomyositis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+265,Primary biliary cirrhosis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+266,Primary sclerosing cholangitis,unmapped_metadata,object,5533,0.0,1638,0.0,2
+267,Ankylosing spondylitis,unmapped_metadata,object,5533,0.0,1638,0.0,2
+268,Psoriasis,unmapped_metadata,object,5533,0.0,1638,0.0,2
+269,Rheumatoid arthritis,unmapped_metadata,object,5533,0.0,1638,0.0,2
+270,Sarcoidosis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+271,Scleroderma (systemic sclerosis),unmapped_metadata,object,5533,0.0,1638,0.0,1
+272,Sjogren's syndrome,unmapped_metadata,object,5533,0.0,1638,0.0,1
+273,Systemic lupus erythematosis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+274,Temporal arteritis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+275,"Thyroid disease (uncertain diagnosis, not cancer)",unmapped_metadata,object,5533,0.0,1638,0.0,2
+276,Type I Diabetes (Juvenile Diabetes),unmapped_metadata,object,5533,0.0,1638,0.0,1
+277,Vitiligo,unmapped_metadata,object,5533,0.0,1638,0.0,1
+278,Arthritis (uncertain diagnosis),unmapped_metadata,object,5533,0.0,1638,0.0,2
+279,Wegener's granulomatosis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+280,Asthma,unmapped_metadata,object,5533,0.0,1638,0.0,2
+281,Autoimmune hemolytic anemia,unmapped_metadata,object,5533,0.0,1638,0.0,1
+282,Autoimmune hepatitis,unmapped_metadata,object,5533,0.0,1638,0.0,1
+283,Bechet's syndrome,unmapped_metadata,object,5533,0.0,1638,0.0,1
+284,Did the patient sign informed consent?,unmapped_metadata,object,5533,0.0,1638,0.0,1
+285,Did the subject withdraw from the study?,unmapped_metadata,object,5533,0.0,1638,0.0,2
+286,Was subject terminated by investigator?,unmapped_metadata,object,5533,0.0,1638,0.0,2
+287,Reason for withdrawal or termination:,unmapped_metadata,object,206,0.9628,73,0.9554,2
+288,Subject is 18 years of age or older:,unmapped_metadata,float64,0,1.0,0,1.0,0
+289,Subject is 17 years of age or younger:,unmapped_metadata,float64,0,1.0,0,1.0,0
+290,Subject has a confirmed diagnosis of IBD:,unmapped_metadata,float64,0,1.0,0,1.0,0
+291,Subject was diagnosed within the last 6 months:,unmapped_metadata,float64,0,1.0,0,1.0,0
+292,Subject is NOT on an anti-TNF inhibitor:,unmapped_metadata,float64,0,1.0,0,1.0,0
+293,Subject has had IBD for 5 years or more:,unmapped_metadata,float64,0,1.0,0,1.0,0
+294,is_inflamed,unmapped_metadata,object,881,0.8408,0,1.0,2
+295,Have the following labs been drawn within +/- 2 weeks?,unmapped_metadata,object,1098,0.8016,0,1.0,2
+296,CRP (mg/L),unmapped_metadata,float64,669,0.8791,0,1.0,85
+297,ESR (mm/hr),unmapped_metadata,float64,669,0.8791,0,1.0,47
+298,Location,unmapped_metadata,object,151,0.9727,0,1.0,2
+299,What is the endoscopic grading of severity?,unmapped_metadata,object,151,0.9727,0,1.0,4
+300,Location.1,unmapped_metadata,object,151,0.9727,0,1.0,2
+301,What is the endoscopic grading of severity?.1,unmapped_metadata,object,151,0.9727,0,1.0,4
+302,Modified Baron's Score,unmapped_metadata,float64,151,0.9727,0,1.0,7
+303,Partial Endoscopy,unmapped_metadata,object,5533,0.0,1638,0.0,2
+304,Was the Modified Baron's Score completed?,unmapped_metadata,object,322,0.9418,0,1.0,2
+305,Location.2,unmapped_metadata,object,171,0.9691,0,1.0,4
+306,What is the endoscopic grading of severity?.2,unmapped_metadata,object,171,0.9691,0,1.0,4
+307,Location.3,unmapped_metadata,object,166,0.97,0,1.0,4
+308,What is the endoscopic grading of severity?.3,unmapped_metadata,object,166,0.97,0,1.0,4
+309,Location.4,unmapped_metadata,object,161,0.9709,0,1.0,3
+310,What is the endoscopic grading of severity?.4,unmapped_metadata,object,161,0.9709,0,1.0,4
+311,Has classification been verified by a physician?,unmapped_metadata,object,124,0.9776,0,1.0,1
+312,Age at diagnosis (A),unmapped_metadata,object,84,0.9848,0,1.0,3
+313,baseline_montreal_location,unmapped_metadata,object,2375,0.5708,654,0.6007,6
+314,Behavior (B).1,unmapped_metadata,object,84,0.9848,0,1.0,6
+315,Extent (E).1,unmapped_metadata,object,40,0.9928,0,1.0,3
+316,Lomotil,unmapped_metadata,object,505,0.9087,0,1.0,1
+317,Dipentum (olsalazine),unmapped_metadata,object,505,0.9087,0,1.0,2
+318,Reason for stopping Dipentum:,unmapped_metadata,object,2,0.9996,0,1.0,1
+319,Rowasa enemas (mesalamine enemas),unmapped_metadata,object,505,0.9087,0,1.0,3
+320,Reason for stopping rowasa enemas:,unmapped_metadata,object,6,0.9989,0,1.0,2
+321,Canasa suppositories (mesalamine suppositories),unmapped_metadata,object,505,0.9087,0,1.0,4
+322,Reason for stopping canasa suppositories:,unmapped_metadata,object,12,0.9978,0,1.0,3
+323,Flagyl (Metronidazole),unmapped_metadata,object,505,0.9087,0,1.0,4
+324,Reason for stopping Flagyl:,unmapped_metadata,object,27,0.9951,0,1.0,3
+325,Cipro (Ciprofloxin),unmapped_metadata,object,505,0.9087,0,1.0,4
+326,Reason for stopping Cipro:,unmapped_metadata,object,32,0.9942,0,1.0,3
+327,Xifaxin (rifaxamin),unmapped_metadata,object,505,0.9087,0,1.0,2
+328,Reason for stopping Xifaxin:,unmapped_metadata,object,4,0.9993,0,1.0,1
+329,Levaquin,unmapped_metadata,object,505,0.9087,0,1.0,2
+330,Reason for stopping Levaquin:,unmapped_metadata,object,1,0.9998,0,1.0,1
+331,Other Antibiotic:,unmapped_metadata,object,505,0.9087,0,1.0,4
+332,Reason for stopping other antibiotic:,unmapped_metadata,object,23,0.9958,0,1.0,2
+333,Prednisone,medications.prednisone,object,505,0.9087,0,1.0,4
+334,Reason for stopping Prednisone:,unmapped_metadata,object,66,0.9881,0,1.0,3
+335,Highest dose of Prednisone taken (mg):,unmapped_metadata,float64,98,0.9823,0,1.0,6
+336,Entocort (Budesonide),unmapped_metadata,object,505,0.9087,0,1.0,4
+337,Reason for stopping Entocort:,unmapped_metadata,object,11,0.998,0,1.0,3
+338,Highest dose of Entocort taken (mg):,unmapped_metadata,float64,34,0.9939,0,1.0,3
+339,Reason for stopping lomotil:,unmapped_metadata,float64,0,1.0,0,1.0,0
+340,Imodium,unmapped_metadata,object,505,0.9087,0,1.0,3
+341,Solumedrol (Medrol),unmapped_metadata,object,505,0.9087,0,1.0,3
+342,Reason for stopping Solumedrol:,unmapped_metadata,object,6,0.9989,0,1.0,2
+343,IV steroids,unmapped_metadata,object,505,0.9087,0,1.0,4
+344,Reason for stopping IV steroids:,unmapped_metadata,object,12,0.9978,0,1.0,3
+345,"Cortenemas, Cortifoam, Proctofoam",unmapped_metadata,object,505,0.9087,0,1.0,3
+346,Reason for stopping enemas or foam:,unmapped_metadata,object,1,0.9998,0,1.0,1
+347,"Azathioprine (Imuran, Azasan)",unmapped_metadata,object,505,0.9087,0,1.0,3
+348,Reason for stopping Azathioprine:,unmapped_metadata,object,2,0.9996,0,1.0,1
+349,Methotrexate,unmapped_metadata,object,505,0.9087,0,1.0,3
+350,Reason for stopping Methotrexate:,unmapped_metadata,object,6,0.9989,0,1.0,2
+351,"Mercaptopurine (Purinethol, 6MP)",unmapped_metadata,object,505,0.9087,0,1.0,3
+352,Reason for stopping Mercaptopurine:,unmapped_metadata,object,8,0.9986,0,1.0,2
+353,VSL #3,unmapped_metadata,object,505,0.9087,0,1.0,3
+354,Reason for stopping VSL #3:,unmapped_metadata,object,2,0.9996,0,1.0,1
+355,FOS,unmapped_metadata,object,505,0.9087,0,1.0,2
+356,Reason for stopping FOS:,unmapped_metadata,float64,0,1.0,0,1.0,0
+357,Remicade (Infliximab),medications.remicade,object,505,0.9087,0,1.0,4
+358,Reason for stopping Remicade:,unmapped_metadata,object,9,0.9984,0,1.0,4
+359,Duration of Remicade use (months):,unmapped_metadata,object,106,0.9808,0,1.0,27
+360,Humira (Adalimumab),medications.humira,object,505,0.9087,0,1.0,3
+361,Reason for stopping Humira:,unmapped_metadata,object,6,0.9989,0,1.0,2
+362,Duration of Humira use (months):,unmapped_metadata,float64,23,0.9958,0,1.0,8
+363,Reason for stopping Imodium:,unmapped_metadata,object,2,0.9996,0,1.0,1
+364,DTO,unmapped_metadata,object,505,0.9087,0,1.0,1
+365,Cimzia (Certlizumab),unmapped_metadata,object,505,0.9087,0,1.0,3
+366,Reason for stopping Cimzia:,unmapped_metadata,object,2,0.9996,0,1.0,1
+367,Duration of Cimzia use (months):,unmapped_metadata,float64,8,0.9986,0,1.0,2
+368,Tysabri (Natalizumab),unmapped_metadata,object,505,0.9087,0,1.0,1
+369,Reason for stopping Tysabri:,unmapped_metadata,float64,0,1.0,0,1.0,0
+370,Duration of Tysabri use (months):,unmapped_metadata,float64,0,1.0,0,1.0,0
+371,Reason for stopping:,unmapped_metadata,float64,0,1.0,0,1.0,0
+372,Asacol (mesalamine),unmapped_metadata,object,505,0.9087,0,1.0,3
+373,Reason for stopping Asacol:,unmapped_metadata,object,11,0.998,0,1.0,3
+374,Pentasa (mesalamine),unmapped_metadata,object,505,0.9087,0,1.0,4
+375,Reason for stopping Pentasa:,unmapped_metadata,object,16,0.9971,0,1.0,2
+376,Lialda (mesalamine),unmapped_metadata,object,505,0.9087,0,1.0,4
+377,Reason for stopping Lialda:,unmapped_metadata,object,3,0.9995,0,1.0,1
+378,Apriso (mesalamine),unmapped_metadata,object,505,0.9087,0,1.0,1
+379,Reason for stopping Apriso:,unmapped_metadata,float64,0,1.0,0,1.0,0
+380,Colozal (balasalizide),unmapped_metadata,object,505,0.9087,0,1.0,4
+381,Reason for stopping Colozal:,unmapped_metadata,object,7,0.9987,0,1.0,3
+382,Sulfasalizine (Azulfidine),unmapped_metadata,object,505,0.9087,0,1.0,3
+383,Reason for stopping Sulfasalazine:,unmapped_metadata,object,8,0.9986,0,1.0,2
+384,"If other, explain:",unmapped_metadata,object,35,0.9937,10,0.9939,1
+385,Type of surgery:,unmapped_metadata,float64,0,1.0,0,1.0,0
+386,Type of surgery:.1,unmapped_metadata,float64,0,1.0,0,1.0,0
+387,Has subject had an upper or lower endoscopy?,unmapped_metadata,object,127,0.977,0,1.0,2
+388,Has IBD been confirmed by histopathology?,unmapped_metadata,object,94,0.983,0,1.0,1
+389,Has subject undergone any GI-related radiology procedures?,unmapped_metadata,object,127,0.977,0,1.0,2
+390,Procedure,unmapped_metadata,object,48,0.9913,0,1.0,5
+391,Procedure.1,unmapped_metadata,object,15,0.9973,0,1.0,5
+392,Has subject undergone any GI-related surgeries?,unmapped_metadata,object,127,0.977,0,1.0,2
+393,Type of surgery:.2,unmapped_metadata,object,15,0.9973,0,1.0,7
+394,Type of surgery:.3,unmapped_metadata,object,5,0.9991,0,1.0,3
+395,Type of surgery:.4,unmapped_metadata,object,4,0.9993,0,1.0,2
+396,Disease_course,unmapped_metadata,object,48,0.9913,0,1.0,4
+397,2a. Red or sore eyes,unmapped_metadata,object,71,0.9872,0,1.0,3
+398,2b. An abscess (collection of puss) in your abdomen (belly),unmapped_metadata,object,71,0.9872,0,1.0,3
+399,2c. An abscess on the buttock or around the anus,unmapped_metadata,object,71,0.9872,0,1.0,3
+400,"2d. A narrowing of the bowel (a ""stricture"")",unmapped_metadata,object,71,0.9872,0,1.0,3
+401,2e. A fistula (an abdominal connection,unmapped_metadata,object,71,0.9872,0,1.0,3
+402,2f. A draining fistula (if you have a fistula to the skin),unmapped_metadata,object,71,0.9872,0,1.0,3
+403,2g. Skin problems,unmapped_metadata,object,69,0.9875,0,1.0,3
+404,3a. Fever greater than 100 degrees Fahrenheit,unmapped_metadata,object,92,0.9834,0,1.0,3
+405,3b. Fatigue or lack of energy,unmapped_metadata,object,120,0.9783,0,1.0,3
+406,3c. Difficulty sleeping,unmapped_metadata,object,120,0.9783,0,1.0,3
+407,3d. Nausea,unmapped_metadata,object,120,0.9783,0,1.0,2
+408,3e. Vomiting,unmapped_metadata,object,120,0.9783,0,1.0,2
+409,3f. Mouth sores,unmapped_metadata,object,120,0.9783,0,1.0,3
+410,3g. Back pain,unmapped_metadata,object,120,0.9783,0,1.0,3
+411,3h. Night sweats,unmapped_metadata,object,118,0.9787,0,1.0,3
+412,3i. Decreased appetite,unmapped_metadata,object,119,0.9785,0,1.0,2
+413,3j. Weight loss,unmapped_metadata,object,120,0.9783,0,1.0,2
+414,"IN THE PAST SIX MONTHS, my disease has been:",unmapped_metadata,object,68,0.9877,0,1.0,6
+415,5a. How would you rate your health today with regard to your,unmapped_metadata,object,119,0.9785,0,1.0,3
+416,5b. How would you rate your health today with regard to you,unmapped_metadata,object,71,0.9872,0,1.0,5
+417,race,clinical.race,object,5533,0.0,1638,0.0,5
+418,"Has the subject undergone any relevant GI imaging procedures (abdomen, pelvis et",unmapped_metadata,object,595,0.8925,0,1.0,2
+419,Has the subject been given the C1 kit and asked to collect and submit a sample,unmapped_metadata,object,595,0.8925,0,1.0,2
+420,Arthralgias,unmapped_metadata,object,5533,0.0,1638,0.0,2
+421,Pyoderma gangrenosum.1,unmapped_metadata,object,5533,0.0,1638,0.0,1
+422,Erythema nodosum.1,unmapped_metadata,object,5533,0.0,1638,0.0,2
+423,Uveitis.1,unmapped_metadata,object,5533,0.0,1638,0.0,2
+424,Was SCCAI completed?,unmapped_metadata,object,1399,0.7472,475,0.71,2
+425,Bowel frequency during the day,clinical.bowel_freq,object,1338,0.7582,453,0.7234,4
+426,Bowel frequency during the night,unmapped_metadata,object,280,0.9494,86,0.9475,2
+427,Urgency of defecation,unmapped_metadata,object,772,0.8605,256,0.8437,3
+428,Blood in the stool,unmapped_metadata,object,612,0.8894,201,0.8773,3
+429,General well being over the past 24 hours,unmapped_metadata,object,1335,0.7587,452,0.7241,5
+430,sccai,clinical.sccai,float64,1335,0.7587,452,0.7241,12
+431,Screening Status,unmapped_metadata,float64,0,1.0,0,1.0,0
+432,Ileum,unmapped_metadata,object,481,0.9131,0,1.0,4
+433,Right Colon,unmapped_metadata,object,481,0.9131,0,1.0,4
+434,Transverse Colon,unmapped_metadata,object,481,0.9131,0,1.0,4
+435,Left Colon,unmapped_metadata,object,481,0.9131,0,1.0,3
+436,Rectum,unmapped_metadata,object,481,0.9131,0,1.0,4
+437,Total,unmapped_metadata,float64,481,0.9131,0,1.0,6
+438,Ileum.1,unmapped_metadata,object,481,0.9131,0,1.0,4
+439,Right Colon.1,unmapped_metadata,object,481,0.9131,0,1.0,4
+440,Transverse Colon.1,unmapped_metadata,object,481,0.9131,0,1.0,3
+441,Left Colon.1,unmapped_metadata,object,481,0.9131,0,1.0,4
+442,Rectum.1,unmapped_metadata,object,481,0.9131,0,1.0,3
+443,Total.1,unmapped_metadata,float64,481,0.9131,0,1.0,8
+444,Ileum.2,unmapped_metadata,object,481,0.9131,0,1.0,4
+445,Right Colon.2,unmapped_metadata,object,481,0.9131,0,1.0,4
+446,Transverse Colon.2,unmapped_metadata,object,481,0.9131,0,1.0,4
+447,Left Colon.2,unmapped_metadata,object,481,0.9131,0,1.0,4
+448,Rectum.2,unmapped_metadata,object,481,0.9131,0,1.0,4
+449,Total.2,unmapped_metadata,float64,481,0.9131,0,1.0,10
+450,Ileum.3,unmapped_metadata,object,481,0.9131,0,1.0,2
+451,Right Colon.3,unmapped_metadata,object,481,0.9131,0,1.0,1
+452,Transverse Colon.3,unmapped_metadata,object,481,0.9131,0,1.0,1
+453,Left Colon.3,unmapped_metadata,object,481,0.9131,0,1.0,1
+454,Rectum.3,unmapped_metadata,object,481,0.9131,0,1.0,2
+455,Total.3,unmapped_metadata,float64,481,0.9131,0,1.0,3
+456,SES-CD Score,clinical.ses_cd,float64,481,0.9131,0,1.0,17
+457,Partial Endoscopy.1,unmapped_metadata,object,5533,0.0,1638,0.0,2
+458,sex,clinical.sex,object,5533,0.0,1638,0.0,2
+459,8. Felt relaxed and free of tension,unmapped_metadata,object,114,0.9794,0,1.0,7
+460,9. Troubled by a feeling of having to go to the bathroom,unmapped_metadata,object,116,0.979,0,1.0,7
+461,10. Felt angry as a result of bowel problem,unmapped_metadata,object,116,0.979,0,1.0,7
+462,1. Feeling of fatigue,unmapped_metadata,object,116,0.979,0,1.0,7
+463,2. Delay or cancel a social engagement,unmapped_metadata,object,116,0.979,0,1.0,7
+464,3. Difficulty doing leisure or sports activities,unmapped_metadata,object,116,0.979,0,1.0,7
+465,4. How often during the last 2 weeks have you been troubled by pain in the abdom,unmapped_metadata,object,114,0.9794,0,1.0,7
+466,5. How often during the last two weeks have you felt depressed or discouraged? P,unmapped_metadata,object,114,0.9794,0,1.0,6
+467,6. Problem with passing large amounts of gas,unmapped_metadata,object,112,0.9798,0,1.0,7
+468,7. Problem with weight,unmapped_metadata,object,112,0.9798,0,1.0,7
+469,SIBDQ Score,clinical.sibdq,float64,110,0.9801,0,1.0,30
+470,Specify race,unmapped_metadata,object,329,0.9405,101,0.9383,9
+471,Was stool sample collected?,unmapped_metadata,object,4363,0.2115,1638,0.0,1
+472,Tube A: DNA/RNA,unmapped_metadata,object,1247,0.7746,381,0.7674,447
+473,Tube A: Metabolomics,unmapped_metadata,object,3413,0.3832,975,0.4048,1633
+474,Tube A: Storage,unmapped_metadata,object,1112,0.799,338,0.7937,418
+475,Tube A:Viromics,unmapped_metadata,object,1814,0.6721,381,0.7674,1031
+476,Tube B:Fecal Calprotectin,outcomes.fc_tube_id,object,2206,0.6013,610,0.6276,751
+477,fecalcal,outcomes.fc_primary,float64,1883,0.6597,456,0.7216,624
+478,Tube B:Proteomics,unmapped_metadata,object,4189,0.2429,1484,0.094,1672
+479,Viromics received at Baylor:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+480,FecalCal received at MGH:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+481,Proteomics received at LBNL:,unmapped_metadata,object,5533,0.0,1638,0.0,1
+482,Stool Sample ID:  Tube A  (EtOH),unmapped_metadata,object,4346,0.2145,1632,0.0037,1765
+483,Sample ID: Tube B (No preservative),unmapped_metadata,object,4345,0.2147,1631,0.0043,1765
+484,Tube A and B received at Broad:,unmapped_metadata,object,5533,0.0,1638,0.0,2
+485,stool_id,unmapped_metadata,float64,0,1.0,0,1.0,0
+486,smoking status,unmapped_metadata,object,100,0.9819,0,1.0,3
+487,Number years smoked,unmapped_metadata,float64,13,0.9977,0,1.0,7
+488,Age when started smoking,unmapped_metadata,float64,20,0.9964,0,1.0,7
+489,How many cigarettes/cigars/etc. do you smoke per day?,unmapped_metadata,float64,7,0.9987,0,1.0,3

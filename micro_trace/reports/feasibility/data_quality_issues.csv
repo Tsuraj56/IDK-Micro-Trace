@@ -1,0 +1,39 @@
+severity,category,field,description,affected_rows
+ERROR,schema_mapping,Cimzia (Certolizumab),Configured column 'Cimzia (Certolizumab)' (medications.cimzia) not found in metadata table.,5533
+ERROR,schema_mapping,Azathioprine,Configured column 'Azathioprine' (medications.azathioprine) not found in metadata table.,5533
+ERROR,schema_mapping,Mercaptopurine,Configured column 'Mercaptopurine' (medications.mercaptopurine) not found in metadata table.,5533
+WARNING,empty_column,Delta,Column 'Delta' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,FFQ/YAQ results:,Column 'FFQ/YAQ results:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Other inflamed cell biopsy:,Column 'Other inflamed cell biopsy:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,"Subject is unwilling or unable to provide biopsy, blood, and stool samples:","Column 'Subject is unwilling or unable to provide biopsy, blood, and stool samples:' is 100% missing (0/5533 non-null).",5533
+WARNING,empty_column,"Subject has an immune mediated disease (i.e. rheumatoid arthritis, lupus, T1DM):","Column 'Subject has an immune mediated disease (i.e. rheumatoid arthritis, lupus, T1DM):' is 100% missing (0/5533 non-null).",5533
+WARNING,empty_column,Subject is pregnant:,Column 'Subject is pregnant:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has a known bleeding disorder:,Column 'Subject has a known bleeding disorder:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has an acute gastrointestinal infection:,Column 'Subject has an acute gastrointestinal infection:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject is actively being treated for a malignancy with chemotherapy:,Column 'Subject is actively being treated for a malignancy with chemotherapy:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has been diagnosed with indeterminate colitis:,Column 'Subject has been diagnosed with indeterminate colitis:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has a stoma or pouch:,Column 'Subject has a stoma or pouch:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has an acute gastrointestinal illness:,Column 'Subject has an acute gastrointestinal illness:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has an acute gastrointestinal infection or IBD:,Column 'Subject has an acute gastrointestinal infection or IBD:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject is 18 years of age or older:,Column 'Subject is 18 years of age or older:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject is 17 years of age or younger:,Column 'Subject is 17 years of age or younger:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has a confirmed diagnosis of IBD:,Column 'Subject has a confirmed diagnosis of IBD:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject was diagnosed within the last 6 months:,Column 'Subject was diagnosed within the last 6 months:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject is NOT on an anti-TNF inhibitor:,Column 'Subject is NOT on an anti-TNF inhibitor:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Subject has had IBD for 5 years or more:,Column 'Subject has had IBD for 5 years or more:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Reason for stopping lomotil:,Column 'Reason for stopping lomotil:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Reason for stopping FOS:,Column 'Reason for stopping FOS:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Reason for stopping Tysabri:,Column 'Reason for stopping Tysabri:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Duration of Tysabri use (months):,Column 'Duration of Tysabri use (months):' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Reason for stopping:,Column 'Reason for stopping:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Reason for stopping Apriso:,Column 'Reason for stopping Apriso:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Type of surgery:,Column 'Type of surgery:' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Type of surgery:.1,Column 'Type of surgery:.1' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,Screening Status,Column 'Screening Status' is 100% missing (0/5533 non-null).,5533
+WARNING,empty_column,stool_id,Column 'stool_id' is 100% missing (0/5533 non-null).,5533
+ERROR,missing_identifier,week_num,Identifier column 'week_num' has 260 missing values.,260
+WARNING,many_to_many_join_risk,External ID,External ID is NOT globally unique in metadata (2892 unique across 5533 rows; 4008 rows share an External ID across multiple omics layers). Joining an omics table to unfiltered metadata on External ID alone causes many-to-many row multiplication. Must filter metadata by data_type (or deduplicate to collection_event_id) before joining.,4008
+WARNING,technical_replicates_within_collection,site_sub_coll+data_type,"Found 130 rows sharing the same (site_sub_coll, data_type) — e.g., technical replicates (_TR / _P) or multiple biopsy locations (Rectum vs Ileum).",130
+WARNING,fc_dual_columns_and_unit_label,fecalcal / fecalcal_ng_ml,"FC is split across two mutually exclusive columns: 'fecalcal' (1883 rows) and 'fecalcal_ng_ml' (121 rows), overlap=0. Within identical collection events (site_sub_coll), their numeric values match to 5 decimal places (max diff < 1e-4), proving both store the exact same scale (~3.45 to 493.7, standard ELISA ug/g range despite 'ng_ml' label).",2004
+WARNING,missing_dates,date_of_receipt,"'date_of_receipt' is missing in 1181/5533 metadata rows (all in biopsy_16S, host_transcriptomics, host_genome, methylome, serology; 0 missing in stool omics layers).",1181
+WARNING,same_week_multiple_collections,Participant ID+week_num,"Found 1 (Participant ID, week_num) pair(s) with multiple distinct collection events and different FC values (e.g. C3007 week 0 has C3007C1 on 2014-06-06 FC=41.21 and C3007C2 on 2014-06-12 FC=58.55). Join on site_sub_coll (or exact date_of_receipt), never on (Participant ID, week_num) alone.",1

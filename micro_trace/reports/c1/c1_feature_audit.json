@@ -1,0 +1,109 @@
+{
+  "execution_timestamp": "2026-11-12T15:03:29.715542+00:00",
+  "cohort_scope": "Phase P1 (C1: Future FC Prediction) Train-Only Feature Engineering & Trajectory Engine",
+  "total_consecutive_pairs": 445,
+  "dev_pairs": 371,
+  "test_pairs": 74,
+  "total_unique_participants": 93,
+  "dev_unique_participants": 75,
+  "test_unique_participants": 18,
+  "arms_feature_dimensions": {
+    "M0": 2,
+    "M1": 29,
+    "M2": 158,
+    "M3": 396,
+    "M4": 524,
+    "M5": 646,
+    "B3": 130,
+    "B4": 368
+  },
+  "prevalence_filtering_threshold": 0.1,
+  "metaphlan3_species_total": 578,
+  "metaphlan3_genus_total": 187,
+  "dev_prevalence_retained_species": 120,
+  "humann3_pathways_unstratified_total": 476,
+  "dev_prevalence_retained_pathways": 361,
+  "5fold_retained_species_counts": {
+    "fold_0": 122,
+    "fold_1": 121,
+    "fold_2": 124,
+    "fold_3": 121,
+    "fold_4": 122
+  },
+  "5fold_retained_pathway_counts": {
+    "fold_0": 363,
+    "fold_1": 360,
+    "fold_2": 363,
+    "fold_3": 358,
+    "fold_4": 361
+  },
+  "species_pseudocount_train_dev": 7.499999999999998e-07,
+  "pathway_pseudocount_train_dev": 5.845815014450065e-07,
+  "guild_membership_counts": {
+    "guild_scfa_butyrate": 19,
+    "guild_pathobiont": 53,
+    "fguild_scfa_butanoate": 21,
+    "fguild_sulfur_h2s": 6,
+    "fguild_oxidative_stress": 2,
+    "fguild_mucin_hexuronide": 8,
+    "fguild_lps_enterobacterial": 5
+  },
+  "zero_sum_sample_handling": {
+    "flagged_zero_sum_samples": [
+      "MSM5LLDM",
+      "MSM5LLDS"
+    ],
+    "clr_imputation": "0.0 (geometric simplex center)",
+    "indicator_column": "is_zero_sum_or_missing_omics",
+    "zero_sum_or_missing_count_consecutive_0d": 1
+  },
+  "trajectory_state_representation_adr009": {
+    "dynamic_variables_count": 12,
+    "dynamic_variables": [
+      "fc_log10",
+      "hbi",
+      "sccai",
+      "shannon_species",
+      "guild_scfa_butyrate_log",
+      "guild_pathobiont_log",
+      "guild_protective_vs_pathobiont_logratio",
+      "fguild_scfa_butanoate_log",
+      "fguild_sulfur_h2s_log",
+      "fguild_oxidative_stress_log",
+      "fguild_mucin_hexuronide_log",
+      "fguild_lps_enterobacterial_log"
+    ],
+    "state_features_per_variable": [
+      "prev",
+      "delta",
+      "logratio",
+      "velocity",
+      "roll_mean",
+      "roll_std",
+      "roll_min",
+      "roll_max",
+      "roll_slope"
+    ],
+    "global_trajectory_features": [
+      "has_prior_visit",
+      "n_visits_up_to_index",
+      "days_since_first_visit",
+      "days_since_prev_visit"
+    ]
+  },
+  "microtrace_attn_sequence_tensors": {
+    "max_seq_len": 25,
+    "d_seq": 15,
+    "d_anchor": 6,
+    "strictly_causal_temporal_deltas": true,
+    "seq_time_deltas_min_days": 0.0
+  },
+  "leakage_verification_flags": {
+    "train_only_fitting_invariant_pr03": true,
+    "m5_trajectory_strict_temporal_causality": true,
+    "sequence_time_deltas_non_negative": true,
+    "all_features_finite_no_nans_or_infs": true,
+    "participant_overlap_dev_test": 0,
+    "participant_overlap_across_folds": 0
+  }
+}

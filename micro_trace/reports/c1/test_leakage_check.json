@@ -1,0 +1,67 @@
+{
+  "benchmark_timestamp": "2026-11-12T17:07:47.087591+00:00",
+  "target_formulation": "Delta_y = log10(FC_{t+1} + 1) - log10(FC_t + 1)",
+  "reconstructed_formulation": "hat{y}_{t+1} = log10(FC_t + 1) + hat{Delta y}",
+  "persistence_baseline_mae": 0.2687,
+  "evaluated_arms": [
+    "M1"
+  ],
+  "evaluated_families": [
+    "ElasticNetCV",
+    "MicroTrace-Attn-L1"
+  ],
+  "dev_pairs_count": 371,
+  "test_pairs_count": 0,
+  "test_partition_status": "untouched_held_out",
+  "cv_folds": 5,
+  "best_cv_model": {
+    "arm": "M1",
+    "model_family": "MicroTrace-Attn-L1",
+    "cv_mae_reconstructed": 0.26,
+    "cv_mae_delta": 0.26,
+    "cv_directional_acc": 62.18,
+    "cv_spearman_rho_reconstructed": 0.6905,
+    "cv_r2_reconstructed": 0.3985,
+    "cv_rmse_reconstructed": 0.4108,
+    "cv_mae_reconstructed_std": 0.0322,
+    "feature_dim": 29
+  },
+  "summary_table": [
+    {
+      "arm": "M0",
+      "model_family": "PersistenceBaseline",
+      "cv_mae_reconstructed": 0.2687,
+      "cv_mae_delta": 0.2687,
+      "cv_directional_acc": 0.0,
+      "cv_spearman_rho_reconstructed": 0.6958,
+      "cv_r2_reconstructed": 0.3778,
+      "cv_rmse_reconstructed": 0.4233,
+      "cv_mae_reconstructed_std": 0.0,
+      "feature_dim": 2
+    },
+    {
+      "arm": "M1",
+      "model_family": "ElasticNetCV",
+      "cv_mae_reconstructed": 0.2854,
+      "cv_mae_delta": 0.2854,
+      "cv_directional_acc": 60.27,
+      "cv_spearman_rho_reconstructed": 0.682,
+      "cv_r2_reconstructed": 0.4719,
+      "cv_rmse_reconstructed": 0.3848,
+      "cv_mae_reconstructed_std": 0.0321,
+      "feature_dim": 29
+    },
+    {
+      "arm": "M1",
+      "model_family": "MicroTrace-Attn-L1",
+      "cv_mae_reconstructed": 0.26,
+      "cv_mae_delta": 0.26,
+      "cv_directional_acc": 62.18,
+      "cv_spearman_rho_reconstructed": 0.6905,
+      "cv_r2_reconstructed": 0.3985,
+      "cv_rmse_reconstructed": 0.4108,
+      "cv_mae_reconstructed_std": 0.0322,
+      "feature_dim": 29
+    }
+  ]
+}

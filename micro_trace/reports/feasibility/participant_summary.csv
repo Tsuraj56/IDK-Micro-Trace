@@ -1,0 +1,132 @@
+participant_id,diagnosis,is_ibd,site_name,n_metadata_rows,n_unique_collection_events,n_stool_collection_events,n_fc_collection_events,n_mgx_samples,n_mgx_collection_events,n_mgx_and_fc_events,n_mtx_collection_events,n_stool_16s_events,follow_up_span_days,has_repeated_stool_visits,has_repeated_fc,has_repeated_mgx_and_fc
+C3001,CD,True,Cedars-Sinai,51,23,18,13,16,16,11,6,10,326,True,True,True
+C3002,CD,True,Cedars-Sinai,61,24,17,12,15,15,10,7,7,309,True,True,True
+C3003,UC,True,Cedars-Sinai,49,19,14,10,10,10,6,7,6,335,True,True,True
+C3004,UC,True,Cedars-Sinai,90,30,23,10,24,22,9,18,6,322,True,True,True
+C3005,UC,True,Cedars-Sinai,56,21,15,10,12,12,7,9,6,321,True,True,True
+C3006,UC,True,Cedars-Sinai,52,22,14,9,11,11,6,7,4,320,True,True,True
+C3007,CD,True,Cedars-Sinai,8,4,4,4,3,3,3,1,4,41,True,True,True
+C3008,CD,True,Cedars-Sinai,41,20,16,7,13,13,5,5,3,308,True,True,True
+C3009,CD,True,Cedars-Sinai,43,15,14,7,12,12,5,8,2,323,True,True,True
+C3010,CD,True,Cedars-Sinai,50,21,15,6,14,14,5,7,1,321,True,True,True
+C3011,UC,True,Cedars-Sinai,52,23,19,6,22,19,6,4,0,314,True,True,True
+C3012,CD,True,Cedars-Sinai,51,19,14,6,14,14,6,8,0,323,True,True,True
+C3013,UC,True,Cedars-Sinai,50,24,20,5,22,20,5,5,0,287,True,True,True
+C3015,UC,True,Cedars-Sinai,63,28,24,7,23,23,6,15,0,322,True,True,True
+C3016,CD,True,Cedars-Sinai,77,30,22,6,20,20,5,15,0,323,True,True,True
+C3017,CD,True,Cedars-Sinai,58,28,23,6,23,22,6,5,0,323,True,True,True
+C3019,CD,True,Cedars-Sinai,1,1,1,0,1,1,0,0,0,0,False,False,False
+C3020,CD,True,Cedars-Sinai,1,1,1,0,1,1,0,0,0,0,False,False,False
+C3021,CD,True,Cedars-Sinai,40,16,9,0,9,9,0,7,0,224,True,False,False
+C3022,nonIBD,False,Cedars-Sinai,57,25,22,6,22,22,6,7,0,338,True,True,True
+C3023,CD,True,Cedars-Sinai,52,19,13,6,12,11,4,7,0,322,True,True,True
+C3024,CD,True,Cedars-Sinai,1,1,1,0,1,1,0,0,0,0,False,False,False
+C3027,CD,True,Cedars-Sinai,59,28,23,6,24,23,6,8,0,321,True,True,True
+C3028,CD,True,Cedars-Sinai,32,19,15,0,12,12,0,5,0,309,True,False,False
+C3029,UC,True,Cedars-Sinai,26,20,14,6,9,9,4,0,0,320,True,True,True
+C3030,CD,True,Cedars-Sinai,38,20,12,3,10,10,2,5,0,264,True,True,True
+C3031,CD,True,Cedars-Sinai,39,16,11,0,11,11,0,9,0,349,True,False,False
+C3032,UC,True,Cedars-Sinai,39,23,17,7,12,12,3,2,0,318,True,True,True
+C3033,CD,True,Cedars-Sinai,1,1,1,0,1,1,0,0,0,0,False,False,False
+C3034,UC,True,Cedars-Sinai,38,16,12,5,10,10,3,6,0,280,True,True,True
+C3035,CD,True,Cedars-Sinai,39,17,13,0,12,12,0,8,0,310,True,False,False
+C3036,UC,True,Cedars-Sinai,1,1,1,0,1,1,0,0,0,0,False,False,False
+C3037,UC,True,Cedars-Sinai,41,21,17,0,11,11,0,7,0,323,True,False,False
+E5001,CD,True,Emory,38,15,15,9,13,13,7,9,8,265,True,True,True
+E5002,nonIBD,False,Emory,18,7,7,7,5,5,5,4,6,188,True,True,True
+E5003,CD,True,Emory,3,2,2,2,1,1,1,0,2,12,True,True,False
+E5004,UC,True,Emory,49,22,16,11,12,12,7,5,7,320,True,True,True
+E5006,CD,True,Emory,6,2,2,2,2,2,2,2,2,27,True,True,True
+E5008,UC,True,Emory,11,6,6,6,3,3,3,1,4,120,True,True,True
+E5009,CD,True,Emory,39,18,13,6,11,11,4,4,0,281,True,True,True
+E5013,CD,True,Emory,44,17,13,6,13,13,6,7,0,279,True,True,True
+E5019,CD,True,Emory,1,1,1,0,1,1,0,0,0,0,False,False,False
+E5022,UC,True,Emory,1,1,1,0,1,1,0,0,0,0,False,False,False
+E5023,CD,True,Emory,1,1,1,0,1,1,0,0,0,0,False,False,False
+H4001,CD,True,Cincinnati,58,25,18,14,12,12,9,5,9,322,True,True,True
+H4004,CD,True,Cincinnati,65,23,13,10,11,11,8,8,4,322,True,True,True
+H4006,CD,True,Cincinnati,91,31,24,9,23,22,7,18,4,323,True,True,True
+H4007,CD,True,Cincinnati,54,24,16,9,12,12,5,4,3,325,True,True,True
+H4008,nonIBD,False,Cincinnati,71,28,21,8,24,20,7,8,3,315,True,True,True
+H4009,nonIBD,False,Cincinnati,63,25,20,8,22,19,7,8,3,322,True,True,True
+H4010,UC,True,Cincinnati,57,18,12,9,13,12,9,7,2,332,True,True,True
+H4011,CD,True,Cincinnati,3,2,2,2,1,1,1,0,2,12,True,True,False
+H4012,CD,True,Cincinnati,3,2,2,2,1,1,1,0,2,15,True,True,False
+H4013,nonIBD,False,Cincinnati,51,16,11,6,14,11,6,6,0,293,True,True,True
+H4014,CD,True,Cincinnati,57,18,11,6,12,11,6,7,1,353,True,True,True
+H4015,CD,True,Cincinnati,63,29,22,7,22,22,7,7,0,323,True,True,True
+H4016,nonIBD,False,Cincinnati,49,21,15,6,14,14,6,5,0,329,True,True,True
+H4017,CD,True,Cincinnati,63,25,17,0,18,17,0,12,0,265,True,False,False
+H4018,nonIBD,False,Cincinnati,52,19,13,6,13,13,6,7,0,322,True,True,True
+H4019,UC,True,Cincinnati,86,35,24,6,24,24,6,13,0,322,True,True,True
+H4020,CD,True,Cincinnati,81,30,23,0,23,23,0,18,0,308,True,False,False
+H4022,nonIBD,False,Cincinnati,50,21,15,5,14,14,5,5,0,322,True,True,True
+H4023,nonIBD,False,Cincinnati,63,28,22,6,22,22,6,8,0,320,True,True,True
+H4024,nonIBD,False,Cincinnati,58,27,22,6,23,22,6,7,0,322,True,True,True
+H4027,UC,True,Cincinnati,46,20,13,6,11,11,4,5,0,280,True,True,True
+H4028,CD,True,Cincinnati,40,18,13,6,10,10,3,5,0,301,True,True,True
+H4030,CD,True,Cincinnati,45,19,14,0,13,13,0,8,0,265,True,False,False
+H4031,CD,True,Cincinnati,51,20,14,6,12,12,5,7,0,323,True,True,True
+H4032,CD,True,Cincinnati,45,21,14,5,13,13,4,4,0,287,True,True,True
+H4035,UC,True,Cincinnati,91,31,24,7,24,24,7,18,0,322,True,True,True
+H4038,CD,True,Cincinnati,47,20,13,0,13,13,0,6,0,323,True,False,False
+H4039,CD,True,Cincinnati,52,21,14,0,13,13,0,9,0,281,True,False,False
+H4040,UC,True,Cincinnati,43,17,11,0,11,11,0,7,0,312,True,False,False
+H4042,UC,True,Cincinnati,31,16,10,4,8,8,3,3,0,347,True,True,True
+H4043,CD,True,Cincinnati,42,21,13,0,10,10,0,4,0,268,True,False,False
+H4044,UC,True,Cincinnati,47,15,11,4,13,11,4,8,0,316,True,True,True
+H4045,nonIBD,False,Cincinnati,47,18,14,4,13,13,3,7,0,278,True,True,True
+M2008,CD,True,MGH,86,30,19,13,17,17,11,12,9,366,True,True,True
+M2010,CD,True,MGH,12,9,9,9,3,3,3,0,9,122,True,True,True
+M2014,CD,True,MGH,59,25,18,16,14,14,12,7,11,336,True,True,True
+M2021,CD,True,MGH,43,18,12,10,8,8,6,5,9,238,True,True,True
+M2024,UC,True,MGH,3,1,1,1,1,1,1,1,1,0,False,False,False
+M2025,CD,True,MGH,58,23,15,10,11,11,7,9,7,311,True,True,True
+M2026,UC,True,MGH,57,27,19,11,17,17,9,7,7,320,True,True,True
+M2027,CD,True,MGH,63,20,14,9,13,13,8,12,6,291,True,True,True
+M2028,CD,True,MGH,67,33,24,11,20,20,7,5,7,345,True,True,True
+M2034,CD,True,MGH,61,30,23,8,20,20,5,6,3,320,True,True,True
+M2039,nonIBD,False,MGH,56,21,16,6,15,15,5,10,0,339,True,True,True
+M2041,nonIBD,False,MGH,53,20,16,6,14,14,4,9,0,354,True,True,True
+M2042,nonIBD,False,MGH,60,28,23,6,23,23,6,8,0,308,True,True,True
+M2044,CD,True,MGH,2,2,2,2,0,0,0,0,0,83,True,True,False
+M2047,nonIBD,False,MGH,55,17,13,6,14,13,6,9,0,279,True,True,True
+M2048,nonIBD,False,MGH,21,9,9,0,10,9,0,4,0,270,True,False,False
+M2058,CD,True,MGH,5,5,5,4,1,1,0,0,0,219,True,True,False
+M2059,UC,True,MGH,5,4,4,4,1,1,1,0,0,196,True,True,False
+M2060,nonIBD,False,MGH,41,17,13,5,12,12,4,5,0,264,True,True,True
+M2061,nonIBD,False,MGH,56,20,16,6,13,13,3,10,0,357,True,True,True
+M2064,UC,True,MGH,72,31,22,6,22,21,5,9,0,371,True,True,True
+M2067,UC,True,MGH,1,1,1,0,1,1,0,0,0,0,False,False,False
+M2068,CD,True,MGH,59,28,24,6,26,24,6,6,0,335,True,True,True
+M2069,UC,True,MGH,86,28,24,7,25,24,7,20,0,326,True,True,True
+M2071,UC,True,MGH,30,9,9,0,10,9,0,8,0,405,True,False,False
+M2072,nonIBD,False,MGH,72,29,24,6,24,24,6,13,0,320,True,True,True
+M2075,nonIBD,False,MGH,44,18,13,5,11,11,4,5,0,361,True,True,True
+M2077,nonIBD,False,MGH,37,13,13,0,14,13,0,8,0,359,True,False,False
+M2079,nonIBD,False,MGH,39,14,14,4,14,14,4,8,0,404,True,True,True
+M2081,UC,True,MGH,1,1,1,0,1,1,0,0,0,0,False,False,False
+M2082,CD,True,MGH,1,1,1,0,1,1,0,0,0,0,False,False,False
+M2083,UC,True,MGH,36,18,18,0,18,18,0,7,0,338,True,False,False
+M2084,nonIBD,False,MGH,61,28,23,5,23,23,5,8,0,331,True,True,True
+M2085,CD,True,MGH,43,14,14,6,14,14,6,8,0,351,True,True,True
+M2086,CD,True,MGH,5,5,5,4,1,1,0,0,0,275,True,True,False
+M2091,UC,True,MGH,1,1,1,0,1,1,0,0,0,0,False,False,False
+M2097,nonIBD,False,MGH,30,12,12,0,11,11,0,7,0,268,True,False,False
+M2103,UC,True,MGH,18,8,8,2,7,7,2,4,0,231,True,True,True
+P6005,CD,True,MGH Pediatrics,56,20,15,6,16,14,5,7,0,347,True,True,True
+P6009,CD,True,MGH Pediatrics,58,23,19,6,22,18,5,5,0,328,True,True,True
+P6010,CD,True,MGH Pediatrics,78,26,23,7,23,23,7,19,0,335,True,True,True
+P6012,UC,True,MGH Pediatrics,40,17,14,4,15,14,4,6,0,249,True,True,True
+P6013,UC,True,MGH Pediatrics,54,27,23,6,23,23,6,6,0,322,True,True,True
+P6014,nonIBD,False,MGH Pediatrics,27,15,12,3,10,10,2,2,0,244,True,True,True
+P6016,CD,True,MGH Pediatrics,58,22,15,6,14,14,5,8,0,329,True,True,True
+P6017,nonIBD,False,MGH Pediatrics,35,16,13,5,10,10,3,5,0,343,True,True,True
+P6018,nonIBD,False,MGH Pediatrics,79,28,24,6,25,24,6,16,0,322,True,True,True
+P6024,CD,True,MGH Pediatrics,37,15,12,5,11,11,4,4,0,260,True,True,True
+P6025,UC,True,MGH Pediatrics,19,13,8,3,7,7,2,0,0,248,True,True,True
+P6028,CD,True,MGH Pediatrics,44,18,13,0,11,11,0,8,0,364,True,False,False
+P6033,CD,True,MGH Pediatrics,27,19,14,0,11,11,0,3,0,300,True,False,False
+P6035,UC,True,MGH Pediatrics,32,11,11,6,11,11,6,7,0,252,True,True,True
+P6037,CD,True,MGH Pediatrics,25,10,10,0,8,8,0,7,0,235,True,False,False
+P6038,UC,True,MGH Pediatrics,32,12,12,0,12,12,0,8,0,265,True,False,False

@@ -1,0 +1,50 @@
+# Python bytecode, packaging & test caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments & secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets & large binary/model artifacts
+DataSet/
+micro-trace-data/
+hmp2_metadata_2018-08-20.csv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pt
+*.pth
+*.ckpt
+
+# Logs, scratch & local orchestration/chat history
+micro_trace/logs/
+*.log
+micro_trace/scratch/
+.orchestrator/
+Chats/
+
+# OS, Office temp locks & IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/

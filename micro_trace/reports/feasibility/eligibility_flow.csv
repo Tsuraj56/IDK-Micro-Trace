@@ -1,0 +1,16 @@
+step_order,step_name,n_unique_participants,n_ibd_participants_CD_UC,n_observations_or_events,n_eligible_pairs,notes
+1,All metadata rows,131,104,5533,0,Raw metadata table across 11 omics layers
+2,Unique collection events (site_sub_coll),131,104,2302,0,Deduplicated physical sample collection events
+3,Stool collection events with valid date,131,104,1769,0,100% of stool events have valid date_of_receipt
+4,Events with shotgun MGX (taxonomy + function),130,103,1595,0,1595 unique collection events (1638 MGX runs incl. replicates)
+5,Events with valid Fecal Calprotectin (FC),98,74,636,0,Combined fecalcal and fecalcal_ng_ml
+6,Events with BOTH MGX and same-event FC,95,71,503,0,Exact collection-event match (0-day window)
+7,Participants with >=2 matched (MGX + same-event FC) visits,90,66,498,0,Minimum requirement for longitudinal baseline+future pair
+8,All causal pairs: Index MGX -> Future FC (t_future > t_index),95,71,1201,3867,"Unrestricted future horizon (>0 days), index FC optional"
+9,Causal pairs with Same-Day Index FC + MGX -> Future FC,93,69,445,1671,Supports all model arms M0-M5 with 0-day index FC match
+10,Consecutive pairs only (Same-Day Index FC + MGX -> Next Future FC),93,69,445,445,Exactly 1 future target per eligible index visit
+11,Same-Day Index FC + MGX pairs in horizon 'short_7_21d' (7-21d),36,31,111,113,IBD-only (CD/UC) pairs=101 across 31 IBD participants
+12,Same-Day Index FC + MGX pairs in horizon 'biweekly_14_35d' (14-35d),44,39,128,190,IBD-only (CD/UC) pairs=175 across 39 IBD participants
+13,Same-Day Index FC + MGX pairs in horizon 'monthly_14_56d' (14-56d),84,63,246,415,IBD-only (CD/UC) pairs=365 across 63 IBD participants
+14,Same-Day Index FC + MGX pairs in horizon 'protocol_30_90d' (30-90d),88,65,396,545,IBD-only (CD/UC) pairs=453 across 65 IBD participants
+15,Same-Day Index FC + MGX pairs in horizon 'any_future_gt0d' (1-400d),93,69,445,1671,IBD-only (CD/UC) pairs=1358 across 69 IBD participants

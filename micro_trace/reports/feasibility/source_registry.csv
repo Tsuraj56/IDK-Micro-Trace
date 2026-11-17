@@ -1,0 +1,9 @@
+source_id,name,url,access_tier,verification_status,role
+SRC-01,IBDMDB Official Data Portal,https://ibdmdb.org/downloads/,Open Public,Verified in actual files & HTTP index,Primary multi-omics product repository
+SRC-02,Globus HMP2 Endpoint,https://g-227ca.190ebd.75bc.data.globus.org/ibdmdb/,Open Public,Verified in actual files (46 merged tables downloaded),Direct file server for HMP2 products
+SRC-03,Lloyd-Price et al. (2019) Nature,https://doi.org/10.1038/s41586-019-1237-9,Open Publication,Reported in publication & verified against metadata,Primary cohort publication (iHMP IBDMDB)
+SRC-04,NCBI BioProject PRJNA398089,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA398089,Open Public,Verified in official metadata/documentation,Raw microbial sequencing reads
+SRC-05,NCBI dbGaP phs001626.v1.p1,https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001626.v1.p1,Controlled Access (NIH dbGaP),Verified in official metadata/documentation,Host human WGS/exome raw reads (not required for C1-C4)
+SRC-06,IBSEN III Study,https://pmc.ncbi.nlm.nih.gov/articles/PMC13533192/,Controlled / Institutional Request,Not yet verified (External cohort),Candidate external validation cohort (16S + FC)
+SRC-07,DINE-CD Trial (ICPSR 38590),https://www.icpsr.umich.edu/web/pcodr/studies/38590,Controlled / Data Use Agreement,Not yet verified (External trial),Dietary RCT evidence (SCD vs Mediterranean in CD)
+SRC-08,AGA / ECCO / BDA IBD Dietary Guidelines,https://gastro.org/clinical-guidance/diet-and-nutritional-therapies-in-patients-with-ibd/,Open Clinical Guidance,Verified in official documentation,C4 dietary-pattern clinical evidence base

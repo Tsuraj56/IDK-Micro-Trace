@@ -1,0 +1,57 @@
+# Phase P1 (C1: Future FC Prediction) Configuration for MICRO-TRACE
+paths:
+  raw_data_dir: "DataSet/hmp2"
+  colab_raw_data_dir: "/content/drive/MyDrive/Micro-Trace/micro-trace-data/raw"
+  interim_c1_dir: "micro-trace-data/interim/c1"
+  processed_c1_dir: "micro-trace-data/processed/c1"
+  c1_reports_dir: "micro_trace/reports/c1"
+  feasibility_reports_dir: "micro_trace/reports/feasibility"
+  schema_mapping_path: "micro_trace/configs/schema_mapping.yaml"
+
+excluded_zero_sum_samples:
+  - "MSM5LLDM"
+  - "MSM5LLDS"
+
+matching_windows_days:
+  - 0
+  - 14
+
+candidate_horizons_days:
+  - name: "short_7_21d"
+    min_days: 7
+    max_days: 21
+  - name: "biweekly_14_35d"
+    min_days: 14
+    max_days: 35
+  - name: "monthly_14_56d"
+    min_days: 14
+    max_days: 56
+  - name: "protocol_30_90d"
+    min_days: 30
+    max_days: 90
+  - name: "any_future_gt0d"
+    min_days: 1
+    max_days: 400
+
+split:
+  random_seed: 42
+  dev_participants_target: 75
+  test_participants_target: 18
+  n_cv_folds: 5
+  dev_frac: 0.80
+
+covariates:
+  - "consent_age"
+  - "Age at diagnosis"
+  - "sex"
+  - "race"
+  - "site_name"
+  - "hbi"
+  - "sccai"
+  - "Bowel frequency during the day"
+  - "Abdominal pain"
+  - "General wellbeing"
+  - "Antibiotics"
+  - "Immunosuppressants (e.g. oral corticosteroids)"
+  - "reads_filtered"
+  - "reads_human"

@@ -1,0 +1,4 @@
+arm,model_family,cv_mae_reconstructed,cv_mae_delta,cv_directional_acc,cv_spearman_rho_reconstructed,cv_r2_reconstructed,cv_rmse_reconstructed,cv_mae_reconstructed_std,feature_dim
+M0,PersistenceBaseline,0.2687,0.2687,0.0,0.6958,0.3778,0.4233,0.0,2
+M1,ElasticNetCV,0.2854,0.2854,60.27,0.682,0.4719,0.3848,0.0321,29
+M1,MicroTrace-Attn-L1,0.26,0.26,62.18,0.6905,0.3985,0.4108,0.0322,29

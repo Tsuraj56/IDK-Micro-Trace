@@ -1,0 +1,4091 @@
+{
+  "timestamp": "2026-11-16T05:13:08.337957+00:00",
+  "seed": 42,
+  "test_partition_status": "untouched_held_out",
+  "subtypes": [
+    "CD",
+    "UC",
+    "nonIBD"
+  ],
+  "targets": {
+    "current_fc": {
+      "cohorts": {
+        "CD": {
+          "n_obs": 196,
+          "n_participants": 34,
+          "n_guilds_tested": 11,
+          "n_species_tested": 117,
+          "n_pathways_tested": 364
+        },
+        "UC": {
+          "n_obs": 121,
+          "n_participants": 22,
+          "n_guilds_tested": 11,
+          "n_species_tested": 117,
+          "n_pathways_tested": 350
+        },
+        "nonIBD": {
+          "n_obs": 98,
+          "n_participants": 19,
+          "n_guilds_tested": 11,
+          "n_species_tested": 138,
+          "n_pathways_tested": 361
+        }
+      },
+      "significance_counts": {
+        "CD": {
+          "guild": {
+            "n_tested": 11,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 1,
+            "nominal_p_lt_0_05": 2
+          },
+          "species": {
+            "n_tested": 117,
+            "fdr_lt_0_05": 3,
+            "fdr_lt_0_10": 4,
+            "nominal_p_lt_0_05": 16
+          },
+          "pathway": {
+            "n_tested": 364,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 9,
+            "nominal_p_lt_0_05": 83
+          },
+          "all": {
+            "n_tested": 492,
+            "fdr_lt_0_05": 3,
+            "fdr_lt_0_10": 14,
+            "nominal_p_lt_0_05": 101
+          }
+        },
+        "UC": {
+          "guild": {
+            "n_tested": 11,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 0,
+            "nominal_p_lt_0_05": 1
+          },
+          "species": {
+            "n_tested": 117,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 0,
+            "nominal_p_lt_0_05": 12
+          },
+          "pathway": {
+            "n_tested": 350,
+            "fdr_lt_0_05": 1,
+            "fdr_lt_0_10": 1,
+            "nominal_p_lt_0_05": 38
+          },
+          "all": {
+            "n_tested": 478,
+            "fdr_lt_0_05": 1,
+            "fdr_lt_0_10": 1,
+            "nominal_p_lt_0_05": 51
+          }
+        },
+        "nonIBD": {
+          "guild": {
+            "n_tested": 11,
+            "fdr_lt_0_05": 3,
+            "fdr_lt_0_10": 5,
+            "nominal_p_lt_0_05": 5
+          },
+          "species": {
+            "n_tested": 138,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 0,
+            "nominal_p_lt_0_05": 19
+          },
+          "pathway": {
+            "n_tested": 361,
+            "fdr_lt_0_05": 103,
+            "fdr_lt_0_10": 133,
+            "nominal_p_lt_0_05": 140
+          },
+          "all": {
+            "n_tested": 510,
+            "fdr_lt_0_05": 106,
+            "fdr_lt_0_10": 138,
+            "nominal_p_lt_0_05": 164
+          }
+        }
+      },
+      "stability_selection": {
+        "CD": {
+          "target": "current_fc",
+          "n_folds": 5,
+          "jaccard_lme_p05": 0.35826118006291024,
+          "jaccard_elasticnet": 0.0792253024398165,
+          "jaccard_rf_top30": 0.2757301111180871,
+          "n_stable_lme_ge4of5": 44,
+          "n_stable_enet_ge4of5": 2,
+          "n_stable_rf_ge4of5": 11
+        },
+        "UC": {
+          "target": "current_fc",
+          "n_folds": 5,
+          "jaccard_lme_p05": 0.3645080765454698,
+          "jaccard_elasticnet": 0.23844577246516296,
+          "jaccard_rf_top30": 0.22352971798233762,
+          "n_stable_lme_ge4of5": 22,
+          "n_stable_enet_ge4of5": 16,
+          "n_stable_rf_ge4of5": 7
+        },
+        "nonIBD": {
+          "target": "current_fc",
+          "n_folds": 5,
+          "jaccard_lme_p05": 0.5573377937459644,
+          "jaccard_elasticnet": 0.11179921227919479,
+          "jaccard_rf_top30": 0.2069979982309579,
+          "n_stable_lme_ge4of5": 112,
+          "n_stable_enet_ge4of5": 5,
+          "n_stable_rf_ge4of5": 7
+        }
+      },
+      "pairwise_beta_correlations": {
+        "CD_vs_UC": {
+          "all": {
+            "n_shared_features": 467,
+            "pearson_r": 0.17985606052764486,
+            "pearson_p": 9.297814047501841e-05,
+            "spearman_rho": 0.2010705180140144,
+            "spearman_p": 1.1959745177708273e-05,
+            "sign_concordance_all": 0.5524625267665952,
+            "n_nominal_union": 133,
+            "sign_concordance_nominal_union": 0.5939849624060151
+          },
+          "guild": {
+            "n_shared_features": 11,
+            "pearson_r": 0.594440978897809,
+            "pearson_p": 0.05376729866145428,
+            "spearman_rho": 0.3545454545454546,
+            "spearman_p": 0.2846927409558867,
+            "sign_concordance_all": 0.5454545454545454,
+            "n_nominal_union": 2,
+            "sign_concordance_nominal_union": 1.0
+          },
+          "species": {
+            "n_shared_features": 106,
+            "pearson_r": 0.1335704963521832,
+            "pearson_p": 0.17224929923807134,
+            "spearman_rho": 0.16329193641836917,
+            "spearman_p": 0.0944247001891035,
+            "sign_concordance_all": 0.5754716981132075,
+            "n_nominal_union": 23,
+            "sign_concordance_nominal_union": 0.6521739130434783
+          },
+          "pathway": {
+            "n_shared_features": 350,
+            "pearson_r": 0.19284171801186123,
+            "pearson_p": 0.0002845740673185504,
+            "spearman_rho": 0.20924321255783992,
+            "spearman_p": 8.002445987162199e-05,
+            "sign_concordance_all": 0.5457142857142857,
+            "n_nominal_union": 108,
+            "sign_concordance_nominal_union": 0.5740740740740741
+          }
+        },
+        "CD_vs_nonIBD": {
+          "all": {
+            "n_shared_features": 479,
+            "pearson_r": 0.6172651417052692,
+            "pearson_p": 1.2190471875122945e-51,
+            "spearman_rho": 0.6249103186501915,
+            "spearman_p": 3.014867687770596e-53,
+            "sign_concordance_all": 0.7494780793319415,
+            "n_nominal_union": 217,
+            "sign_concordance_nominal_union": 0.9170506912442397
+          },
+          "guild": {
+            "n_shared_features": 11,
+            "pearson_r": 0.7415801481048758,
+            "pearson_p": 0.008994168930055139,
+            "spearman_rho": 0.6000000000000001,
+            "spearman_p": 0.05100326070695074,
+            "sign_concordance_all": 0.8181818181818182,
+            "n_nominal_union": 5,
+            "sign_concordance_nominal_union": 1.0
+          },
+          "species": {
+            "n_shared_features": 110,
+            "pearson_r": 0.28078219788735825,
+            "pearson_p": 0.002965973354959412,
+            "spearman_rho": 0.21598629488537746,
+            "spearman_p": 0.02343759902595179,
+            "sign_concordance_all": 0.5636363636363636,
+            "n_nominal_union": 30,
+            "sign_concordance_nominal_union": 0.7
+          },
+          "pathway": {
+            "n_shared_features": 358,
+            "pearson_r": 0.7035424987908394,
+            "pearson_p": 9.279716556411509e-55,
+            "spearman_rho": 0.6946194632703712,
+            "spearman_p": 7.23573093365492e-53,
+            "sign_concordance_all": 0.8044692737430168,
+            "n_nominal_union": 182,
+            "sign_concordance_nominal_union": 0.9505494505494505
+          }
+        },
+        "UC_vs_nonIBD": {
+          "all": {
+            "n_shared_features": 473,
+            "pearson_r": 0.10313026650913998,
+            "pearson_p": 0.02489783633107944,
+            "spearman_rho": 0.14011793255165217,
+            "spearman_p": 0.002255249133685236,
+            "sign_concordance_all": 0.5221987315010571,
+            "n_nominal_union": 194,
+            "sign_concordance_nominal_union": 0.4793814432989691
+          },
+          "guild": {
+            "n_shared_features": 11,
+            "pearson_r": 0.31774020721801255,
+            "pearson_p": 0.3410056464618316,
+            "spearman_rho": 0.16363636363636366,
+            "spearman_p": 0.6306852146425356,
+            "sign_concordance_all": 0.7272727272727273,
+            "n_nominal_union": 5,
+            "sign_concordance_nominal_union": 0.6
+          },
+          "species": {
+            "n_shared_features": 113,
+            "pearson_r": 0.04319087661432589,
+            "pearson_p": 0.649661474226467,
+            "spearman_rho": 0.05278128950695323,
+            "spearman_p": 0.5787430470184044,
+            "sign_concordance_all": 0.5663716814159292,
+            "n_nominal_union": 24,
+            "sign_concordance_nominal_union": 0.5833333333333334
+          },
+          "pathway": {
+            "n_shared_features": 349,
+            "pearson_r": 0.12441108416068834,
+            "pearson_p": 0.020077735996230493,
+            "spearman_rho": 0.17200758369190064,
+            "spearman_p": 0.0012557081056320243,
+            "sign_concordance_all": 0.501432664756447,
+            "n_nominal_union": 165,
+            "sign_concordance_nominal_union": 0.46060606060606063
+          }
+        }
+      },
+      "overlap_fdr_lt_0_05": {
+        "counts": {
+          "CD": 3,
+          "UC": 1,
+          "nonIBD": 106,
+          "CD_only": 3,
+          "UC_only": 1,
+          "nonIBD_only": 106,
+          "CD_and_UC_shared": 0,
+          "CD_and_nonIBD_shared": 0,
+          "UC_and_nonIBD_shared": 0,
+          "all_three_shared": 0
+        },
+        "CD_and_UC_shared_features": [],
+        "all_three_shared_features": [],
+        "CD_only_top25": [
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_fragilis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Rikenellaceae|g__Alistipes|s__Alistipes_indistinctus"
+        ],
+        "UC_only_top25": [
+          "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol"
+        ],
+        "nonIBD_only_top25": [
+          "1CMET2-PWY: N10-formyl-tetrahydrofolate biosynthesis",
+          "ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",
+          "ARGININE-SYN4-PWY: L-ornithine de novo  biosynthesis",
+          "ARO-PWY: chorismate biosynthesis I",
+          "ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis",
+          "BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched amino acid biosynthesis",
+          "COA-PWY-1: coenzyme A biosynthesis II (mammalian)",
+          "COA-PWY: coenzyme A biosynthesis I",
+          "COBALSYN-PWY: adenosylcobalamin salvage from cobinamide I",
+          "COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",
+          "DAPLYSINESYN-PWY: L-lysine biosynthesis I",
+          "DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II",
+          "DTDPRHAMSYN-PWY: dTDP-L-rhamnose biosynthesis I",
+          "GALACT-GLUCUROCAT-PWY: superpathway of hexuronide and hexuronate degradation",
+          "GALACTUROCAT-PWY: D-galacturonate degradation I",
+          "GLUCOSE1PMETAB-PWY: glucose and glucose-1-phosphate degradation",
+          "GLUCUROCAT-PWY: superpathway of &beta;-D-glucuronide and D-glucuronate degradation",
+          "GLYCOLYSIS: glycolysis I (from glucose 6-phosphate)",
+          "HISDEG-PWY: L-histidine degradation I",
+          "HISTSYN-PWY: L-histidine biosynthesis",
+          "ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)",
+          "KETOGLUCONMET-PWY: ketogluconate metabolism",
+          "NAGLIPASYN-PWY: lipid IVA biosynthesis",
+          "PANTO-PWY: phosphopantothenate biosynthesis I",
+          "PANTOSYN-PWY: pantothenate and coenzyme A biosynthesis I"
+        ]
+      },
+      "overlap_fdr_lt_0_10": {
+        "counts": {
+          "CD": 14,
+          "UC": 1,
+          "nonIBD": 138,
+          "CD_only": 10,
+          "UC_only": 1,
+          "nonIBD_only": 134,
+          "CD_and_UC_shared": 0,
+          "CD_and_nonIBD_shared": 4,
+          "UC_and_nonIBD_shared": 0,
+          "all_three_shared": 0
+        },
+        "CD_and_UC_shared_features": [],
+        "all_three_shared_features": [],
+        "CD_only_top25": [
+          "CITRULBIO-PWY: L-citrulline biosynthesis",
+          "PWY-5173: superpathway of acetyl-CoA biosynthesis",
+          "PWY-5675: nitrate reduction V (assimilatory)",
+          "PWY-6317: galactose degradation I (Leloir pathway)",
+          "PWY-6527: stachyose degradation",
+          "PWY66-422: D-galactose degradation V (Leloir pathway)",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_fragilis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Rikenellaceae|g__Alistipes|s__Alistipes_indistinctus",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Ruminococcaceae|g__Ruminococcus|s__Ruminococcus_bicirculans"
+        ],
+        "UC_only_top25": [
+          "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol"
+        ],
+        "nonIBD_only_top25": [
+          "1CMET2-PWY: N10-formyl-tetrahydrofolate biosynthesis",
+          "ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",
+          "ARGININE-SYN4-PWY: L-ornithine de novo  biosynthesis",
+          "ARO-PWY: chorismate biosynthesis I",
+          "ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis",
+          "BIOTIN-BIOSYNTHESIS-PWY: biotin biosynthesis I",
+          "BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched amino acid biosynthesis",
+          "COA-PWY-1: coenzyme A biosynthesis II (mammalian)",
+          "COA-PWY: coenzyme A biosynthesis I",
+          "COBALSYN-PWY: adenosylcobalamin salvage from cobinamide I",
+          "COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",
+          "DAPLYSINESYN-PWY: L-lysine biosynthesis I",
+          "DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II",
+          "DTDPRHAMSYN-PWY: dTDP-L-rhamnose biosynthesis I",
+          "GALACT-GLUCUROCAT-PWY: superpathway of hexuronide and hexuronate degradation",
+          "GALACTUROCAT-PWY: D-galacturonate degradation I",
+          "GLUCOSE1PMETAB-PWY: glucose and glucose-1-phosphate degradation",
+          "GLUCUROCAT-PWY: superpathway of &beta;-D-glucuronide and D-glucuronate degradation",
+          "GLYCOLYSIS-E-D: superpathway of glycolysis and Entner-Doudoroff",
+          "GLYCOLYSIS: glycolysis I (from glucose 6-phosphate)",
+          "GLYOXYLATE-BYPASS: glyoxylate cycle",
+          "HISDEG-PWY: L-histidine degradation I",
+          "HISTSYN-PWY: L-histidine biosynthesis",
+          "HSERMETANA-PWY: L-methionine biosynthesis III",
+          "ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)"
+        ]
+      },
+      "overlap_nominal_p_lt_0_05": {
+        "counts": {
+          "CD": 101,
+          "UC": 51,
+          "nonIBD": 164,
+          "CD_only": 54,
+          "UC_only": 31,
+          "nonIBD_only": 117,
+          "CD_and_UC_shared": 16,
+          "CD_and_nonIBD_shared": 43,
+          "UC_and_nonIBD_shared": 16,
+          "all_three_shared": 12
+        },
+        "CD_and_UC_shared_features": [
+          "KETOGLUCONMET-PWY: ketogluconate metabolism",
+          "NONMEVIPP-PWY: methylerythritol phosphate pathway I",
+          "P105-PWY: TCA cycle IV (2-oxoglutarate decarboxylase)",
+          "PWY-5121: superpathway of geranylgeranyl diphosphate biosynthesis II (via MEP)",
+          "PWY-561: superpathway of glyoxylate cycle and fatty acid degradation",
+          "PWY-5675: nitrate reduction V (assimilatory)",
+          "PWY-6270: isoprene biosynthesis I",
+          "PWY-6628: superpathway of L-phenylalanine biosynthesis",
+          "PWY-6803: phosphatidylcholine acyl editing",
+          "PWY-7254: TCA cycle VII (acetate-producers)",
+          "PWY-7392: taxadiene biosynthesis (engineered)",
+          "PWY-7560: methylerythritol phosphate pathway II",
+          "TEICHOICACID-PWY: teichoic acid (poly-glycerol) biosynthesis",
+          "guild_protective_vs_pathobiont_logratio",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Ruminococcaceae|g__Ruminococcus|s__Ruminococcus_bicirculans",
+          "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Veillonella|s__Veillonella_dispar"
+        ],
+        "all_three_shared_features": [
+          "KETOGLUCONMET-PWY: ketogluconate metabolism",
+          "NONMEVIPP-PWY: methylerythritol phosphate pathway I",
+          "P105-PWY: TCA cycle IV (2-oxoglutarate decarboxylase)",
+          "PWY-5121: superpathway of geranylgeranyl diphosphate biosynthesis II (via MEP)",
+          "PWY-561: superpathway of glyoxylate cycle and fatty acid degradation",
+          "PWY-6270: isoprene biosynthesis I",
+          "PWY-6628: superpathway of L-phenylalanine biosynthesis",
+          "PWY-6803: phosphatidylcholine acyl editing",
+          "PWY-7254: TCA cycle VII (acetate-producers)",
+          "PWY-7560: methylerythritol phosphate pathway II",
+          "TEICHOICACID-PWY: teichoic acid (poly-glycerol) biosynthesis",
+          "guild_protective_vs_pathobiont_logratio"
+        ],
+        "CD_only_top25": [
+          "AST-PWY: L-arginine degradation II (AST pathway)",
+          "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+          "COLANSYN-PWY: colanic acid building blocks biosynthesis",
+          "FASYN-INITIAL-PWY: superpathway of fatty acid biosynthesis initiation (E. coli)",
+          "GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",
+          "GLUCARDEG-PWY: D-glucarate degradation I",
+          "GLYCOL-GLYOXDEG-PWY: superpathway of glycol metabolism and degradation",
+          "NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch)",
+          "OANTIGEN-PWY: O-antigen building blocks biosynthesis (E. coli)",
+          "P185-PWY: formaldehyde assimilation III (dihydroxyacetone cycle)",
+          "PENTOSE-P-PWY: pentose phosphate pathway",
+          "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+          "POLYISOPRENSYN-PWY: polyisoprenoid biosynthesis (E. coli)",
+          "PWY-4984: urea cycle",
+          "PWY-5100: pyruvate fermentation to acetate and lactate II",
+          "PWY-5104: L-isoleucine biosynthesis IV",
+          "PWY-5173: superpathway of acetyl-CoA biosynthesis",
+          "PWY-5177: glutaryl-CoA degradation",
+          "PWY-5188: tetrapyrrole biosynthesis I (from glutamate)",
+          "PWY-5189: tetrapyrrole biosynthesis II (from glycine)",
+          "PWY-5918: superpathay of heme biosynthesis from glutamate",
+          "PWY-5989: stearate biosynthesis II (bacteria and plants)",
+          "PWY-6143: CMP-pseudaminate biosynthesis",
+          "PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)",
+          "PWY-6285: superpathway of fatty acids biosynthesis (E. coli)"
+        ],
+        "UC_only_top25": [
+          "FUCCAT-PWY: fucose degradation",
+          "GLYCOLYSIS-TCA-GLYOX-BYPASS: superpathway of glycolysis, pyruvate dehydrogenase, TCA, and glyoxylate bypass",
+          "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+          "LACTOSECAT-PWY: lactose and galactose degradation I",
+          "METH-ACETATE-PWY: methanogenesis from acetate",
+          "P162-PWY: L-glutamate degradation V (via hydroxyglutarate)",
+          "P164-PWY: purine nucleobases degradation I (anaerobic)",
+          "PWY-5138: unsaturated, even numbered fatty acid &beta;-oxidation",
+          "PWY-5676: acetyl-CoA fermentation to butanoate II",
+          "PWY-5677: succinate fermentation to butanoate",
+          "PWY-5705: allantoin degradation to glyoxylate III",
+          "PWY-5723: Rubisco shunt",
+          "PWY-6263: superpathway of menaquinol-8 biosynthesis II",
+          "PWY-6470: peptidoglycan biosynthesis V (&beta;-lactam resistance)",
+          "PWY-6478: GDP-D-glycero-&alpha;-D-manno-heptose biosynthesis",
+          "PWY-6901: superpathway of glucose and xylose degradation",
+          "PWY-7196: superpathway of pyrimidine ribonucleosides salvage",
+          "PWY-7211: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis",
+          "PWY-7288: fatty acid &beta;-oxidation (peroxisome, yeast)",
+          "PWY-7316: dTDP-N-acetylviosamine biosynthesis",
+          "PWY-7332: superpathway of UDP-N-acetylglucosamine-derived O-antigen building blocks biosynthesis",
+          "PWY66-391: fatty acid &beta;-oxidation VI (peroxisome)",
+          "TCA-GLYOX-BYPASS: superpathway of glyoxylate bypass and TCA",
+          "k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Bifidobacteriales|f__Bifidobacteriaceae|g__Bifidobacterium|s__Bifidobacterium_bifidum",
+          "k__Bacteria|p__Actinobacteria|c__Coriobacteriia|o__Coriobacteriales|f__Coriobacteriaceae|g__Collinsella|s__Collinsella_aerofaciens"
+        ],
+        "nonIBD_only_top25": [
+          "1CMET2-PWY: N10-formyl-tetrahydrofolate biosynthesis",
+          "ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",
+          "ARGININE-SYN4-PWY: L-ornithine de novo  biosynthesis",
+          "ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis",
+          "BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched amino acid biosynthesis",
+          "COA-PWY-1: coenzyme A biosynthesis II (mammalian)",
+          "COA-PWY: coenzyme A biosynthesis I",
+          "DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II",
+          "DTDPRHAMSYN-PWY: dTDP-L-rhamnose biosynthesis I",
+          "GALACT-GLUCUROCAT-PWY: superpathway of hexuronide and hexuronate degradation",
+          "GALACTUROCAT-PWY: D-galacturonate degradation I",
+          "GLUCOSE1PMETAB-PWY: glucose and glucose-1-phosphate degradation",
+          "GLUCUROCAT-PWY: superpathway of &beta;-D-glucuronide and D-glucuronate degradation",
+          "GLYCOLYSIS-E-D: superpathway of glycolysis and Entner-Doudoroff",
+          "GLYCOLYSIS: glycolysis I (from glucose 6-phosphate)",
+          "GLYOXYLATE-BYPASS: glyoxylate cycle",
+          "HISDEG-PWY: L-histidine degradation I",
+          "HISTSYN-PWY: L-histidine biosynthesis",
+          "NAGLIPASYN-PWY: lipid IVA biosynthesis",
+          "PANTO-PWY: phosphopantothenate biosynthesis I",
+          "PANTOSYN-PWY: pantothenate and coenzyme A biosynthesis I",
+          "PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",
+          "PWY-1042: glycolysis IV (plant cytosol)",
+          "PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis I",
+          "PWY-2723: trehalose degradation V"
+        ]
+      },
+      "overlap_stable_lme_ge4of5": {
+        "counts": {
+          "CD": 44,
+          "UC": 22,
+          "nonIBD": 112,
+          "CD_only": 34,
+          "UC_only": 15,
+          "nonIBD_only": 101,
+          "CD_and_UC_shared": 3,
+          "CD_and_nonIBD_shared": 7,
+          "UC_and_nonIBD_shared": 4,
+          "all_three_shared": 0
+        },
+        "CD_and_UC_shared_features": [
+          "PWY-5675: nitrate reduction V (assimilatory)",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Ruminococcaceae|g__Ruminococcus|s__Ruminococcus_bicirculans",
+          "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Veillonella|s__Veillonella_dispar"
+        ],
+        "all_three_shared_features": [],
+        "CD_only_top25": [
+          "BIOTIN-BIOSYNTHESIS-PWY: biotin biosynthesis I",
+          "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+          "CITRULBIO-PWY: L-citrulline biosynthesis",
+          "COLANSYN-PWY: colanic acid building blocks biosynthesis",
+          "FASYN-ELONG-PWY: fatty acid elongation -- saturated",
+          "GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",
+          "HSERMETANA-PWY: L-methionine biosynthesis III",
+          "NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch)",
+          "POLYISOPRENSYN-PWY: polyisoprenoid biosynthesis (E. coli)",
+          "PWY-5173: superpathway of acetyl-CoA biosynthesis",
+          "PWY-5189: tetrapyrrole biosynthesis II (from glycine)",
+          "PWY-5918: superpathay of heme biosynthesis from glutamate",
+          "PWY-5989: stearate biosynthesis II (bacteria and plants)",
+          "PWY-6317: galactose degradation I (Leloir pathway)",
+          "PWY-6519: 8-amino-7-oxononanoate biosynthesis I",
+          "PWY-6527: stachyose degradation",
+          "PWY-7184: pyrimidine deoxyribonucleotides de novo biosynthesis I",
+          "PWY-7187: pyrimidine deoxyribonucleotides de novo biosynthesis II",
+          "PWY-7197: pyrimidine deoxyribonucleotide phosphorylation",
+          "PWY-7388: octanoyl-[acyl-carrier protein] biosynthesis (mitochondria, yeast)",
+          "PWY0-1415: superpathway of heme biosynthesis from uroporphyrinogen-III",
+          "PWY0-162: superpathway of pyrimidine ribonucleotides de novo biosynthesis",
+          "PWY0-166: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis (E. coli)",
+          "PWY4FS-7: phosphatidylglycerol biosynthesis I (plastidic)",
+          "PWY4FS-8: phosphatidylglycerol biosynthesis II (non-plastidic)"
+        ],
+        "UC_only_top25": [
+          "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+          "METH-ACETATE-PWY: methanogenesis from acetate",
+          "P105-PWY: TCA cycle IV (2-oxoglutarate decarboxylase)",
+          "P164-PWY: purine nucleobases degradation I (anaerobic)",
+          "PWY-5121: superpathway of geranylgeranyl diphosphate biosynthesis II (via MEP)",
+          "PWY-5138: unsaturated, even numbered fatty acid &beta;-oxidation",
+          "PWY-5723: Rubisco shunt",
+          "PWY-6470: peptidoglycan biosynthesis V (&beta;-lactam resistance)",
+          "PWY-6629: superpathway of L-tryptophan biosynthesis",
+          "PWY-7211: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis",
+          "PWY-7392: taxadiene biosynthesis (engineered)",
+          "k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Bifidobacteriales|f__Bifidobacteriaceae|g__Bifidobacterium|s__Bifidobacterium_longum",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_intestinalis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_massiliensis",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Clostridiaceae|g__Clostridium|s__Clostridium_sp_CAG_58"
+        ],
+        "nonIBD_only_top25": [
+          "1CMET2-PWY: N10-formyl-tetrahydrofolate biosynthesis",
+          "ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",
+          "ARO-PWY: chorismate biosynthesis I",
+          "ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis",
+          "BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched amino acid biosynthesis",
+          "COA-PWY-1: coenzyme A biosynthesis II (mammalian)",
+          "COA-PWY: coenzyme A biosynthesis I",
+          "COBALSYN-PWY: adenosylcobalamin salvage from cobinamide I",
+          "COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",
+          "DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II",
+          "DTDPRHAMSYN-PWY: dTDP-L-rhamnose biosynthesis I",
+          "GALACT-GLUCUROCAT-PWY: superpathway of hexuronide and hexuronate degradation",
+          "GALACTUROCAT-PWY: D-galacturonate degradation I",
+          "GLUCUROCAT-PWY: superpathway of &beta;-D-glucuronide and D-glucuronate degradation",
+          "GLYCOLYSIS: glycolysis I (from glucose 6-phosphate)",
+          "GLYOXYLATE-BYPASS: glyoxylate cycle",
+          "HISTSYN-PWY: L-histidine biosynthesis",
+          "ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)",
+          "NAGLIPASYN-PWY: lipid IVA biosynthesis",
+          "PANTO-PWY: phosphopantothenate biosynthesis I",
+          "PANTOSYN-PWY: pantothenate and coenzyme A biosynthesis I",
+          "PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",
+          "PWY-1042: glycolysis IV (plant cytosol)",
+          "PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis I",
+          "PWY-2942: L-lysine biosynthesis III"
+        ]
+      },
+      "fdr_lt_0_10_hits": {
+        "CD": [
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_fragilis",
+            "family": "species",
+            "beta": 0.13829074787514978,
+            "se": 0.035697065273157434,
+            "p_value": 0.00010705950869928354,
+            "fdr_bh": 0.010686283532987152,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Rikenellaceae|g__Alistipes|s__Alistipes_indistinctus",
+            "family": "species",
+            "beta": -0.12052718034206017,
+            "se": 0.03221059725814516,
+            "p_value": 0.00018267151338439576,
+            "fdr_bh": 0.010686283532987152,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+            "family": "species",
+            "beta": -0.13461190784129912,
+            "se": 0.04098005397058088,
+            "p_value": 0.0010204924899769518,
+            "fdr_bh": 0.03979920710910112,
+            "direction": "negative"
+          },
+          {
+            "feature": "guild_pathobiont_log",
+            "family": "guild",
+            "beta": 0.08161183435715265,
+            "se": 0.02922559780080444,
+            "p_value": 0.00523060494288016,
+            "fdr_bh": 0.05753665437168176,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Ruminococcaceae|g__Ruminococcus|s__Ruminococcus_bicirculans",
+            "family": "species",
+            "beta": -0.08854266228678352,
+            "se": 0.029057556865299747,
+            "p_value": 0.0023102430073931065,
+            "fdr_bh": 0.06757460796624837,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6527: stachyose degradation",
+            "family": "pathway",
+            "beta": -0.08894566906287907,
+            "se": 0.025256299554671038,
+            "p_value": 0.00042875329689778477,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY66-422: D-galactose degradation V (Leloir pathway)",
+            "family": "pathway",
+            "beta": -0.09008667778254127,
+            "se": 0.02616855322770793,
+            "p_value": 0.0005762471609004212,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6317: galactose degradation I (Leloir pathway)",
+            "family": "pathway",
+            "beta": -0.08769498596264214,
+            "se": 0.026207206319860357,
+            "p_value": 0.0008192240702851783,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5173: superpathway of acetyl-CoA biosynthesis",
+            "family": "pathway",
+            "beta": 0.09053871187910886,
+            "se": 0.027156810577701387,
+            "p_value": 0.0008563039900163225,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "positive"
+          },
+          {
+            "feature": "CITRULBIO-PWY: L-citrulline biosynthesis",
+            "family": "pathway",
+            "beta": -0.09726294862808715,
+            "se": 0.029456603954884784,
+            "p_value": 0.0009603011513397463,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5675: nitrate reduction V (assimilatory)",
+            "family": "pathway",
+            "beta": 0.08746084461097602,
+            "se": 0.026897005331177982,
+            "p_value": 0.0011471924978182074,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7187: pyrimidine deoxyribonucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "beta": -0.08701063929529104,
+            "se": 0.027591558477698,
+            "p_value": 0.0016131201497659954,
+            "fdr_bh": 0.08388224778783175,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6305: putrescine biosynthesis IV",
+            "family": "pathway",
+            "beta": -0.08062687930545875,
+            "se": 0.025964323584427084,
+            "p_value": 0.0019008945728220237,
+            "fdr_bh": 0.08607323530543637,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7197: pyrimidine deoxyribonucleotide phosphorylation",
+            "family": "pathway",
+            "beta": -0.08340402088581529,
+            "se": 0.02715208698278667,
+            "p_value": 0.00212818438942013,
+            "fdr_bh": 0.08607323530543637,
+            "direction": "negative"
+          }
+        ],
+        "UC": [
+          {
+            "feature": "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+            "family": "pathway",
+            "beta": -0.19232564541651556,
+            "se": 0.04593673845779247,
+            "p_value": 2.829770624673039e-05,
+            "fdr_bh": 0.009904197186355636,
+            "direction": "negative"
+          }
+        ],
+        "nonIBD": [
+          {
+            "feature": "PWY-5103: L-isoleucine biosynthesis III",
+            "family": "pathway",
+            "beta": -0.15232286241089532,
+            "se": 0.04025060522031797,
+            "p_value": 0.0001541033619170462,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched amino acid biosynthesis",
+            "family": "pathway",
+            "beta": -0.151368423148325,
+            "se": 0.04018508400356511,
+            "p_value": 0.0001653657368607827,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6588: pyruvate fermentation to acetone",
+            "family": "pathway",
+            "beta": 0.13226953814958742,
+            "se": 0.03565568644926282,
+            "p_value": 0.00020755927815768225,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II",
+            "family": "pathway",
+            "beta": -0.14321731152108344,
+            "se": 0.03966139692666506,
+            "p_value": 0.0003050184479563159,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis",
+            "family": "pathway",
+            "beta": -0.14321731152108344,
+            "se": 0.03966139692666506,
+            "p_value": 0.0003050184479563159,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "RHAMCAT-PWY: L-rhamnose degradation I",
+            "family": "pathway",
+            "beta": -0.14909909349908437,
+            "se": 0.04132250325958104,
+            "p_value": 0.0003083507040736614,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6876: isopropanol biosynthesis",
+            "family": "pathway",
+            "beta": 0.14076147794223068,
+            "se": 0.03914688459631377,
+            "p_value": 0.0003234879207073723,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I",
+            "family": "pathway",
+            "beta": -0.14172521239594998,
+            "se": 0.03972237865686583,
+            "p_value": 0.0003598628518825842,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)",
+            "family": "pathway",
+            "beta": -0.14202336495453616,
+            "se": 0.03988320048227813,
+            "p_value": 0.0003694702045144742,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7111: pyruvate fermentation to isobutanol (engineered)",
+            "family": "pathway",
+            "beta": -0.14254296338544165,
+            "se": 0.040106977209917904,
+            "p_value": 0.0003793197164459154,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6700: queuosine biosynthesis",
+            "family": "pathway",
+            "beta": -0.1403450797346173,
+            "se": 0.03949568969069368,
+            "p_value": 0.00038024563069289773,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "HISTSYN-PWY: L-histidine biosynthesis",
+            "family": "pathway",
+            "beta": -0.140950295891168,
+            "se": 0.03967563626905318,
+            "p_value": 0.00038149405472704355,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)",
+            "family": "pathway",
+            "beta": -0.1413915032434155,
+            "se": 0.03988211959068852,
+            "p_value": 0.00039226256132700695,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)",
+            "family": "pathway",
+            "beta": -0.14210090056862199,
+            "se": 0.040114272878277006,
+            "p_value": 0.00039649996687662875,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "VALSYN-PWY: L-valine biosynthesis",
+            "family": "pathway",
+            "beta": -0.14210090056862199,
+            "se": 0.040114272878277006,
+            "p_value": 0.00039649996687662875,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6386: UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)",
+            "family": "pathway",
+            "beta": -0.14098764359126326,
+            "se": 0.039940301479084034,
+            "p_value": 0.00041562340425494696,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5097: L-lysine biosynthesis VI",
+            "family": "pathway",
+            "beta": -0.14183339129140196,
+            "se": 0.040186598085804756,
+            "p_value": 0.0004165496120156464,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6385: peptidoglycan biosynthesis III (mycobacteria)",
+            "family": "pathway",
+            "beta": -0.1400459714638693,
+            "se": 0.039755202357112523,
+            "p_value": 0.0004271616216073261,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)",
+            "family": "pathway",
+            "beta": -0.14012546520169036,
+            "se": 0.039836093417085015,
+            "p_value": 0.0004355496770380346,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "RIBOSYN2-PWY: flavin biosynthesis I (bacteria and plants)",
+            "family": "pathway",
+            "beta": -0.13995852883609664,
+            "se": 0.03990210660150322,
+            "p_value": 0.0004522578367775626,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "TRNA-CHARGING-PWY: tRNA charging",
+            "family": "pathway",
+            "beta": -0.14110854982685964,
+            "se": 0.04023135279177943,
+            "p_value": 0.0004524617668433148,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-2942: L-lysine biosynthesis III",
+            "family": "pathway",
+            "beta": -0.13887295530246815,
+            "se": 0.039633463772232556,
+            "p_value": 0.0004584426958870977,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PYRIDNUCSYN-PWY: NAD biosynthesis I (from aspartate)",
+            "family": "pathway",
+            "beta": -0.13767351210267,
+            "se": 0.039337426058668634,
+            "p_value": 0.00046559010940643394,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-3001: superpathway of L-isoleucine biosynthesis I",
+            "family": "pathway",
+            "beta": -0.14003114429771713,
+            "se": 0.0400236337307535,
+            "p_value": 0.00046751228428140495,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7357: thiamin formation from pyrithiamine and oxythiamine (yeast)",
+            "family": "pathway",
+            "beta": -0.14363857666493132,
+            "se": 0.04113990260316649,
+            "p_value": 0.0004803773617835467,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6151: S-adenosyl-L-methionine cycle I",
+            "family": "pathway",
+            "beta": -0.13977398033197397,
+            "se": 0.0400421732382171,
+            "p_value": 0.00048181243891094456,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6897: thiamin salvage II",
+            "family": "pathway",
+            "beta": -0.14129206515885362,
+            "se": 0.04054334549568882,
+            "p_value": 0.0004922048159506723,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6163: chorismate biosynthesis from 3-dehydroquinate",
+            "family": "pathway",
+            "beta": -0.1378108700517488,
+            "se": 0.03972478733735704,
+            "p_value": 0.0005221262534999027,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "COA-PWY-1: coenzyme A biosynthesis II (mammalian)",
+            "family": "pathway",
+            "beta": -0.1376042757502113,
+            "se": 0.039758971917187406,
+            "p_value": 0.0005382495484766199,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6608: guanosine nucleotides degradation III",
+            "family": "pathway",
+            "beta": -0.13949053038347944,
+            "se": 0.04033180358383455,
+            "p_value": 0.0005430429156913198,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6628: superpathway of L-phenylalanine biosynthesis",
+            "family": "pathway",
+            "beta": 0.1284828529308826,
+            "se": 0.037182962356805745,
+            "p_value": 0.0005494306703753811,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7219: adenosine ribonucleotides de novo biosynthesis",
+            "family": "pathway",
+            "beta": -0.1386762975314011,
+            "se": 0.040294582574910975,
+            "p_value": 0.0005783662656670539,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-3841: folate transformations II",
+            "family": "pathway",
+            "beta": -0.13569525009117664,
+            "se": 0.039574338130141114,
+            "p_value": 0.0006061003688163541,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "DTDPRHAMSYN-PWY: dTDP-L-rhamnose biosynthesis I",
+            "family": "pathway",
+            "beta": -0.139359008012413,
+            "se": 0.040715180011936754,
+            "p_value": 0.0006198475897361994,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PANTO-PWY: phosphopantothenate biosynthesis I",
+            "family": "pathway",
+            "beta": -0.13424297574047003,
+            "se": 0.039239175852608506,
+            "p_value": 0.000623576933921535,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5686: UMP biosynthesis",
+            "family": "pathway",
+            "beta": -0.1379877542600577,
+            "se": 0.04033512653384169,
+            "p_value": 0.0006238401617508347,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7221: guanosine ribonucleotides de novo biosynthesis",
+            "family": "pathway",
+            "beta": -0.13703578913363987,
+            "se": 0.04005964289623546,
+            "p_value": 0.0006243858989729352,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6609: adenine and adenosine salvage III",
+            "family": "pathway",
+            "beta": -0.13879057969576525,
+            "se": 0.040601084120020205,
+            "p_value": 0.000629914076358288,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis I",
+            "family": "pathway",
+            "beta": -0.14128763122561372,
+            "se": 0.041607256408674964,
+            "p_value": 0.0006844210048494088,
+            "fdr_bh": 0.006197950457953808,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5667: CDP-diacylglycerol biosynthesis I",
+            "family": "pathway",
+            "beta": -0.1359352102289036,
+            "se": 0.040121998181178176,
+            "p_value": 0.0007039223511803495,
+            "fdr_bh": 0.006197950457953808,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY0-1319: CDP-diacylglycerol biosynthesis II",
+            "family": "pathway",
+            "beta": -0.1359352102289036,
+            "se": 0.040121998181178176,
+            "p_value": 0.0007039223511803495,
+            "fdr_bh": 0.006197950457953808,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-1042: glycolysis IV (plant cytosol)",
+            "family": "pathway",
+            "beta": -0.13799062577527643,
+            "se": 0.04088496580894891,
+            "p_value": 0.0007379033108648384,
+            "fdr_bh": 0.0062792264428362735,
+            "direction": "negative"
+          },
+          {
+            "feature": "ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",
+            "family": "pathway",
+            "beta": -0.13601260436269313,
+            "se": 0.04040546572090952,
+            "p_value": 0.0007621330605470447,
+            "fdr_bh": 0.0062792264428362735,
+            "direction": "negative"
+          },
+          {
+            "feature": "DAPLYSINESYN-PWY: L-lysine biosynthesis I",
+            "family": "pathway",
+            "beta": 0.13063983737282428,
+            "se": 0.038831258337674555,
+            "p_value": 0.0007673926173647186,
+            "fdr_bh": 0.0062792264428362735,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7199: pyrimidine deoxyribonucleosides salvage",
+            "family": "pathway",
+            "beta": -0.13489892777189236,
+            "se": 0.04018814871057378,
+            "p_value": 0.0007888312801361133,
+            "fdr_bh": 0.0062792264428362735,
+            "direction": "negative"
+          },
+          {
+            "feature": "THISYN-PWY: superpathway of thiamin diphosphate biosynthesis I",
+            "family": "pathway",
+            "beta": -0.13788273356575137,
+            "se": 0.04113566955744617,
+            "p_value": 0.0008025842003343747,
+            "fdr_bh": 0.0062792264428362735,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6123: inosine-5'-phosphate biosynthesis I",
+            "family": "pathway",
+            "beta": -0.131999961206214,
+            "se": 0.03945736938420737,
+            "p_value": 0.0008216940554471839,
+            "fdr_bh": 0.0062792264428362735,
+            "direction": "negative"
+          },
+          {
+            "feature": "1CMET2-PWY: N10-formyl-tetrahydrofolate biosynthesis",
+            "family": "pathway",
+            "beta": -0.13090045861796396,
+            "se": 0.03918056473181485,
+            "p_value": 0.000834910995169366,
+            "fdr_bh": 0.0062792264428362735,
+            "direction": "negative"
+          },
+          {
+            "feature": "PANTOSYN-PWY: pantothenate and coenzyme A biosynthesis I",
+            "family": "pathway",
+            "beta": -0.1317012823562389,
+            "se": 0.03950279419647173,
+            "p_value": 0.0008561471020551111,
+            "fdr_bh": 0.006307532731467247,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7229: superpathway of adenosine nucleotides de novo biosynthesis I",
+            "family": "pathway",
+            "beta": -0.1332209483220407,
+            "se": 0.04014768704011981,
+            "p_value": 0.0009057621437679301,
+            "fdr_bh": 0.006539602678004456,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5695: urate biosynthesis/inosine 5'-phosphate degradation",
+            "family": "pathway",
+            "beta": -0.13181289435734858,
+            "se": 0.03982305228980287,
+            "p_value": 0.0009330776272876613,
+            "fdr_bh": 0.006604725950016582,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6168: flavin biosynthesis III (fungi)",
+            "family": "pathway",
+            "beta": -0.133231248543934,
+            "se": 0.04033118793648197,
+            "p_value": 0.0009550987541849094,
+            "fdr_bh": 0.00663058942809139,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5659: GDP-mannose biosynthesis",
+            "family": "pathway",
+            "beta": -0.12631842664328835,
+            "se": 0.038516201667560715,
+            "p_value": 0.0010394774547040691,
+            "fdr_bh": 0.00683237349610061,
+            "direction": "negative"
+          },
+          {
+            "feature": "COA-PWY: coenzyme A biosynthesis I",
+            "family": "pathway",
+            "beta": -0.13019728950983053,
+            "se": 0.03974194921703461,
+            "p_value": 0.0010526357499003952,
+            "fdr_bh": 0.00683237349610061,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5973: cis-vaccenate biosynthesis",
+            "family": "pathway",
+            "beta": -0.1304173702837125,
+            "se": 0.039846038478226924,
+            "p_value": 0.001064003243036645,
+            "fdr_bh": 0.00683237349610061,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6124: inosine-5'-phosphate biosynthesis II",
+            "family": "pathway",
+            "beta": -0.12912642143235106,
+            "se": 0.03945982817126723,
+            "p_value": 0.0010665694716703688,
+            "fdr_bh": 0.00683237349610061,
+            "direction": "negative"
+          },
+          {
+            "feature": "TRPSYN-PWY: L-tryptophan biosynthesis",
+            "family": "pathway",
+            "beta": -0.1307493632450774,
+            "se": 0.039995183154304274,
+            "p_value": 0.0010787958151737807,
+            "fdr_bh": 0.00683237349610061,
+            "direction": "negative"
+          },
+          {
+            "feature": "COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis",
+            "family": "pathway",
+            "beta": -0.1319106603320273,
+            "se": 0.04058005886823015,
+            "p_value": 0.0011515057231393964,
+            "fdr_bh": 0.007167130449195209,
+            "direction": "negative"
+          },
+          {
+            "feature": "SER-GLYSYN-PWY: superpathway of L-serine and glycine biosynthesis I",
+            "family": "pathway",
+            "beta": -0.12772542177089055,
+            "se": 0.03944305290865094,
+            "p_value": 0.0012027653491516674,
+            "fdr_bh": 0.007359293068538168,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7663: gondoate biosynthesis (anaerobic)",
+            "family": "pathway",
+            "beta": -0.12856313961025329,
+            "se": 0.0399487897557676,
+            "p_value": 0.0012899846138628842,
+            "fdr_bh": 0.007737801848707493,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6126: superpathway of adenosine nucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "beta": -0.12966647234994533,
+            "se": 0.04034013134173889,
+            "p_value": 0.0013074956032442023,
+            "fdr_bh": 0.007737801848707493,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I",
+            "family": "pathway",
+            "beta": -0.12953844357964472,
+            "se": 0.04044391876989112,
+            "p_value": 0.0013604401773313279,
+            "fdr_bh": 0.007812944929462091,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-4242: pantothenate and coenzyme A biosynthesis III",
+            "family": "pathway",
+            "beta": -0.12830210126259597,
+            "se": 0.04006594937188191,
+            "p_value": 0.0013634779239781489,
+            "fdr_bh": 0.007812944929462091,
+            "direction": "negative"
+          },
+          {
+            "feature": "THISYNARA-PWY: superpathway of thiamin diphosphate biosynthesis III (eukaryotes)",
+            "family": "pathway",
+            "beta": -0.12664047299511247,
+            "se": 0.03964661106639157,
+            "p_value": 0.001402034043457639,
+            "fdr_bh": 0.007908348276378246,
+            "direction": "negative"
+          },
+          {
+            "feature": "ARO-PWY: chorismate biosynthesis I",
+            "family": "pathway",
+            "beta": -0.13027445729091477,
+            "se": 0.04088147501436677,
+            "p_value": 0.001439368580148029,
+            "fdr_bh": 0.00799403165282213,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "beta": -0.1292369154036887,
+            "se": 0.04068556543431146,
+            "p_value": 0.001490736827298165,
+            "fdr_bh": 0.008153878706888449,
+            "direction": "negative"
+          },
+          {
+            "feature": "PYRIDNUCSAL-PWY: NAD salvage pathway I",
+            "family": "pathway",
+            "beta": 0.12199058719905766,
+            "se": 0.03853766268840582,
+            "p_value": 0.0015482196505129722,
+            "fdr_bh": 0.008341899907987806,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7282: 4-amino-2-methyl-5-phosphomethylpyrimidine biosynthesis (yeast)",
+            "family": "pathway",
+            "beta": -0.13059303482604664,
+            "se": 0.041452950958518656,
+            "p_value": 0.0016305166592632755,
+            "fdr_bh": 0.008656125205794743,
+            "direction": "negative"
+          },
+          {
+            "feature": "THRESYN-PWY: superpathway of L-threonine biosynthesis",
+            "family": "pathway",
+            "beta": -0.12540202541390305,
+            "se": 0.04005009041884385,
+            "p_value": 0.0017413526875528517,
+            "fdr_bh": 0.009110555365312745,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-724: superpathway of L-lysine, L-threonine and L-methionine biosynthesis II",
+            "family": "pathway",
+            "beta": -0.1254024388761667,
+            "se": 0.04027177113097102,
+            "p_value": 0.0018462940172470665,
+            "fdr_bh": 0.0095216020032313,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6703: preQ0 biosynthesis",
+            "family": "pathway",
+            "beta": -0.12465494101341777,
+            "se": 0.04015843403548902,
+            "p_value": 0.001908725306431275,
+            "fdr_bh": 0.009704927262277329,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6147: 6-hydroxymethyl-dihydropterin diphosphate biosynthesis I",
+            "family": "pathway",
+            "beta": -0.125856579039027,
+            "se": 0.04074181734299749,
+            "p_value": 0.002007467490499529,
+            "fdr_bh": 0.01006521894542125,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6737: starch degradation V",
+            "family": "pathway",
+            "beta": -0.1255192487513091,
+            "se": 0.04094591002071662,
+            "p_value": 0.0021731415841821093,
+            "fdr_bh": 0.01056076797009326,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7539: 6-hydroxymethyl-dihydropterin diphosphate biosynthesis III (Chlamydia)",
+            "family": "pathway",
+            "beta": -0.12484741255141986,
+            "se": 0.04073490472250738,
+            "p_value": 0.002177606059262949,
+            "fdr_bh": 0.01056076797009326,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLYCOLYSIS: glycolysis I (from glucose 6-phosphate)",
+            "family": "pathway",
+            "beta": -0.1287945374976714,
+            "se": 0.04205367488215596,
+            "p_value": 0.002194065367747907,
+            "fdr_bh": 0.01056076797009326,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6803: phosphatidylcholine acyl editing",
+            "family": "pathway",
+            "beta": 0.11733442591459319,
+            "se": 0.0384023236183248,
+            "p_value": 0.002247611980088453,
+            "fdr_bh": 0.010676156905420153,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-5484: glycolysis II (from fructose 6-phosphate)",
+            "family": "pathway",
+            "beta": -0.12764287440245234,
+            "se": 0.0419150330822439,
+            "p_value": 0.002324663163470867,
+            "fdr_bh": 0.010871980060667957,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-621: sucrose degradation III (sucrose invertase)",
+            "family": "pathway",
+            "beta": -0.12415641094982881,
+            "se": 0.04081227126222097,
+            "p_value": 0.0023490704840224393,
+            "fdr_bh": 0.010871980060667957,
+            "direction": "negative"
+          },
+          {
+            "feature": "GALACT-GLUCUROCAT-PWY: superpathway of hexuronide and hexuronate degradation",
+            "family": "pathway",
+            "beta": -0.13262692652183752,
+            "se": 0.0441941107998627,
+            "p_value": 0.0026908656641814644,
+            "fdr_bh": 0.012296234237588717,
+            "direction": "negative"
+          },
+          {
+            "feature": "DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "beta": -0.12065581574611255,
+            "se": 0.040637824138760444,
+            "p_value": 0.002987199764505326,
+            "fdr_bh": 0.0133368812688605,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLUCUROCAT-PWY: superpathway of &beta;-D-glucuronide and D-glucuronate degradation",
+            "family": "pathway",
+            "beta": -0.12557323735572945,
+            "se": 0.04235240962837762,
+            "p_value": 0.0030272143036578036,
+            "fdr_bh": 0.0133368812688605,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6507: 4-deoxy-L-threo-hex-4-enopyranuronate degradation",
+            "family": "pathway",
+            "beta": -0.13386939574692683,
+            "se": 0.045153904516564536,
+            "p_value": 0.003029430094311803,
+            "fdr_bh": 0.0133368812688605,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-841: superpathway of purine nucleotides de novo biosynthesis I",
+            "family": "pathway",
+            "beta": -0.1195205971004074,
+            "se": 0.040381343810736686,
+            "p_value": 0.0030784139844994593,
+            "fdr_bh": 0.013389246366316925,
+            "direction": "negative"
+          },
+          {
+            "feature": "GALACTUROCAT-PWY: D-galacturonate degradation I",
+            "family": "pathway",
+            "beta": -0.13233500083265992,
+            "se": 0.04479252843169,
+            "p_value": 0.003132786876258565,
+            "fdr_bh": 0.013463524551539787,
+            "direction": "negative"
+          },
+          {
+            "feature": "ASPASN-PWY: superpathway of L-aspartate and L-asparagine biosynthesis",
+            "family": "pathway",
+            "beta": -0.11958214432238155,
+            "se": 0.040594242009347005,
+            "p_value": 0.003221301958986961,
+            "fdr_bh": 0.01353300205920255,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "beta": -0.1224996284619409,
+            "se": 0.041638775046708675,
+            "p_value": 0.003261416008727484,
+            "fdr_bh": 0.01353300205920255,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "beta": -0.1224996284619409,
+            "se": 0.041638775046708675,
+            "p_value": 0.003261416008727484,
+            "fdr_bh": 0.01353300205920255,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-3781: aerobic respiration I (cytochrome c)",
+            "family": "pathway",
+            "beta": 0.11394184767903598,
+            "se": 0.039145175834164894,
+            "p_value": 0.0036056158775990264,
+            "fdr_bh": 0.014791219679696006,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6892: thiazole biosynthesis I (E. coli)",
+            "family": "pathway",
+            "beta": -0.11825014200667931,
+            "se": 0.04174973011336949,
+            "p_value": 0.004620622273448644,
+            "fdr_bh": 0.01874207461477484,
+            "direction": "negative"
+          },
+          {
+            "feature": "guild_pathobiont_log",
+            "family": "guild",
+            "beta": 0.1259983362466547,
+            "se": 0.04039823539328524,
+            "p_value": 0.001815232908958679,
+            "fdr_bh": 0.019967561998545467,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7242: D-fructuronate degradation",
+            "family": "pathway",
+            "beta": -0.11679529997757125,
+            "se": 0.042723801726234634,
+            "p_value": 0.00626215423363448,
+            "fdr_bh": 0.025118196426022744,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5030: L-histidine degradation III",
+            "family": "pathway",
+            "beta": -0.11050652014209757,
+            "se": 0.040672727016228004,
+            "p_value": 0.006588286778193042,
+            "fdr_bh": 0.026037588577329702,
+            "direction": "negative"
+          },
+          {
+            "feature": "HISDEG-PWY: L-histidine degradation I",
+            "family": "pathway",
+            "beta": -0.10823913738623994,
+            "se": 0.03987298337205812,
+            "p_value": 0.006635618141590948,
+            "fdr_bh": 0.026037588577329702,
+            "direction": "negative"
+          },
+          {
+            "feature": "ARGININE-SYN4-PWY: L-ornithine de novo  biosynthesis",
+            "family": "pathway",
+            "beta": -0.10902806783052624,
+            "se": 0.0402586371911638,
+            "p_value": 0.0067651132509108204,
+            "fdr_bh": 0.026260278318051677,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5941: glycogen degradation II (eukaryotic)",
+            "family": "pathway",
+            "beta": -0.11717064329917039,
+            "se": 0.0433791615856647,
+            "p_value": 0.006911443620787023,
+            "fdr_bh": 0.026542884543660803,
+            "direction": "negative"
+          },
+          {
+            "feature": "COBALSYN-PWY: adenosylcobalamin salvage from cobinamide I",
+            "family": "pathway",
+            "beta": -0.11647788114098286,
+            "se": 0.04339596578127301,
+            "p_value": 0.0072731518994385656,
+            "fdr_bh": 0.02763797721786655,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-4702: phytate degradation I",
+            "family": "pathway",
+            "beta": 0.10420538407886708,
+            "se": 0.03931516459953923,
+            "p_value": 0.008036945750708258,
+            "fdr_bh": 0.03022226475005918,
+            "direction": "positive"
+          },
+          {
+            "feature": "PPGPPMET-PWY: ppGpp biosynthesis",
+            "family": "pathway",
+            "beta": 0.1055347156173983,
+            "se": 0.040491873736495126,
+            "p_value": 0.00915213407022402,
+            "fdr_bh": 0.03384526558797717,
+            "direction": "positive"
+          },
+          {
+            "feature": "KETOGLUCONMET-PWY: ketogluconate metabolism",
+            "family": "pathway",
+            "beta": 0.10237149387608815,
+            "se": 0.03933139844901846,
+            "p_value": 0.009246772863429186,
+            "fdr_bh": 0.03384526558797717,
+            "direction": "positive"
+          },
+          {
+            "feature": "NAGLIPASYN-PWY: lipid IVA biosynthesis",
+            "family": "pathway",
+            "beta": -0.11577466163498436,
+            "se": 0.044503015338779164,
+            "p_value": 0.009281665632159944,
+            "fdr_bh": 0.03384526558797717,
+            "direction": "negative"
+          },
+          {
+            "feature": "species_richness",
+            "family": "guild",
+            "beta": 0.11521445955885483,
+            "se": 0.04402767494771231,
+            "p_value": 0.00887415609181385,
+            "fdr_bh": 0.03715185563227245,
+            "direction": "positive"
+          },
+          {
+            "feature": "guild_protective_vs_pathobiont_logratio",
+            "family": "guild",
+            "beta": -0.11093242253156738,
+            "se": 0.04314287197720678,
+            "p_value": 0.010132324263347032,
+            "fdr_bh": 0.03715185563227245,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6549: L-glutamine biosynthesis III",
+            "family": "pathway",
+            "beta": 0.10177373152591881,
+            "se": 0.039890201672209843,
+            "p_value": 0.010730754233340752,
+            "fdr_bh": 0.03873802278236012,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7312: dTDP-D-&beta;-fucofuranose biosynthesis",
+            "family": "pathway",
+            "beta": -0.15247829768554866,
+            "se": 0.060272959616897805,
+            "p_value": 0.011412883204518031,
+            "fdr_bh": 0.040792582542881275,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLUCOSE1PMETAB-PWY: glucose and glucose-1-phosphate degradation",
+            "family": "pathway",
+            "beta": 0.09465646915143856,
+            "se": 0.037991904651069504,
+            "p_value": 0.012720837234166334,
+            "fdr_bh": 0.04502178668170634,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-2941: L-lysine biosynthesis II",
+            "family": "pathway",
+            "beta": -0.1086373661864059,
+            "se": 0.04384923572318265,
+            "p_value": 0.013229892877287668,
+            "fdr_bh": 0.04636884785146454,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7385: 1,3-propanediol biosynthesis (engineered)",
+            "family": "pathway",
+            "beta": 0.09653447514848548,
+            "se": 0.03954339046774338,
+            "p_value": 0.014637365999595206,
+            "fdr_bh": 0.050773136858726385,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY0-1241: ADP-L-glycero-&beta;-D-manno-heptose biosynthesis",
+            "family": "pathway",
+            "beta": -0.0958024977012579,
+            "se": 0.03929514781751539,
+            "p_value": 0.014767809889657259,
+            "fdr_bh": 0.050773136858726385,
+            "direction": "negative"
+          },
+          {
+            "feature": "HSERMETANA-PWY: L-methionine biosynthesis III",
+            "family": "pathway",
+            "beta": -0.09847440565858208,
+            "se": 0.040602644212655185,
+            "p_value": 0.015294897747697723,
+            "fdr_bh": 0.05208922723508376,
+            "direction": "negative"
+          },
+          {
+            "feature": "fguild_sulfur_h2s_log",
+            "family": "guild",
+            "beta": 0.08676405010949138,
+            "se": 0.03702111949749346,
+            "p_value": 0.019096768564088037,
+            "fdr_bh": 0.052516113551242104,
+            "direction": "positive"
+          },
+          {
+            "feature": "fguild_scfa_butanoate_log",
+            "family": "guild",
+            "beta": 0.1054391936052245,
+            "se": 0.04680914078121206,
+            "p_value": 0.024288529782924232,
+            "fdr_bh": 0.053434765522433314,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY0-845: superpathway of pyridoxal 5'-phosphate biosynthesis and salvage",
+            "family": "pathway",
+            "beta": -0.10029010574997847,
+            "se": 0.041903507071702886,
+            "p_value": 0.016694929438318087,
+            "fdr_bh": 0.056325883432082516,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY0-1061: superpathway of L-alanine biosynthesis",
+            "family": "pathway",
+            "beta": 0.09719343359913821,
+            "se": 0.04119442910563914,
+            "p_value": 0.01830535473343925,
+            "fdr_bh": 0.06118734313677379,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7187: pyrimidine deoxyribonucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "beta": -0.10124038946697062,
+            "se": 0.04307687283746094,
+            "p_value": 0.018762012037043495,
+            "fdr_bh": 0.06213840683828166,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6305: putrescine biosynthesis IV",
+            "family": "pathway",
+            "beta": -0.09272128133545011,
+            "se": 0.03970597544559817,
+            "p_value": 0.019533123123646,
+            "fdr_bh": 0.06374370922361182,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLYOXYLATE-BYPASS: glyoxylate cycle",
+            "family": "pathway",
+            "beta": 0.09090592018018533,
+            "se": 0.03894987261684469,
+            "p_value": 0.019599866270972058,
+            "fdr_bh": 0.06374370922361182,
+            "direction": "positive"
+          },
+          {
+            "feature": "PYRIDOXSYN-PWY: pyridoxal 5'-phosphate biosynthesis I",
+            "family": "pathway",
+            "beta": -0.09802946375288357,
+            "se": 0.04207884692271538,
+            "p_value": 0.019824056306408638,
+            "fdr_bh": 0.0638971814876207,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY0-166: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis (E. coli)",
+            "family": "pathway",
+            "beta": -0.09858126407906188,
+            "se": 0.04258628308827806,
+            "p_value": 0.02062061971650019,
+            "fdr_bh": 0.0658764930766068,
+            "direction": "negative"
+          },
+          {
+            "feature": "TEICHOICACID-PWY: teichoic acid (poly-glycerol) biosynthesis",
+            "family": "pathway",
+            "beta": -0.10487629788421055,
+            "se": 0.04554515514485305,
+            "p_value": 0.02129638447251001,
+            "fdr_bh": 0.06705376777603654,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5747: 2-methylcitrate cycle II",
+            "family": "pathway",
+            "beta": 0.08994363310765421,
+            "se": 0.03907960801739809,
+            "p_value": 0.021360618543612746,
+            "fdr_bh": 0.06705376777603654,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6936: seleno-amino acid biosynthesis",
+            "family": "pathway",
+            "beta": -0.09405233713350648,
+            "se": 0.040990722319779196,
+            "p_value": 0.021763020145374345,
+            "fdr_bh": 0.06749070616465412,
+            "direction": "negative"
+          },
+          {
+            "feature": "NONMEVIPP-PWY: methylerythritol phosphate pathway I",
+            "family": "pathway",
+            "beta": 0.09335296048756754,
+            "se": 0.04072007785678567,
+            "p_value": 0.02187371917247793,
+            "fdr_bh": 0.06749070616465412,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7560: methylerythritol phosphate pathway II",
+            "family": "pathway",
+            "beta": 0.09135254641730761,
+            "se": 0.040471689232937334,
+            "p_value": 0.02399581271578615,
+            "fdr_bh": 0.07341091856270171,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-561: superpathway of glyoxylate cycle and fatty acid degradation",
+            "family": "pathway",
+            "beta": 0.09066447924666608,
+            "se": 0.0402522836431009,
+            "p_value": 0.024296636236876713,
+            "fdr_bh": 0.07348487997590462,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6270: isoprene biosynthesis I",
+            "family": "pathway",
+            "beta": 0.09170276785534937,
+            "se": 0.04075055256244211,
+            "p_value": 0.02442710691719821,
+            "fdr_bh": 0.07348487997590462,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7184: pyrimidine deoxyribonucleotides de novo biosynthesis I",
+            "family": "pathway",
+            "beta": -0.09521394091715915,
+            "se": 0.04241666173088246,
+            "p_value": 0.024785489350806815,
+            "fdr_bh": 0.07366069357114385,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-4981: L-proline biosynthesis II (from arginine)",
+            "family": "pathway",
+            "beta": -0.10428196818850742,
+            "se": 0.04649116385824049,
+            "p_value": 0.024893641594680195,
+            "fdr_bh": 0.07366069357114385,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLYCOLYSIS-E-D: superpathway of glycolysis and Entner-Doudoroff",
+            "family": "pathway",
+            "beta": -0.08648714756932667,
+            "se": 0.03891039673898265,
+            "p_value": 0.02623428667981297,
+            "fdr_bh": 0.07699656497083318,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5121: superpathway of geranylgeranyl diphosphate biosynthesis II (via MEP)",
+            "family": "pathway",
+            "beta": 0.09043033600831489,
+            "se": 0.04090211237641769,
+            "p_value": 0.02704300695416055,
+            "fdr_bh": 0.0784807195619919,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6630: superpathway of L-tyrosine biosynthesis",
+            "family": "pathway",
+            "beta": 0.08887738758070649,
+            "se": 0.04023425034459999,
+            "p_value": 0.027174764391271436,
+            "fdr_bh": 0.0784807195619919,
+            "direction": "positive"
+          },
+          {
+            "feature": "P105-PWY: TCA cycle IV (2-oxoglutarate decarboxylase)",
+            "family": "pathway",
+            "beta": 0.08726994064369449,
+            "se": 0.039807034014980654,
+            "p_value": 0.028356075391861177,
+            "fdr_bh": 0.08124240647985623,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY0-42: 2-methylcitrate cycle I",
+            "family": "pathway",
+            "beta": 0.0836793266377896,
+            "se": 0.03909948571592581,
+            "p_value": 0.0323414846266092,
+            "fdr_bh": 0.09193130669453481,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-7208: superpathway of pyrimidine nucleobases salvage",
+            "family": "pathway",
+            "beta": -0.08602735694313308,
+            "se": 0.040257995092133896,
+            "p_value": 0.032606030570637816,
+            "fdr_bh": 0.09195919559375197,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7094: fatty acid salvage",
+            "family": "pathway",
+            "beta": 0.08097586471024158,
+            "se": 0.03830749507313585,
+            "p_value": 0.03452904829158234,
+            "fdr_bh": 0.09567746529998207,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-5920: superpathway of heme biosynthesis from glycine",
+            "family": "pathway",
+            "beta": 0.08453172943444665,
+            "se": 0.040013709130891376,
+            "p_value": 0.034637657357774077,
+            "fdr_bh": 0.09567746529998207,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-5384: sucrose degradation IV (sucrose phosphorylase)",
+            "family": "pathway",
+            "beta": 0.08217985029952618,
+            "se": 0.03893530713864142,
+            "p_value": 0.034800099613944396,
+            "fdr_bh": 0.09567746529998207,
+            "direction": "positive"
+          },
+          {
+            "feature": "BIOTIN-BIOSYNTHESIS-PWY: biotin biosynthesis I",
+            "family": "pathway",
+            "beta": -0.0874314050002861,
+            "se": 0.04146543372710413,
+            "p_value": 0.034984557949023914,
+            "fdr_bh": 0.09567746529998207,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7197: pyrimidine deoxyribonucleotide phosphorylation",
+            "family": "pathway",
+            "beta": -0.0897032468069706,
+            "se": 0.042939205332111235,
+            "p_value": 0.03670091699685637,
+            "fdr_bh": 0.099616774705753,
+            "direction": "negative"
+          }
+        ]
+      },
+      "top_10_lme_hits": {
+        "CD": [
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_fragilis",
+            "family": "species",
+            "beta": 0.13829074787514978,
+            "se": 0.035697065273157434,
+            "p_value": 0.00010705950869928354,
+            "fdr_bh": 0.010686283532987152,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Rikenellaceae|g__Alistipes|s__Alistipes_indistinctus",
+            "family": "species",
+            "beta": -0.12052718034206017,
+            "se": 0.03221059725814516,
+            "p_value": 0.00018267151338439576,
+            "fdr_bh": 0.010686283532987152,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+            "family": "species",
+            "beta": -0.13461190784129912,
+            "se": 0.04098005397058088,
+            "p_value": 0.0010204924899769518,
+            "fdr_bh": 0.03979920710910112,
+            "direction": "negative"
+          },
+          {
+            "feature": "guild_pathobiont_log",
+            "family": "guild",
+            "beta": 0.08161183435715265,
+            "se": 0.02922559780080444,
+            "p_value": 0.00523060494288016,
+            "fdr_bh": 0.05753665437168176,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Ruminococcaceae|g__Ruminococcus|s__Ruminococcus_bicirculans",
+            "family": "species",
+            "beta": -0.08854266228678352,
+            "se": 0.029057556865299747,
+            "p_value": 0.0023102430073931065,
+            "fdr_bh": 0.06757460796624837,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6527: stachyose degradation",
+            "family": "pathway",
+            "beta": -0.08894566906287907,
+            "se": 0.025256299554671038,
+            "p_value": 0.00042875329689778477,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY66-422: D-galactose degradation V (Leloir pathway)",
+            "family": "pathway",
+            "beta": -0.09008667778254127,
+            "se": 0.02616855322770793,
+            "p_value": 0.0005762471609004212,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6317: galactose degradation I (Leloir pathway)",
+            "family": "pathway",
+            "beta": -0.08769498596264214,
+            "se": 0.026207206319860357,
+            "p_value": 0.0008192240702851783,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5173: superpathway of acetyl-CoA biosynthesis",
+            "family": "pathway",
+            "beta": 0.09053871187910886,
+            "se": 0.027156810577701387,
+            "p_value": 0.0008563039900163225,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "positive"
+          },
+          {
+            "feature": "CITRULBIO-PWY: L-citrulline biosynthesis",
+            "family": "pathway",
+            "beta": -0.09726294862808715,
+            "se": 0.029456603954884784,
+            "p_value": 0.0009603011513397463,
+            "fdr_bh": 0.06959634486763792,
+            "direction": "negative"
+          }
+        ],
+        "UC": [
+          {
+            "feature": "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+            "family": "pathway",
+            "beta": -0.19232564541651556,
+            "se": 0.04593673845779247,
+            "p_value": 2.829770624673039e-05,
+            "fdr_bh": 0.009904197186355636,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5675: nitrate reduction V (assimilatory)",
+            "family": "pathway",
+            "beta": 0.14738254971013176,
+            "se": 0.04494736065035662,
+            "p_value": 0.0010417436997728496,
+            "fdr_bh": 0.123388269069448,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-5138: unsaturated, even numbered fatty acid &beta;-oxidation",
+            "family": "pathway",
+            "beta": -0.14218677824066306,
+            "se": 0.043419331980840935,
+            "p_value": 0.0010576137348809829,
+            "fdr_bh": 0.123388269069448,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6629: superpathway of L-tryptophan biosynthesis",
+            "family": "pathway",
+            "beta": 0.130327748508372,
+            "se": 0.04193993893091396,
+            "p_value": 0.0018868629608321018,
+            "fdr_bh": 0.12806751860698445,
+            "direction": "positive"
+          },
+          {
+            "feature": "P164-PWY: purine nucleobases degradation I (anaerobic)",
+            "family": "pathway",
+            "beta": -0.12577148262512428,
+            "se": 0.0409773315548,
+            "p_value": 0.002145652401715384,
+            "fdr_bh": 0.12806751860698445,
+            "direction": "negative"
+          },
+          {
+            "feature": "KETOGLUCONMET-PWY: ketogluconate metabolism",
+            "family": "pathway",
+            "beta": 0.13604487386026945,
+            "se": 0.04461050240130311,
+            "p_value": 0.002291346066643676,
+            "fdr_bh": 0.12806751860698445,
+            "direction": "positive"
+          },
+          {
+            "feature": "METH-ACETATE-PWY: methanogenesis from acetate",
+            "family": "pathway",
+            "beta": -0.14502513045177068,
+            "se": 0.04810394020285649,
+            "p_value": 0.002571245904052283,
+            "fdr_bh": 0.12806751860698445,
+            "direction": "negative"
+          },
+          {
+            "feature": "P105-PWY: TCA cycle IV (2-oxoglutarate decarboxylase)",
+            "family": "pathway",
+            "beta": 0.1251693138902609,
+            "se": 0.04206982652446368,
+            "p_value": 0.0029272575681596447,
+            "fdr_bh": 0.12806751860698445,
+            "direction": "positive"
+          },
+          {
+            "feature": "PPGPPMET-PWY: ppGpp biosynthesis",
+            "family": "pathway",
+            "beta": -0.128208733177178,
+            "se": 0.04377382662742689,
+            "p_value": 0.003401745311766636,
+            "fdr_bh": 0.13229009545759138,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-561: superpathway of glyoxylate cycle and fatty acid degradation",
+            "family": "pathway",
+            "beta": 0.11868702368868682,
+            "se": 0.042141672092501775,
+            "p_value": 0.004856796323349013,
+            "fdr_bh": 0.16998787131721546,
+            "direction": "positive"
+          }
+        ],
+        "nonIBD": [
+          {
+            "feature": "PWY-5103: L-isoleucine biosynthesis III",
+            "family": "pathway",
+            "beta": -0.15232286241089532,
+            "se": 0.04025060522031797,
+            "p_value": 0.0001541033619170462,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched amino acid biosynthesis",
+            "family": "pathway",
+            "beta": -0.151368423148325,
+            "se": 0.04018508400356511,
+            "p_value": 0.0001653657368607827,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6588: pyruvate fermentation to acetone",
+            "family": "pathway",
+            "beta": 0.13226953814958742,
+            "se": 0.03565568644926282,
+            "p_value": 0.00020755927815768225,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II",
+            "family": "pathway",
+            "beta": -0.14321731152108344,
+            "se": 0.03966139692666506,
+            "p_value": 0.0003050184479563159,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis",
+            "family": "pathway",
+            "beta": -0.14321731152108344,
+            "se": 0.03966139692666506,
+            "p_value": 0.0003050184479563159,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "RHAMCAT-PWY: L-rhamnose degradation I",
+            "family": "pathway",
+            "beta": -0.14909909349908437,
+            "se": 0.04132250325958104,
+            "p_value": 0.0003083507040736614,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6876: isopropanol biosynthesis",
+            "family": "pathway",
+            "beta": 0.14076147794223068,
+            "se": 0.03914688459631377,
+            "p_value": 0.0003234879207073723,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "positive"
+          },
+          {
+            "feature": "PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I",
+            "family": "pathway",
+            "beta": -0.14172521239594998,
+            "se": 0.03972237865686583,
+            "p_value": 0.0003598628518825842,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)",
+            "family": "pathway",
+            "beta": -0.14202336495453616,
+            "se": 0.03988320048227813,
+            "p_value": 0.0003694702045144742,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7111: pyruvate fermentation to isobutanol (engineered)",
+            "family": "pathway",
+            "beta": -0.14254296338544165,
+            "se": 0.040106977209917904,
+            "p_value": 0.0003793197164459154,
+            "fdr_bh": 0.005984183725403737,
+            "direction": "negative"
+          }
+        ]
+      },
+      "top_stable_lme_ge4of5_hits": {
+        "CD": [
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_fragilis",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.1402529412200216,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.1388222291906085,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "PWY-3781: aerobic respiration I (cytochrome c)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.06605962052654296,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "PWY-6527: stachyose degradation",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.09002287896876567,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 2
+          },
+          {
+            "feature": "PWY-7197: pyrimidine deoxyribonucleotide phosphorylation",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.0862147082314483,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "COLANSYN-PWY: colanic acid building blocks biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.07011983456531602,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY-5675: nitrate reduction V (assimilatory)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.08818220819292902,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY-7184: pyrimidine deoxyribonucleotides de novo biosynthesis I",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.07963332479991206,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY0-166: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis (E. coli)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.07869090024561774,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY-5173: superpathway of acetyl-CoA biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.0911610831143632,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "PWY-6305: putrescine biosynthesis IV",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.08219078356877652,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "PWY-7187: pyrimidine deoxyribonucleotides de novo biosynthesis II",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.08926418345808702,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Rikenellaceae|g__Alistipes|s__Alistipes_indistinctus",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.11996725482067613,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.07075089240165358,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "CITRULBIO-PWY: L-citrulline biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.10011638666051619,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 0
+          }
+        ],
+        "UC": [
+          {
+            "feature": "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.1907768185244573,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_massiliensis",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.18999554510999003,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "PWY-5121: superpathway of geranylgeranyl diphosphate biosynthesis II (via MEP)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.11187808545052294,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "PWY-5138: unsaturated, even numbered fatty acid &beta;-oxidation",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.1447983466410543,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Enterobacteriaceae|g__Escherichia|s__Escherichia_coli",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.1379032316512621,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "P164-PWY: purine nucleobases degradation I (anaerobic)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.12639944225207891,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 4
+          },
+          {
+            "feature": "PWY-5675: nitrate reduction V (assimilatory)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.14352451925143714,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "PWY-7392: taxadiene biosynthesis (engineered)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.11295740458823852,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PPGPPMET-PWY: ppGpp biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.12950462835484347,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "KETOGLUCONMET-PWY: ketogluconate metabolism",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.1321931263660891,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY-7211: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.1076443185823889,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Clostridiaceae|g__Clostridium|s__Clostridium_sp_CAG_58",
+            "family": "species",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.16826569259428217,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 4
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Veillonella|s__Veillonella_dispar",
+            "family": "species",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": 0.12220889398269712,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Ruminococcaceae|g__Ruminococcus|s__Ruminococcus_bicirculans",
+            "family": "species",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.14237406776671427,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 4
+          },
+          {
+            "feature": "PWY-5723: Rubisco shunt",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": 0.11238130025894968,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 2
+          }
+        ],
+        "nonIBD": [
+          {
+            "feature": "PWY-6628: superpathway of L-phenylalanine biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.1300833367725614,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "PWY-6588: pyruvate fermentation to acetone",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.1285179794333982,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 2
+          },
+          {
+            "feature": "DAPLYSINESYN-PWY: L-lysine biosynthesis I",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.12796688399223197,
+            "enet_sel_folds": 4,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "PWY-6876: isopropanol biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.13359121482649786,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "PYRIDNUCSAL-PWY: NAD salvage pathway I",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.11722127617946684,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Lachnoclostridium|s__Clostridium_symbiosum",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.1463436776304456,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 2
+          },
+          {
+            "feature": "PWY-5103: L-isoleucine biosynthesis III",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.14655409953515405,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched amino acid biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.1456231591319992,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "guild_pathobiont_log",
+            "family": "guild",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.1258171683128699,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis I",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.13752716738197454,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "PWY-7282: 4-amino-2-methyl-5-phosphomethylpyrimidine biosynthesis (yeast)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.12522249467591579,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "guild_protective_vs_pathobiont_logratio",
+            "family": "guild",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.11333659757177746,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "1CMET2-PWY: N10-formyl-tetrahydrofolate biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.125534410087361,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.13013592156964082,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "ARO-PWY: chorismate biosynthesis I",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.12456191048919096,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 0
+          }
+        ]
+      }
+    },
+    "future_fc": {
+      "cohorts": {
+        "CD": {
+          "n_obs": 177,
+          "n_participants": 34,
+          "n_guilds_tested": 11,
+          "n_species_tested": 118,
+          "n_pathways_tested": 364
+        },
+        "UC": {
+          "n_obs": 108,
+          "n_participants": 22,
+          "n_guilds_tested": 11,
+          "n_species_tested": 122,
+          "n_pathways_tested": 355
+        },
+        "nonIBD": {
+          "n_obs": 85,
+          "n_participants": 19,
+          "n_guilds_tested": 11,
+          "n_species_tested": 138,
+          "n_pathways_tested": 359
+        }
+      },
+      "significance_counts": {
+        "CD": {
+          "guild": {
+            "n_tested": 11,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 0,
+            "nominal_p_lt_0_05": 1
+          },
+          "species": {
+            "n_tested": 118,
+            "fdr_lt_0_05": 2,
+            "fdr_lt_0_10": 2,
+            "nominal_p_lt_0_05": 5
+          },
+          "pathway": {
+            "n_tested": 364,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 1,
+            "nominal_p_lt_0_05": 13
+          },
+          "all": {
+            "n_tested": 493,
+            "fdr_lt_0_05": 2,
+            "fdr_lt_0_10": 3,
+            "nominal_p_lt_0_05": 19
+          }
+        },
+        "UC": {
+          "guild": {
+            "n_tested": 11,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 0,
+            "nominal_p_lt_0_05": 0
+          },
+          "species": {
+            "n_tested": 122,
+            "fdr_lt_0_05": 1,
+            "fdr_lt_0_10": 1,
+            "nominal_p_lt_0_05": 11
+          },
+          "pathway": {
+            "n_tested": 355,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 0,
+            "nominal_p_lt_0_05": 15
+          },
+          "all": {
+            "n_tested": 488,
+            "fdr_lt_0_05": 1,
+            "fdr_lt_0_10": 1,
+            "nominal_p_lt_0_05": 26
+          }
+        },
+        "nonIBD": {
+          "guild": {
+            "n_tested": 11,
+            "fdr_lt_0_05": 2,
+            "fdr_lt_0_10": 2,
+            "nominal_p_lt_0_05": 2
+          },
+          "species": {
+            "n_tested": 138,
+            "fdr_lt_0_05": 0,
+            "fdr_lt_0_10": 4,
+            "nominal_p_lt_0_05": 19
+          },
+          "pathway": {
+            "n_tested": 359,
+            "fdr_lt_0_05": 22,
+            "fdr_lt_0_10": 29,
+            "nominal_p_lt_0_05": 43
+          },
+          "all": {
+            "n_tested": 508,
+            "fdr_lt_0_05": 24,
+            "fdr_lt_0_10": 35,
+            "nominal_p_lt_0_05": 64
+          }
+        }
+      },
+      "stability_selection": {
+        "CD": {
+          "target": "future_fc",
+          "n_folds": 5,
+          "jaccard_lme_p05": 0.24422682706224247,
+          "jaccard_elasticnet": 0.22798290973538154,
+          "jaccard_rf_top30": 0.21724279237063074,
+          "n_stable_lme_ge4of5": 7,
+          "n_stable_enet_ge4of5": 12,
+          "n_stable_rf_ge4of5": 9
+        },
+        "UC": {
+          "target": "future_fc",
+          "n_folds": 5,
+          "jaccard_lme_p05": 0.2498613828676907,
+          "jaccard_elasticnet": 0.2214997421122606,
+          "jaccard_rf_top30": 0.21207427116437366,
+          "n_stable_lme_ge4of5": 6,
+          "n_stable_enet_ge4of5": 13,
+          "n_stable_rf_ge4of5": 7
+        },
+        "nonIBD": {
+          "target": "future_fc",
+          "n_folds": 5,
+          "jaccard_lme_p05": 0.27816905569335915,
+          "jaccard_elasticnet": 0.004725965858041329,
+          "jaccard_rf_top30": 0.18552288912443055,
+          "n_stable_lme_ge4of5": 39,
+          "n_stable_enet_ge4of5": 0,
+          "n_stable_rf_ge4of5": 5
+        }
+      },
+      "pairwise_beta_correlations": {
+        "CD_vs_UC": {
+          "all": {
+            "n_shared_features": 474,
+            "pearson_r": -0.11671713478095201,
+            "pearson_p": 0.010987384302231689,
+            "spearman_rho": -0.05781782780679162,
+            "spearman_p": 0.2089307930100919,
+            "sign_concordance_all": 0.47257383966244726,
+            "n_nominal_union": 43,
+            "sign_concordance_nominal_union": 0.2558139534883721
+          },
+          "guild": {
+            "n_shared_features": 11,
+            "pearson_r": 0.5317536247925571,
+            "pearson_p": 0.09226727783095794,
+            "spearman_rho": 0.6454545454545455,
+            "spearman_p": 0.03196279932801746,
+            "sign_concordance_all": 0.6363636363636364,
+            "n_nominal_union": 1,
+            "sign_concordance_nominal_union": 1.0
+          },
+          "species": {
+            "n_shared_features": 109,
+            "pearson_r": -0.162029909478212,
+            "pearson_p": 0.09232058308932875,
+            "spearman_rho": -0.08608099342044297,
+            "spearman_p": 0.3734635629664417,
+            "sign_concordance_all": 0.42201834862385323,
+            "n_nominal_union": 15,
+            "sign_concordance_nominal_union": 0.26666666666666666
+          },
+          "pathway": {
+            "n_shared_features": 354,
+            "pearson_r": -0.10263884807525607,
+            "pearson_p": 0.05368039774081776,
+            "spearman_rho": -0.06151190620540686,
+            "spearman_p": 0.2483609304955012,
+            "sign_concordance_all": 0.4830508474576271,
+            "n_nominal_union": 27,
+            "sign_concordance_nominal_union": 0.2222222222222222
+          }
+        },
+        "CD_vs_nonIBD": {
+          "all": {
+            "n_shared_features": 480,
+            "pearson_r": -0.024693347718306752,
+            "pearson_p": 0.5894205742536059,
+            "spearman_rho": 0.03176634763364409,
+            "spearman_p": 0.4874774986843437,
+            "sign_concordance_all": 0.5375,
+            "n_nominal_union": 76,
+            "sign_concordance_nominal_union": 0.4473684210526316
+          },
+          "guild": {
+            "n_shared_features": 11,
+            "pearson_r": 0.07266359534534254,
+            "pearson_p": 0.8318619355902878,
+            "spearman_rho": 0.15454545454545454,
+            "spearman_p": 0.6500339654975799,
+            "sign_concordance_all": 0.6363636363636364,
+            "n_nominal_union": 3,
+            "sign_concordance_nominal_union": 0.6666666666666666
+          },
+          "species": {
+            "n_shared_features": 112,
+            "pearson_r": -0.05827179767599036,
+            "pearson_p": 0.5416688244979717,
+            "spearman_rho": 0.009994191410120614,
+            "spearman_p": 0.9167054160218524,
+            "sign_concordance_all": 0.49107142857142855,
+            "n_nominal_union": 18,
+            "sign_concordance_nominal_union": 0.4444444444444444
+          },
+          "pathway": {
+            "n_shared_features": 357,
+            "pearson_r": -0.02076037353110826,
+            "pearson_p": 0.6958547580466493,
+            "spearman_rho": 0.03810061845821882,
+            "spearman_p": 0.4729879828780593,
+            "sign_concordance_all": 0.5490196078431373,
+            "n_nominal_union": 55,
+            "sign_concordance_nominal_union": 0.43636363636363634
+          }
+        },
+        "UC_vs_nonIBD": {
+          "all": {
+            "n_shared_features": 478,
+            "pearson_r": 0.07238213411974936,
+            "pearson_p": 0.11400702572941943,
+            "spearman_rho": 0.07329725980903454,
+            "spearman_p": 0.10949410804675742,
+            "sign_concordance_all": 0.49581589958158995,
+            "n_nominal_union": 84,
+            "sign_concordance_nominal_union": 0.6309523809523809
+          },
+          "guild": {
+            "n_shared_features": 11,
+            "pearson_r": -0.5133159464278266,
+            "pearson_p": 0.10632974891788241,
+            "spearman_rho": -0.3181818181818182,
+            "spearman_p": 0.34029761418190335,
+            "sign_concordance_all": 0.2727272727272727,
+            "n_nominal_union": 2,
+            "sign_concordance_nominal_union": 0.5
+          },
+          "species": {
+            "n_shared_features": 114,
+            "pearson_r": -0.002739907335971285,
+            "pearson_p": 0.976918938151491,
+            "spearman_rho": -0.003114558230898524,
+            "spearman_p": 0.9737639226366558,
+            "sign_concordance_all": 0.49122807017543857,
+            "n_nominal_union": 26,
+            "sign_concordance_nominal_union": 0.5769230769230769
+          },
+          "pathway": {
+            "n_shared_features": 353,
+            "pearson_r": 0.13181847052762166,
+            "pearson_p": 0.013186769717294886,
+            "spearman_rho": 0.12802249164140778,
+            "spearman_p": 0.016097205291434376,
+            "sign_concordance_all": 0.5042492917847026,
+            "n_nominal_union": 56,
+            "sign_concordance_nominal_union": 0.6607142857142857
+          }
+        }
+      },
+      "overlap_fdr_lt_0_05": {
+        "counts": {
+          "CD": 2,
+          "UC": 1,
+          "nonIBD": 24,
+          "CD_only": 2,
+          "UC_only": 1,
+          "nonIBD_only": 24,
+          "CD_and_UC_shared": 0,
+          "CD_and_nonIBD_shared": 0,
+          "UC_and_nonIBD_shared": 0,
+          "all_three_shared": 0
+        },
+        "CD_and_UC_shared_features": [],
+        "all_three_shared_features": [],
+        "CD_only_top25": [
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+          "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Dialister|s__Dialister_invisus"
+        ],
+        "UC_only_top25": [
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Fusicatenibacter|s__Fusicatenibacter_saccharivorans"
+        ],
+        "nonIBD_only_top25": [
+          "ANAEROFRUCAT-PWY: homolactic fermentation",
+          "ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",
+          "ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",
+          "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+          "GLUCONEO-PWY: gluconeogenesis I",
+          "GLUTORN-PWY: L-ornithine biosynthesis",
+          "GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",
+          "HOMOSER-METSYN-PWY: L-methionine biosynthesis I",
+          "MET-SAM-PWY: superpathway of S-adenosyl-L-methionine biosynthesis",
+          "METSYN-PWY: L-homoserine and L-methionine biosynthesis",
+          "NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch)",
+          "PENTOSE-P-PWY: pentose phosphate pathway",
+          "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+          "PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",
+          "PWY-5347: superpathway of L-methionine biosynthesis (transsulfuration)",
+          "PWY-6317: galactose degradation I (Leloir pathway)",
+          "PWY-6545: pyrimidine deoxyribonucleotides de novo biosynthesis III",
+          "PWY-6606: guanosine nucleotides degradation II",
+          "PWY-6901: superpathway of glucose and xylose degradation",
+          "PWY-7400: L-arginine biosynthesis IV (archaebacteria)",
+          "PWY4FS-7: phosphatidylglycerol biosynthesis I (plastidic)",
+          "PWY4FS-8: phosphatidylglycerol biosynthesis II (non-plastidic)",
+          "fguild_oxidative_stress_log",
+          "fguild_sulfur_h2s_log"
+        ]
+      },
+      "overlap_fdr_lt_0_10": {
+        "counts": {
+          "CD": 3,
+          "UC": 1,
+          "nonIBD": 35,
+          "CD_only": 3,
+          "UC_only": 1,
+          "nonIBD_only": 35,
+          "CD_and_UC_shared": 0,
+          "CD_and_nonIBD_shared": 0,
+          "UC_and_nonIBD_shared": 0,
+          "all_three_shared": 0
+        },
+        "CD_and_UC_shared_features": [],
+        "all_three_shared_features": [],
+        "CD_only_top25": [
+          "PRPP-PWY: superpathway of histidine, purine, and pyrimidine biosynthesis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+          "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Dialister|s__Dialister_invisus"
+        ],
+        "UC_only_top25": [
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Fusicatenibacter|s__Fusicatenibacter_saccharivorans"
+        ],
+        "nonIBD_only_top25": [
+          "ANAEROFRUCAT-PWY: homolactic fermentation",
+          "ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",
+          "ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",
+          "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+          "GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",
+          "GLUCONEO-PWY: gluconeogenesis I",
+          "GLUTORN-PWY: L-ornithine biosynthesis",
+          "GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",
+          "HOMOSER-METSYN-PWY: L-methionine biosynthesis I",
+          "MET-SAM-PWY: superpathway of S-adenosyl-L-methionine biosynthesis",
+          "METSYN-PWY: L-homoserine and L-methionine biosynthesis",
+          "NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch)",
+          "PENTOSE-P-PWY: pentose phosphate pathway",
+          "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+          "PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",
+          "PWY-5347: superpathway of L-methionine biosynthesis (transsulfuration)",
+          "PWY-6317: galactose degradation I (Leloir pathway)",
+          "PWY-6527: stachyose degradation",
+          "PWY-6545: pyrimidine deoxyribonucleotides de novo biosynthesis III",
+          "PWY-6606: guanosine nucleotides degradation II",
+          "PWY-6901: superpathway of glucose and xylose degradation",
+          "PWY-7323: superpathway of GDP-mannose-derived O-antigen building blocks biosynthesis",
+          "PWY-7400: L-arginine biosynthesis IV (archaebacteria)",
+          "PWY-7616: methanol oxidation to carbon dioxide",
+          "PWY0-1296: purine ribonucleosides degradation"
+        ]
+      },
+      "overlap_nominal_p_lt_0_05": {
+        "counts": {
+          "CD": 19,
+          "UC": 26,
+          "nonIBD": 64,
+          "CD_only": 17,
+          "UC_only": 23,
+          "nonIBD_only": 61,
+          "CD_and_UC_shared": 1,
+          "CD_and_nonIBD_shared": 1,
+          "UC_and_nonIBD_shared": 2,
+          "all_three_shared": 0
+        },
+        "CD_and_UC_shared_features": [
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Rikenellaceae|g__Alistipes|s__Alistipes_putredinis"
+        ],
+        "all_three_shared_features": [],
+        "CD_only_top25": [
+          "LPSSYN-PWY: superpathway of lipopolysaccharide biosynthesis",
+          "P162-PWY: L-glutamate degradation V (via hydroxyglutarate)",
+          "P42-PWY: incomplete reductive TCA cycle",
+          "P441-PWY: superpathway of N-acetylneuraminate degradation",
+          "PRPP-PWY: superpathway of histidine, purine, and pyrimidine biosynthesis",
+          "PWY-5022: 4-aminobutanoate degradation V",
+          "PWY-6143: CMP-pseudaminate biosynthesis",
+          "PWY-6595: superpathway of guanosine nucleotides degradation (plants)",
+          "PWY-6969: TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase)",
+          "PWY-7328: superpathway of UDP-glucose-derived O-antigen building blocks biosynthesis",
+          "PWY-7392: taxadiene biosynthesis (engineered)",
+          "PWY-7456: mannan degradation",
+          "PWY0-1261: anhydromuropeptides recycling",
+          "fguild_lps_enterobacterial_log",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Odoribacteraceae|g__Butyricimonas|s__Butyricimonas_synergistica",
+          "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Dialister|s__Dialister_invisus"
+        ],
+        "UC_only_top25": [
+          "GALACTARDEG-PWY: D-galactarate degradation I",
+          "GLUCARGALACTSUPER-PWY: superpathway of D-glucarate and D-galactarate degradation",
+          "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+          "HEMESYN2-PWY: heme biosynthesis II (anaerobic)",
+          "PWY-5850: superpathway of menaquinol-6 biosynthesis I",
+          "PWY-5860: superpathway of demethylmenaquinol-6 biosynthesis I",
+          "PWY-5896: superpathway of menaquinol-10 biosynthesis",
+          "PWY-6318: L-phenylalanine degradation IV (mammalian, via side chain)",
+          "PWY-6859: all-trans-farnesol biosynthesis",
+          "PWY-7094: fatty acid salvage",
+          "PWY-7209: superpathway of pyrimidine ribonucleosides degradation",
+          "PWY0-1479: tRNA processing",
+          "PWY0-42: 2-methylcitrate cycle I",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_intestinalis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_massiliensis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_ovatus",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Tannerellaceae|g__Parabacteroides|s__Parabacteroides_merdae",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Eubacteriaceae|g__Eubacterium|s__Eubacterium_ramulus",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Fusicatenibacter|s__Fusicatenibacter_saccharivorans",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Lachnoclostridium|s__Clostridium_citroniae",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Lachnoclostridium|s__Clostridium_saccharolyticum",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Roseburia|s__Roseburia_hominis",
+          "k__Bacteria|p__Firmicutes|c__Firmicutes_unclassified|o__Firmicutes_unclassified|f__Firmicutes_unclassified|g__Firmicutes_unclassified|s__Firmicutes_bacterium_CAG_83"
+        ],
+        "nonIBD_only_top25": [
+          "ANAEROFRUCAT-PWY: homolactic fermentation",
+          "ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",
+          "ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",
+          "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+          "GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",
+          "GLUCONEO-PWY: gluconeogenesis I",
+          "GLUTORN-PWY: L-ornithine biosynthesis",
+          "GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",
+          "HOMOSER-METSYN-PWY: L-methionine biosynthesis I",
+          "MET-SAM-PWY: superpathway of S-adenosyl-L-methionine biosynthesis",
+          "METSYN-PWY: L-homoserine and L-methionine biosynthesis",
+          "NAGLIPASYN-PWY: lipid IVA biosynthesis",
+          "NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch)",
+          "OANTIGEN-PWY: O-antigen building blocks biosynthesis (E. coli)",
+          "P221-PWY: octane oxidation",
+          "PENTOSE-P-PWY: pentose phosphate pathway",
+          "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+          "PWY-5100: pyruvate fermentation to acetate and lactate II",
+          "PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",
+          "PWY-5177: glutaryl-CoA degradation",
+          "PWY-5347: superpathway of L-methionine biosynthesis (transsulfuration)",
+          "PWY-5505: L-glutamate and L-glutamine biosynthesis",
+          "PWY-5918: superpathay of heme biosynthesis from glutamate",
+          "PWY-6317: galactose degradation I (Leloir pathway)",
+          "PWY-6527: stachyose degradation"
+        ]
+      },
+      "overlap_stable_lme_ge4of5": {
+        "counts": {
+          "CD": 7,
+          "UC": 6,
+          "nonIBD": 39,
+          "CD_only": 7,
+          "UC_only": 6,
+          "nonIBD_only": 39,
+          "CD_and_UC_shared": 0,
+          "CD_and_nonIBD_shared": 0,
+          "UC_and_nonIBD_shared": 0,
+          "all_three_shared": 0
+        },
+        "CD_and_UC_shared_features": [],
+        "all_three_shared_features": [],
+        "CD_only_top25": [
+          "LPSSYN-PWY: superpathway of lipopolysaccharide biosynthesis",
+          "P162-PWY: L-glutamate degradation V (via hydroxyglutarate)",
+          "P42-PWY: incomplete reductive TCA cycle",
+          "PRPP-PWY: superpathway of histidine, purine, and pyrimidine biosynthesis",
+          "PWY-5022: 4-aminobutanoate degradation V",
+          "PWY-6969: TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase)",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis"
+        ],
+        "UC_only_top25": [
+          "GLYCOLYSIS-E-D: superpathway of glycolysis and Entner-Doudoroff",
+          "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_massiliensis",
+          "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Tannerellaceae|g__Parabacteroides|s__Parabacteroides_merdae",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Eubacteriaceae|g__Eubacterium|s__Eubacterium_ramulus",
+          "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Fusicatenibacter|s__Fusicatenibacter_saccharivorans"
+        ],
+        "nonIBD_only_top25": [
+          "ANAEROFRUCAT-PWY: homolactic fermentation",
+          "ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",
+          "ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",
+          "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+          "GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",
+          "GLUCONEO-PWY: gluconeogenesis I",
+          "GLUTORN-PWY: L-ornithine biosynthesis",
+          "GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",
+          "HOMOSER-METSYN-PWY: L-methionine biosynthesis I",
+          "MET-SAM-PWY: superpathway of S-adenosyl-L-methionine biosynthesis",
+          "METSYN-PWY: L-homoserine and L-methionine biosynthesis",
+          "NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch)",
+          "OANTIGEN-PWY: O-antigen building blocks biosynthesis (E. coli)",
+          "PENTOSE-P-PWY: pentose phosphate pathway",
+          "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+          "POLYISOPRENSYN-PWY: polyisoprenoid biosynthesis (E. coli)",
+          "PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",
+          "PWY-5347: superpathway of L-methionine biosynthesis (transsulfuration)",
+          "PWY-6317: galactose degradation I (Leloir pathway)",
+          "PWY-6527: stachyose degradation",
+          "PWY-6545: pyrimidine deoxyribonucleotides de novo biosynthesis III",
+          "PWY-6606: guanosine nucleotides degradation II",
+          "PWY-6901: superpathway of glucose and xylose degradation",
+          "PWY-7211: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis",
+          "PWY-7323: superpathway of GDP-mannose-derived O-antigen building blocks biosynthesis"
+        ]
+      },
+      "fdr_lt_0_10_hits": {
+        "CD": [
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+            "family": "species",
+            "beta": -0.16175180221038726,
+            "se": 0.03544054509039776,
+            "p_value": 5.018028790346413e-06,
+            "fdr_bh": 0.0005921273972608768,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Dialister|s__Dialister_invisus",
+            "family": "species",
+            "beta": 0.09948137391762636,
+            "se": 0.02631259310317729,
+            "p_value": 0.0001563557264376949,
+            "fdr_bh": 0.009224987859824,
+            "direction": "positive"
+          },
+          {
+            "feature": "PRPP-PWY: superpathway of histidine, purine, and pyrimidine biosynthesis",
+            "family": "pathway",
+            "beta": -0.08642524748713158,
+            "se": 0.023182889873443042,
+            "p_value": 0.00019302407074834265,
+            "fdr_bh": 0.07026076175239672,
+            "direction": "negative"
+          }
+        ],
+        "UC": [
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Fusicatenibacter|s__Fusicatenibacter_saccharivorans",
+            "family": "species",
+            "beta": -0.18408760447447506,
+            "se": 0.04503855796674698,
+            "p_value": 4.3635972626826895e-05,
+            "fdr_bh": 0.005323588660472881,
+            "direction": "negative"
+          }
+        ],
+        "nonIBD": [
+          {
+            "feature": "fguild_oxidative_stress_log",
+            "family": "guild",
+            "beta": -0.1174817122168783,
+            "se": 0.0315328698250456,
+            "p_value": 0.00019478131554118123,
+            "fdr_bh": 0.0021425944709529935,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5347: superpathway of L-methionine biosynthesis (transsulfuration)",
+            "family": "pathway",
+            "beta": -0.12204013858175768,
+            "se": 0.0293594728645456,
+            "p_value": 3.227996939850289e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "METSYN-PWY: L-homoserine and L-methionine biosynthesis",
+            "family": "pathway",
+            "beta": -0.12184382240140394,
+            "se": 0.029487767852277174,
+            "p_value": 3.5960101709863196e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "MET-SAM-PWY: superpathway of S-adenosyl-L-methionine biosynthesis",
+            "family": "pathway",
+            "beta": -0.11955756118396947,
+            "se": 0.029576268095449873,
+            "p_value": 5.291866961155142e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "HOMOSER-METSYN-PWY: L-methionine biosynthesis I",
+            "family": "pathway",
+            "beta": -0.1206192860094491,
+            "se": 0.030065241804587597,
+            "p_value": 6.022741104687574e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "fguild_sulfur_h2s_log",
+            "family": "guild",
+            "beta": -0.10280197478764251,
+            "se": 0.03357096820750413,
+            "p_value": 0.002196956924895113,
+            "fdr_bh": 0.012083263086923122,
+            "direction": "negative"
+          },
+          {
+            "feature": "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+            "family": "pathway",
+            "beta": -0.12382008546331916,
+            "se": 0.034344043882184476,
+            "p_value": 0.0003118098746415503,
+            "fdr_bh": 0.020006162968529553,
+            "direction": "negative"
+          },
+          {
+            "feature": "ANAEROFRUCAT-PWY: homolactic fermentation",
+            "family": "pathway",
+            "beta": -0.11941988456579239,
+            "se": 0.033291403025760426,
+            "p_value": 0.0003343648406996583,
+            "fdr_bh": 0.020006162968529553,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY4FS-7: phosphatidylglycerol biosynthesis I (plastidic)",
+            "family": "pathway",
+            "beta": -0.12339012103121032,
+            "se": 0.03562502352831814,
+            "p_value": 0.0005330379528510477,
+            "fdr_bh": 0.023920078134190767,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY4FS-8: phosphatidylglycerol biosynthesis II (non-plastidic)",
+            "family": "pathway",
+            "beta": -0.12339012103121032,
+            "se": 0.03562502352831814,
+            "p_value": 0.0005330379528510477,
+            "fdr_bh": 0.023920078134190767,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5154: L-arginine biosynthesis III (via N-acetyl-L-citrulline)",
+            "family": "pathway",
+            "beta": -0.11542095116605934,
+            "se": 0.0342028178168383,
+            "p_value": 0.0007392209351851234,
+            "fdr_bh": 0.027386104927726595,
+            "direction": "negative"
+          },
+          {
+            "feature": "CALVIN-PWY: Calvin-Benson-Bassham cycle",
+            "family": "pathway",
+            "beta": -0.11252969482642167,
+            "se": 0.033580776697284445,
+            "p_value": 0.000805158681957611,
+            "fdr_bh": 0.027386104927726595,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)",
+            "family": "pathway",
+            "beta": -0.11396953941068572,
+            "se": 0.034127167647288424,
+            "p_value": 0.0008391285632451046,
+            "fdr_bh": 0.027386104927726595,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6901: superpathway of glucose and xylose degradation",
+            "family": "pathway",
+            "beta": -0.10742343801461048,
+            "se": 0.03382404512978206,
+            "p_value": 0.0014934726999344847,
+            "fdr_bh": 0.040004955005402264,
+            "direction": "negative"
+          },
+          {
+            "feature": "ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)",
+            "family": "pathway",
+            "beta": -0.11634563581952716,
+            "se": 0.036775870716241985,
+            "p_value": 0.0015580909952678536,
+            "fdr_bh": 0.040004955005402264,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7400: L-arginine biosynthesis IV (archaebacteria)",
+            "family": "pathway",
+            "beta": -0.1162744723608385,
+            "se": 0.036757695132467065,
+            "p_value": 0.0015600818107956316,
+            "fdr_bh": 0.040004955005402264,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6606: guanosine nucleotides degradation II",
+            "family": "pathway",
+            "beta": -0.10546129636756268,
+            "se": 0.03408563133561454,
+            "p_value": 0.0019747059294622283,
+            "fdr_bh": 0.04430912795211442,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6317: galactose degradation I (Leloir pathway)",
+            "family": "pathway",
+            "beta": -0.11511273066904967,
+            "se": 0.03720515830578069,
+            "p_value": 0.0019747800758602527,
+            "fdr_bh": 0.04430912795211442,
+            "direction": "negative"
+          },
+          {
+            "feature": "PENTOSE-P-PWY: pentose phosphate pathway",
+            "family": "pathway",
+            "beta": -0.09652577730890224,
+            "se": 0.031903299061022905,
+            "p_value": 0.0024816205229573757,
+            "fdr_bh": 0.047648747130088334,
+            "direction": "negative"
+          },
+          {
+            "feature": "ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)",
+            "family": "pathway",
+            "beta": -0.11179557526307385,
+            "se": 0.03704000747312564,
+            "p_value": 0.002542487529908215,
+            "fdr_bh": 0.047648747130088334,
+            "direction": "negative"
+          },
+          {
+            "feature": "NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch)",
+            "family": "pathway",
+            "beta": -0.10328139967606531,
+            "se": 0.03448966419668142,
+            "p_value": 0.002748401884417659,
+            "fdr_bh": 0.047648747130088334,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLUTORN-PWY: L-ornithine biosynthesis",
+            "family": "pathway",
+            "beta": -0.11093189838861243,
+            "se": 0.037073115071650876,
+            "p_value": 0.002769325659365397,
+            "fdr_bh": 0.047648747130088334,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLUCONEO-PWY: gluconeogenesis I",
+            "family": "pathway",
+            "beta": -0.10402543460445346,
+            "se": 0.034885120706974866,
+            "p_value": 0.0028642550593586122,
+            "fdr_bh": 0.047648747130088334,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6545: pyrimidine deoxyribonucleotides de novo biosynthesis III",
+            "family": "pathway",
+            "beta": -0.1165971592295169,
+            "se": 0.03917864185383939,
+            "p_value": 0.0029199789327630735,
+            "fdr_bh": 0.047648747130088334,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY66-422: D-galactose degradation V (Leloir pathway)",
+            "family": "pathway",
+            "beta": -0.10797597238133351,
+            "se": 0.036845213474472394,
+            "p_value": 0.0033838523662635617,
+            "fdr_bh": 0.052817521716896465,
+            "direction": "negative"
+          },
+          {
+            "feature": "GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",
+            "family": "pathway",
+            "beta": -0.10315404177827743,
+            "se": 0.036183868822775356,
+            "p_value": 0.004360534035819641,
+            "fdr_bh": 0.06364480049718384,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY0-1296: purine ribonucleosides degradation",
+            "family": "pathway",
+            "beta": -0.10845358961783028,
+            "se": 0.038112063293599,
+            "p_value": 0.0044320891711130805,
+            "fdr_bh": 0.06364480049718384,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7323: superpathway of GDP-mannose-derived O-antigen building blocks biosynthesis",
+            "family": "pathway",
+            "beta": -0.10018363847946778,
+            "se": 0.035636507642328945,
+            "p_value": 0.004934724532408833,
+            "fdr_bh": 0.06813715796672196,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-6527: stachyose degradation",
+            "family": "pathway",
+            "beta": -0.10803346401817172,
+            "se": 0.03883849458396318,
+            "p_value": 0.005409034393216011,
+            "fdr_bh": 0.07192012396905734,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY66-400: glycolysis VI (metazoan)",
+            "family": "pathway",
+            "beta": -0.09604615184547509,
+            "se": 0.03552086300647191,
+            "p_value": 0.006852341830263949,
+            "fdr_bh": 0.08785681132374135,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-7616: methanol oxidation to carbon dioxide",
+            "family": "pathway",
+            "beta": 0.0843959937157356,
+            "se": 0.03162899914676065,
+            "p_value": 0.007623374659155689,
+            "fdr_bh": 0.09437212078058249,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Streptococcaceae|g__Streptococcus|s__Streptococcus_parasanguinis",
+            "family": "species",
+            "beta": 0.1203417559187956,
+            "se": 0.035987354270556694,
+            "p_value": 0.0008257937979590281,
+            "fdr_bh": 0.09530721556963107,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Bifidobacteriales|f__Bifidobacteriaceae|g__Bifidobacterium|s__Bifidobacterium_adolescentis",
+            "family": "species",
+            "beta": -0.12723227979316443,
+            "se": 0.04145908198113685,
+            "p_value": 0.0021487446100531995,
+            "fdr_bh": 0.09530721556963107,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Megasphaera|s__Megasphaera_sp_DISK_18",
+            "family": "species",
+            "beta": 0.2175702344154524,
+            "se": 0.07112544079741118,
+            "p_value": 0.00222103092314354,
+            "fdr_bh": 0.09530721556963107,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_xylanisolvens",
+            "family": "species",
+            "beta": -0.15705282605224546,
+            "se": 0.05247343896971562,
+            "p_value": 0.002762527987525538,
+            "fdr_bh": 0.09530721556963107,
+            "direction": "negative"
+          }
+        ]
+      },
+      "top_10_lme_hits": {
+        "CD": [
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+            "family": "species",
+            "beta": -0.16175180221038726,
+            "se": 0.03544054509039776,
+            "p_value": 5.018028790346413e-06,
+            "fdr_bh": 0.0005921273972608768,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Dialister|s__Dialister_invisus",
+            "family": "species",
+            "beta": 0.09948137391762636,
+            "se": 0.02631259310317729,
+            "p_value": 0.0001563557264376949,
+            "fdr_bh": 0.009224987859824,
+            "direction": "positive"
+          },
+          {
+            "feature": "PRPP-PWY: superpathway of histidine, purine, and pyrimidine biosynthesis",
+            "family": "pathway",
+            "beta": -0.08642524748713158,
+            "se": 0.023182889873443042,
+            "p_value": 0.00019302407074834265,
+            "fdr_bh": 0.07026076175239672,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Odoribacteraceae|g__Butyricimonas|s__Butyricimonas_synergistica",
+            "family": "species",
+            "beta": -0.09838722583096479,
+            "se": 0.03707450838619873,
+            "p_value": 0.007959801248602807,
+            "fdr_bh": 0.3130855157783771,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_xylanisolvens",
+            "family": "species",
+            "beta": 0.09857798652860865,
+            "se": 0.039305049723232025,
+            "p_value": 0.01214086086104036,
+            "fdr_bh": 0.35815539540069063,
+            "direction": "positive"
+          },
+          {
+            "feature": "fguild_lps_enterobacterial_log",
+            "family": "guild",
+            "beta": -0.04988048112079215,
+            "se": 0.023584354410515252,
+            "p_value": 0.03443149571659538,
+            "fdr_bh": 0.36921501689575487,
+            "direction": "negative"
+          },
+          {
+            "feature": "fguild_sulfur_h2s_log",
+            "family": "guild",
+            "beta": -0.03852047677231692,
+            "se": 0.02472721883164245,
+            "p_value": 0.11927668370269898,
+            "fdr_bh": 0.36921501689575487,
+            "direction": "negative"
+          },
+          {
+            "feature": "guild_protective_vs_pathobiont_logratio",
+            "family": "guild",
+            "beta": 0.04474711190172237,
+            "se": 0.029815153840233997,
+            "p_value": 0.1334027081374295,
+            "fdr_bh": 0.36921501689575487,
+            "direction": "positive"
+          },
+          {
+            "feature": "guild_scfa_butyrate_log",
+            "family": "guild",
+            "beta": 0.03951315234715388,
+            "se": 0.02638586154334749,
+            "p_value": 0.13426000614391087,
+            "fdr_bh": 0.36921501689575487,
+            "direction": "positive"
+          },
+          {
+            "feature": "P162-PWY: L-glutamate degradation V (via hydroxyglutarate)",
+            "family": "pathway",
+            "beta": 0.07694613681927807,
+            "se": 0.025652817448396946,
+            "p_value": 0.0027040544544310293,
+            "fdr_bh": 0.4921379107064473,
+            "direction": "positive"
+          }
+        ],
+        "UC": [
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Fusicatenibacter|s__Fusicatenibacter_saccharivorans",
+            "family": "species",
+            "beta": -0.18408760447447506,
+            "se": 0.04503855796674698,
+            "p_value": 4.3635972626826895e-05,
+            "fdr_bh": 0.005323588660472881,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Tannerellaceae|g__Parabacteroides|s__Parabacteroides_merdae",
+            "family": "species",
+            "beta": 0.12907411093363577,
+            "se": 0.04242299135757814,
+            "p_value": 0.0023458213342764395,
+            "fdr_bh": 0.14309510139086282,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_massiliensis",
+            "family": "species",
+            "beta": 0.13799217990286117,
+            "se": 0.048122284056328624,
+            "p_value": 0.004136872261534166,
+            "fdr_bh": 0.1682328053023894,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Eubacteriaceae|g__Eubacterium|s__Eubacterium_ramulus",
+            "family": "species",
+            "beta": 0.11434810251948407,
+            "se": 0.04340824735051396,
+            "p_value": 0.008432379347445304,
+            "fdr_bh": 0.25718757009708176,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Lachnoclostridium|s__Clostridium_citroniae",
+            "family": "species",
+            "beta": -0.10355997691206575,
+            "se": 0.0435064974742242,
+            "p_value": 0.01729697199710556,
+            "fdr_bh": 0.4220461167293756,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Lachnoclostridium|s__Clostridium_saccharolyticum",
+            "family": "species",
+            "beta": -0.10229523261003218,
+            "se": 0.04492508567263932,
+            "p_value": 0.022785145594694804,
+            "fdr_bh": 0.463297960425461,
+            "direction": "negative"
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Firmicutes_unclassified|o__Firmicutes_unclassified|f__Firmicutes_unclassified|g__Firmicutes_unclassified|s__Firmicutes_bacterium_CAG_83",
+            "family": "species",
+            "beta": 0.09284207152548449,
+            "se": 0.04283221261804662,
+            "p_value": 0.030190969563809348,
+            "fdr_bh": 0.4671208549878767,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_intestinalis",
+            "family": "species",
+            "beta": 0.12379980685032513,
+            "se": 0.05726606856143958,
+            "p_value": 0.030630875736909948,
+            "fdr_bh": 0.4671208549878767,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Rikenellaceae|g__Alistipes|s__Alistipes_putredinis",
+            "family": "species",
+            "beta": 0.09057411390886183,
+            "se": 0.044037586861233706,
+            "p_value": 0.03971070139005819,
+            "fdr_bh": 0.5120407009136879,
+            "direction": "positive"
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_ovatus",
+            "family": "species",
+            "beta": -0.09853561165840312,
+            "se": 0.04844873041270203,
+            "p_value": 0.04197054925522032,
+            "fdr_bh": 0.5120407009136879,
+            "direction": "negative"
+          }
+        ],
+        "nonIBD": [
+          {
+            "feature": "fguild_oxidative_stress_log",
+            "family": "guild",
+            "beta": -0.1174817122168783,
+            "se": 0.0315328698250456,
+            "p_value": 0.00019478131554118123,
+            "fdr_bh": 0.0021425944709529935,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY-5347: superpathway of L-methionine biosynthesis (transsulfuration)",
+            "family": "pathway",
+            "beta": -0.12204013858175768,
+            "se": 0.0293594728645456,
+            "p_value": 3.227996939850289e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "METSYN-PWY: L-homoserine and L-methionine biosynthesis",
+            "family": "pathway",
+            "beta": -0.12184382240140394,
+            "se": 0.029487767852277174,
+            "p_value": 3.5960101709863196e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "MET-SAM-PWY: superpathway of S-adenosyl-L-methionine biosynthesis",
+            "family": "pathway",
+            "beta": -0.11955756118396947,
+            "se": 0.029576268095449873,
+            "p_value": 5.291866961155142e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "HOMOSER-METSYN-PWY: L-methionine biosynthesis I",
+            "family": "pathway",
+            "beta": -0.1206192860094491,
+            "se": 0.030065241804587597,
+            "p_value": 6.022741104687574e-05,
+            "fdr_bh": 0.005405410141457098,
+            "direction": "negative"
+          },
+          {
+            "feature": "fguild_sulfur_h2s_log",
+            "family": "guild",
+            "beta": -0.10280197478764251,
+            "se": 0.03357096820750413,
+            "p_value": 0.002196956924895113,
+            "fdr_bh": 0.012083263086923122,
+            "direction": "negative"
+          },
+          {
+            "feature": "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+            "family": "pathway",
+            "beta": -0.12382008546331916,
+            "se": 0.034344043882184476,
+            "p_value": 0.0003118098746415503,
+            "fdr_bh": 0.020006162968529553,
+            "direction": "negative"
+          },
+          {
+            "feature": "ANAEROFRUCAT-PWY: homolactic fermentation",
+            "family": "pathway",
+            "beta": -0.11941988456579239,
+            "se": 0.033291403025760426,
+            "p_value": 0.0003343648406996583,
+            "fdr_bh": 0.020006162968529553,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY4FS-7: phosphatidylglycerol biosynthesis I (plastidic)",
+            "family": "pathway",
+            "beta": -0.12339012103121032,
+            "se": 0.03562502352831814,
+            "p_value": 0.0005330379528510477,
+            "fdr_bh": 0.023920078134190767,
+            "direction": "negative"
+          },
+          {
+            "feature": "PWY4FS-8: phosphatidylglycerol biosynthesis II (non-plastidic)",
+            "family": "pathway",
+            "beta": -0.12339012103121032,
+            "se": 0.03562502352831814,
+            "p_value": 0.0005330379528510477,
+            "fdr_bh": 0.023920078134190767,
+            "direction": "negative"
+          }
+        ]
+      },
+      "top_stable_lme_ge4of5_hits": {
+        "CD": [
+          {
+            "feature": "PRPP-PWY: superpathway of histidine, purine, and pyrimidine biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.08646478543965397,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Barnesiellaceae|g__Barnesiella|s__Barnesiella_intestinihominis",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.15600462390690537,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "PWY-6969: TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.06664767351773453,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "LPSSYN-PWY: superpathway of lipopolysaccharide biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.060255763165056674,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "P162-PWY: L-glutamate degradation V (via hydroxyglutarate)",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": 0.07531884434447904,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY-5022: 4-aminobutanoate degradation V",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.06043592799341803,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "P42-PWY: incomplete reductive TCA cycle",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.0708147319722228,
+            "enet_sel_folds": 0,
+            "rf_top_folds": 1
+          }
+        ],
+        "UC": [
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_massiliensis",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.14374602308948034,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Lachnospiraceae|g__Fusicatenibacter|s__Fusicatenibacter_saccharivorans",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.18020177185399971,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Tannerellaceae|g__Parabacteroides|s__Parabacteroides_merdae",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": 0.13073301316588246,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "GOLPDLCAT-PWY: superpathway of glycerol degradation to 1,3-propanediol",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.1314109951764881,
+            "enet_sel_folds": 5,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Eubacteriaceae|g__Eubacterium|s__Eubacterium_ramulus",
+            "family": "species",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": 0.10865660604586791,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 2
+          },
+          {
+            "feature": "GLYCOLYSIS-E-D: superpathway of glycolysis and Entner-Doudoroff",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.10171232878798302,
+            "enet_sel_folds": 3,
+            "rf_top_folds": 1
+          }
+        ],
+        "nonIBD": [
+          {
+            "feature": "HOMOSER-METSYN-PWY: L-methionine biosynthesis I",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.11753436744615386,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "MET-SAM-PWY: superpathway of S-adenosyl-L-methionine biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.11673788883663938,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "METSYN-PWY: L-homoserine and L-methionine biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.11890890926274958,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "PWY-5347: superpathway of L-methionine biosynthesis (transsulfuration)",
+            "family": "pathway",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.11913936042940429,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "k__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Bifidobacteriales|f__Bifidobacteriaceae|g__Bifidobacterium|s__Bifidobacterium_adolescentis",
+            "family": "species",
+            "lme_sig_folds": 5,
+            "lme_stability": 1.0,
+            "lme_mean_beta": -0.12203440283341446,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Streptococcaceae|g__Streptococcus|s__Streptococcus_parasanguinis",
+            "family": "species",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": 0.1177353005563947,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 5
+          },
+          {
+            "feature": "PHOSLIPSYN-PWY: superpathway of phospholipid biosynthesis I (bacteria)",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.11438122448684843,
+            "enet_sel_folds": 2,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Megasphaera|s__Megasphaera_sp_DISK_18",
+            "family": "species",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": 0.225075029083604,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 3
+          },
+          {
+            "feature": "PWY-7211: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.09078432562441144,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY4FS-7: phosphatidylglycerol biosynthesis I (plastidic)",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.11412642178730817,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "PWY4FS-8: phosphatidylglycerol biosynthesis II (non-plastidic)",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.11412642178730817,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "k__Bacteria|p__Firmicutes|c__Negativicutes|o__Veillonellales|f__Veillonellaceae|g__Veillonella|s__Veillonella_sp_T11011_6",
+            "family": "species",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": 0.09013574835923303,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 1
+          },
+          {
+            "feature": "ANAEROFRUCAT-PWY: homolactic fermentation",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.11032023570418145,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "GLCMANNANAUT-PWY: superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.09547674243739493,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          },
+          {
+            "feature": "GLUCONEO-PWY: gluconeogenesis I",
+            "family": "pathway",
+            "lme_sig_folds": 4,
+            "lme_stability": 0.8,
+            "lme_mean_beta": -0.09747781618878379,
+            "enet_sel_folds": 1,
+            "rf_top_folds": 0
+          }
+        ]
+      }
+    }
+  }
+}

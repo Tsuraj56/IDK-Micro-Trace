@@ -1,0 +1,118 @@
+{
+  "status": "SUCCESS",
+  "timestamp": "2026-11-16T15:28:14.122912+00:00",
+  "paths": {
+    "raw_metadata": "D:\\IDK-projects\\IDK--PS-projects\\IDK-Micro-Trace\\DataSet\\hmp2\\metadata\\hmp2_metadata_2018-08-20.csv",
+    "c1_cohort_consecutive_0d": "D:\\IDK-projects\\IDK--PS-projects\\IDK-Micro-Trace\\micro_trace\\reports\\c1\\c1_cohort_consecutive_0d.csv",
+    "c1_cohort_all_horizons_0d": "D:\\IDK-projects\\IDK--PS-projects\\IDK-Micro-Trace\\micro_trace\\reports\\c1\\c1_cohort_all_horizons_0d.csv",
+    "c1_cohort_consecutive_le14d": "D:\\IDK-projects\\IDK--PS-projects\\IDK-Micro-Trace\\micro_trace\\reports\\c1\\c1_cohort_consecutive_le14d.csv",
+    "split_audit_80_20": "D:\\IDK-projects\\IDK--PS-projects\\IDK-Micro-Trace\\micro_trace\\reports\\c1\\split_audit_80_20.csv",
+    "c1_cohort_summary": "D:\\IDK-projects\\IDK--PS-projects\\IDK-Micro-Trace\\micro_trace\\reports\\c1\\c1_cohort_summary.json"
+  },
+  "metadata_stats": {
+    "total_rows": 5533,
+    "unique_participants": 131,
+    "unique_collection_events": 2302,
+    "mgx_visits_deduplicated": 1595,
+    "fc_events_total": 636,
+    "mgx_fc_same_day_0d_visits": 503,
+    "mgx_fc_same_day_0d_participants": 95,
+    "mgx_fc_prior_or_same_day_le14d_visits": 686,
+    "mgx_fc_prior_or_same_day_le14d_participants": 96
+  },
+  "c1_cohort_consecutive_0d": {
+    "n_pairs": 445,
+    "n_participants": 93,
+    "participants_by_diagnosis": {
+      "CD": 42,
+      "UC": 27,
+      "nonIBD": 24
+    },
+    "pairs_by_diagnosis": {
+      "CD": 216,
+      "UC": 125,
+      "nonIBD": 104
+    },
+    "ibd_participants": 69,
+    "ibd_pairs": 341,
+    "non_ibd_participants": 24,
+    "non_ibd_pairs": 104,
+    "dev_pairs": 371,
+    "test_pairs": 74,
+    "median_elapsed_days": 56.0,
+    "iqr_elapsed_days": [
+      22.0,
+      70.0
+    ],
+    "all_temporal_order_verified": true
+  },
+  "c1_cohort_all_horizons_0d": {
+    "n_pairs": 1671,
+    "n_participants": 93,
+    "horizons": {
+      "short_7_21d": {
+        "pairs": 113,
+        "participants": 36
+      },
+      "biweekly_14_35d": {
+        "pairs": 190,
+        "participants": 44
+      },
+      "monthly_14_56d": {
+        "pairs": 415,
+        "participants": 84
+      },
+      "protocol_30_90d": {
+        "pairs": 545,
+        "participants": 88
+      },
+      "any_future_gt0d": {
+        "pairs": 1671,
+        "participants": 93
+      }
+    }
+  },
+  "c1_cohort_consecutive_le14d": {
+    "n_matched_index_visits": 686,
+    "n_matched_participants": 96,
+    "n_pairs": 611,
+    "n_participants": 94,
+    "dev_pairs": 506,
+    "test_pairs": 104,
+    "unassigned_pairs": 1
+  },
+  "split_summary": {
+    "dev_participants": 75,
+    "test_participants": 18,
+    "participant_overlap_dev_test": 0,
+    "folds_distribution": {
+      "fold_0": 15,
+      "fold_1": 15,
+      "fold_2": 15,
+      "fold_3": 15,
+      "fold_4": 15
+    },
+    "dev_participants_by_diagnosis": {
+      "CD": 34,
+      "UC": 22,
+      "nonIBD": 19
+    },
+    "test_participants_by_diagnosis": {
+      "CD": 8,
+      "nonIBD": 5,
+      "UC": 5
+    },
+    "total_consecutive_0d_pairs": 445,
+    "total_all_future_0d_pairs": 1671,
+    "total_30_90d_pairs": 545,
+    "total_14_56d_pairs": 415
+  },
+  "zero_sum_sample_audit": {
+    "configured_excluded": [
+      "MSM5LLDM",
+      "MSM5LLDS"
+    ],
+    "consecutive_0d_flagged": 1,
+    "all_horizons_0d_flagged": 11
+  }
+}

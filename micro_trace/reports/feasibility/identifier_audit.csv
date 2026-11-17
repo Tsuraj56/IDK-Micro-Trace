@@ -1,0 +1,22 @@
+source_table,modality,n_rows,n_unique_participants,n_unique_external_ids,n_unique_collection_events,n_valid_dates,is_external_id_unique,matched_in_metadata_dt,unmatched_in_metadata_dt,join_cardinality
+metadata[biopsy_16S],biopsy_16S,178,81,178,178,0,True,178,0,1:1
+metadata[host_genome],host_genome,92,92,92,92,0,True,92,0,1:1
+metadata[host_transcriptomics],host_transcriptomics,252,90,252,249,0,True,252,0,1:1
+metadata[metabolomics],metabolomics,546,106,546,546,546,True,546,0,1:1
+metadata[metagenomics],metagenomics,1638,130,1638,1595,1638,True,1638,0,1:1
+metadata[metatranscriptomics],metatranscriptomics,835,109,835,815,835,True,835,0,1:1
+metadata[methylome],methylome,449,94,449,449,0,True,449,0,1:1
+metadata[proteomics],proteomics,450,89,450,450,450,True,450,0,1:1
+metadata[serology],serology,210,67,210,210,0,True,210,0,1:1
+metadata[stool_16S],stool_16S,180,36,180,180,180,True,180,0,1:1
+metadata[viromics],viromics,703,105,703,703,703,True,703,0,1:1
+mgx_taxonomy_v2,taxonomy:MetaPhlAn2,1479,130,1638,1595,1638,True,1638,0,1:1 (on External ID + data_type)
+mgx_taxonomy_v3,taxonomy:MetaPhlAn3,932,130,1638,1595,1638,True,1638,0,1:1 (on External ID + data_type)
+s16_biopsy_taxonomy,taxonomy:16S_OTU_pipeline,982,81,178,178,0,True,178,0,1:1 (on External ID + data_type)
+s16_pilot_stool_taxonomy,taxonomy:16S_OTU_pipeline,503,22,58,58,58,True,58,0,1:1 (on External ID + data_type)
+mgx_pathways_v2,function_potential:HUMAnN2_MetaCyc,10884,130,1638,1595,1638,True,1638,0,1:1 (on External ID + data_type)
+mgx_pathways_v3,function_potential:HUMAnN3_MetaCyc,22113,130,1638,1595,1638,True,1638,0,1:1 (on External ID + data_type)
+mgx_ecs_v2,function_potential:HUMAnN2_EC,108433,130,1638,1595,1638,True,1638,0,1:1 (on External ID + data_type)
+mgx_ecs_v3,function_potential:HUMAnN3_EC,167854,129,1635,1593,1635,True,1635,0,1:1 (on External ID + data_type)
+mtx_pathways_v2,function_expression:HUMAnN2_MetaCyc,6061,104,735,716,735,True,735,0,1:1 (on External ID + data_type)
+mtx_ecs_v2,function_expression:HUMAnN2_EC,70711,104,735,716,735,True,735,0,1:1 (on External ID + data_type)
